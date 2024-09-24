@@ -1,0 +1,1001 @@
+Item_Identifier,Item_Type,Item_Weight,Item_Fat_Content,Item_Visibility,Item_MRP,Sales,Outlet_Identifier,Outlet_Type,Outlet_Establishment_Year,Outlet_Size,Outlet_Location_Type
+d7dec3bc-55a8-4f8f-a8dd-45b023b17647,Electronics,6.8,Other,0.686926,431.48,6742,acb85838-f6f7-4156-b78e-3944be66a1e7,Electronics Store,2000,Large,Rural
+03eb8d3d-cca0-4a74-9b57-58e76af0c29a,Appliances,7.14,Other,0.575627,360.72,2347,21951ba1-4eeb-4103-a1a1-d0f008835de5,Supermarket,2008,Medium,Urban
+2fdce377-3022-46c5-83b0-0014b3c35a4b,Food,2.1,Low Fat,0.917134,494.19,4135,0d6a7148-98d6-4ce1-a1d7-59236fddb6b8,Electronics Store,1996,Medium,Rural
+b1ae3356-9b3a-4d31-acb2-727396987f31,Appliances,7.14,Other,0.523211,63.56,8932,f142c4ad-c47d-49a5-abaa-e86b26f302da,Fashion Store,2006,Small,Urban
+a1f04156-0437-40c1-af49-fb817fe237fe,Appliances,7.14,Other,0.24094,59.28,8056,8e585091-2d53-4dd9-a138-7b011b4f1e48,Fashion Store,2018,Medium,Rural
+5d4163ca-ef29-4964-88ff-64f9a6d23873,Clothing,0.32,Other,0.870888,466.4,8473,b9596adc-60e0-4e52-9143-b49c39727dfd,Electronics Store,2017,Small,Rural
+c8580075-bff7-40f4-bb50-fda41f067d54,Food,2.1,Regular,0.705336,499.33,5334,b6015131-1c42-4620-beeb-56e660b2e9c2,Electronics Store,2004,Large,Rural
+68f3ce48-ba8b-4df3-8611-b1bf799b53d3,Appliances,7.14,Other,0.208673,71.95,5752,41691e42-7c80-422a-9893-089a04449d39,Fashion Store,1995,Medium,Rural
+09b99bcb-9921-4cdd-9b2b-9e280137847f,Food,2.1,Low Fat,0.237115,272.61,6181,15998534-f517-4681-96ad-6097f5a44300,Online,1992,Medium,Rural
+e8777cfe-09f1-4510-9cfb-5cb66c426705,Clothing,0.32,Other,0.744395,429.37,1589,c597c254-dbb9-4e0c-81c9-10394ebe3ab1,Supermarket,2013,Small,Urban
+b54cf14d-e780-4d80-b294-60afb148f809,Electronics,6.8,Other,0.37423,361.68,723,ffe8e282-ca1f-4188-85cb-023f9439d1ff,Fashion Store,2013,Medium,Rural
+603051b8-5453-4c41-b47a-b6c18ccc2e33,Appliances,7.14,Other,0.585671,404.29,8589,667838cf-27b5-4077-98a6-552cc104f400,Online,2003,Small,Rural
+a3c66070-d754-4cf4-a3b4-7e3ce936d79f,Appliances,7.14,Other,0.545827,465.42,363,c070ff13-e2e1-4cb6-b96b-56f234a236bf,Fashion Store,1995,Large,Rural
+1b1876e0-2ba9-4945-b039-e4fa44ced387,Clothing,0.32,Other,0.779155,366.04,4347,52a6b22d-5f15-4ab4-8368-eeff627e9d0c,Fashion Store,1995,Small,Urban
+7a0d4c04-93a6-4843-8d94-1d2a8ac26b2e,Clothing,0.32,Other,0.02512,357.0,4666,338720d4-6ee0-42ad-b053-c0dde3948f48,Fashion Store,2003,Small,Urban
+7e2d42dd-c753-4e5e-8c53-189f0fe7ebe4,Appliances,7.14,Other,0.059643,304.51,7301,b38ee779-3aec-4884-b23f-5fb7c66c1244,Electronics Store,2005,Small,Urban
+3bbf482a-6010-4d70-9952-3395441d610f,Electronics,6.8,Other,0.880094,150.75,6540,88bd2052-94f3-4a65-a8bb-21d8316e2710,Electronics Store,1997,Small,Urban
+c8799851-3de0-4ceb-a16f-5478222309c9,Clothing,0.32,Other,0.906395,272.08,3121,a60d7de6-a7e2-4be4-853b-285fd84f7cb4,Online,2013,Large,Rural
+de165879-0304-4573-a3d4-e46f4f86fc21,Clothing,0.32,Other,0.045139,453.45,7025,071ef8de-518b-4ec6-87b0-6f5c018e918f,Electronics Store,2014,Medium,Urban
+ffd29baf-728e-4fdd-a315-7b1a27b6dbb4,Appliances,7.14,Other,0.740103,414.78,5364,52794eae-8436-4f6e-aab4-f87b2a30c646,Electronics Store,2016,Small,Rural
+d211935f-0289-45bf-b19e-92cb13ade3d2,Clothing,0.32,Other,0.442611,134.01,8658,0c025f3a-eb26-4ee6-92fc-327502fdaea5,Online,1993,Medium,Urban
+6f488a1e-3aca-4298-b71f-0c5ce53590f0,Clothing,0.32,Other,0.00944,237.17,2056,345ee724-18d4-44cc-92dd-8c0d7ffac40d,Online,2008,Medium,Rural
+247e0620-8d80-45d4-98d4-869b02c32e1d,Electronics,6.8,Other,0.714864,63.28,5654,f1f15496-a0e0-4794-b53c-f3c6f7adc3e9,Online,1997,Medium,Urban
+41d39950-10f9-4dc4-94ea-0b92eab642ee,Clothing,0.32,Other,0.791031,187.58,2184,5eea2b87-b270-45ec-9513-64abd79013d9,Online,2005,Large,Urban
+6cba13fc-a077-4463-933a-66cbe123045b,Food,2.1,Low Fat,0.726097,266.61,7484,61fe897a-66b8-4d64-97d2-9ed41cc4e702,Fashion Store,1992,Large,Urban
+96a81db7-fd96-4240-896a-af82db542143,Electronics,6.8,Other,0.109791,188.19,6547,0e7cd86f-0476-4c69-a7e4-5fc610a115ff,Electronics Store,2010,Small,Urban
+e9f0cb1d-b29b-45a0-95ad-2260a0adf408,Appliances,7.14,Other,0.594537,334.79,8960,6902bec9-48ae-4b1d-b49d-f672ee32db5e,Fashion Store,2001,Large,Rural
+369172fd-0b32-48dc-a336-8480bd8b0236,Food,2.1,Low Fat,0.529987,369.77,4298,c1e3c217-21e2-40e0-8652-f7c62710aee3,Fashion Store,1992,Large,Rural
+d2266be5-fa28-4e16-9430-8d528462040b,Food,2.1,Regular,0.785951,82.53,5417,19ec637a-b30d-4666-a9bd-e0d0c11a6c9a,Supermarket,2000,Large,Urban
+77bb6224-90b1-4312-bf04-5c869b686589,Food,2.1,Low Fat,0.125195,350.81,6812,ddbbb8e3-8d51-4e9d-91f4-09beb0e0f109,Supermarket,2015,Medium,Urban
+99e5d01a-5ac3-46d0-92ce-c033c7a8312f,Appliances,7.14,Other,0.383908,194.02,7561,5d5bdb7e-e44c-4f31-8e20-3a7d02039621,Supermarket,1998,Medium,Rural
+e5f1df4a-4327-4aeb-b25b-fd40bd98ace9,Appliances,7.14,Other,0.281538,218.83,5672,703e3519-95cf-4c83-97ed-98e3a5f79ae3,Fashion Store,2007,Small,Rural
+0ab543b2-dea0-4d86-836e-20b09d8e4988,Appliances,7.14,Other,0.52884,173.58,6818,654c06c7-6701-4453-aa15-02fc36fe0bac,Supermarket,2011,Small,Rural
+f089e35d-7a77-4465-9c4a-f183d9ecf58a,Electronics,6.8,Other,0.155917,438.52,9786,b5096014-7238-4c39-8fae-536c12fe2120,Supermarket,2013,Medium,Rural
+07916608-db47-413b-b044-d77ac1d4d9e2,Clothing,0.32,Other,0.080066,239.98,3660,167e328d-4e1d-40a2-b3bd-df439ab334a0,Fashion Store,2013,Small,Rural
+e1c7b8e1-742c-42c1-abe3-bf68db9635bf,Electronics,6.8,Other,0.219643,135.15,4647,6fdac8cb-c8c4-4cd1-a2ae-4792869ae4a6,Online,2008,Medium,Urban
+a9471568-834d-4645-9b60-ffef3ec7938c,Appliances,7.14,Other,0.045652,170.74,3297,00d448b6-bde1-403f-a4e7-6c4f25c325d8,Fashion Store,2017,Large,Rural
+66873f98-eaa8-42b7-bd82-b1c19570518b,Clothing,0.32,Other,0.218985,151.92,9488,442105de-462e-4727-8bec-d0d61145ef3e,Electronics Store,1994,Small,Urban
+c3e47352-ef28-42a6-ad39-28a657f05a7f,Clothing,0.32,Other,0.444382,220.88,3510,62215b2a-17f3-4e1b-b81d-d517660bade0,Fashion Store,2018,Medium,Rural
+d7e288ed-2c31-4ff9-a793-9e9784772eec,Electronics,6.8,Other,0.868681,173.95,5893,082fc33d-2bd2-4400-9702-962fbb9dc103,Supermarket,2004,Medium,Urban
+4e4f0e74-4318-4625-871e-7fd2a42c6464,Clothing,0.32,Other,0.939829,437.31,2939,74f5642a-0e45-418b-9957-87574f3233d7,Online,2002,Large,Urban
+5588e42a-e941-4364-a84b-63078c12bab8,Appliances,7.14,Other,0.213565,351.92,9264,4e4c35ee-8ac9-4667-8717-c91e5aaece91,Electronics Store,2008,Small,Rural
+6b132fbb-441a-49f2-a55a-76e0e4022720,Clothing,0.32,Other,0.439279,375.94,3270,c4f4270f-2a61-487e-add3-8785dbf30eee,Online,2005,Medium,Rural
+5e1c3ab8-c0ae-4f81-b21b-d0ea3a3fa01b,Electronics,6.8,Other,0.505295,356.2,5531,9fcf52a1-9f6e-4954-9a97-97184e8b85b0,Fashion Store,2020,Medium,Urban
+60957648-ea58-42ea-8e5d-fa398d408da3,Electronics,6.8,Other,0.809186,478.03,4346,a7738cc9-f834-498b-943d-3d6f994c65db,Supermarket,1999,Medium,Rural
+4c062d31-f0df-4e0d-837d-31214c28d5d6,Appliances,7.14,Other,0.409497,173.76,5977,0bfa5266-0090-4eae-bc5a-5f080ac1578d,Supermarket,1990,Small,Urban
+a742e297-d469-47a7-87dc-4dae8cc4a261,Clothing,0.32,Other,0.278113,67.97,4491,b84d2952-2bea-4363-bb38-a787a477df32,Supermarket,2013,Large,Rural
+e96d3146-c6f6-4d8b-b1af-7e33df4af3a4,Clothing,0.32,Other,0.881608,283.35,4514,a50acbef-492f-4915-8da6-0aa237001929,Fashion Store,1996,Large,Urban
+5a644b24-3140-4397-809a-1229de2e74d4,Appliances,7.14,Other,0.326202,471.08,9476,286fe070-3efc-4d54-b4aa-be88c961161c,Fashion Store,2002,Medium,Rural
+720e3c65-8868-4cb3-9d4e-ec1ddd384478,Electronics,6.8,Other,0.486934,253.68,3436,77c5ef93-fb96-4cc3-815f-6eea66295990,Fashion Store,2017,Medium,Urban
+916ddf09-3861-47fa-b4f4-b44c5c549509,Electronics,6.8,Other,0.696899,382.0,3032,8cbc3fd6-34cb-435c-98a7-364304485535,Supermarket,2014,Medium,Rural
+664629b3-f820-4d9a-a63d-6a63290730c4,Food,2.1,Low Fat,0.847676,96.82,1214,b6ebaa8a-8fd3-4a7c-ab6b-ddec9e78f6dc,Supermarket,1999,Small,Rural
+7945dbca-afb3-460b-875f-19d9446451fd,Electronics,6.8,Other,0.532531,141.47,347,d0ad4ac2-01d7-4af0-89a0-b36155dac17b,Electronics Store,1997,Small,Urban
+d71dec8d-e7fc-422f-bd81-fa730ef60b09,Appliances,7.14,Other,0.408265,102.4,3374,c24c4348-3a7a-41f0-b6fe-ae1b7407efbd,Supermarket,2013,Medium,Rural
+91d44978-7992-40af-9a3f-92b3b43692b9,Food,2.1,Low Fat,0.601547,90.76,7837,543452f8-bf5d-422a-8a4f-f1cbf94efa82,Electronics Store,2014,Small,Urban
+5478dd74-60b6-479e-b955-10310488e422,Electronics,6.8,Other,0.40077,439.35,3186,e435c2c0-6d02-46b6-9a45-3d5291f3e8eb,Supermarket,2008,Large,Urban
+b40b906c-17d1-40f3-a0fc-6d6e7d65299e,Food,2.1,Low Fat,0.102352,283.8,2235,827cb0b4-19ed-4a9d-80d3-66398f445819,Online,2009,Medium,Urban
+a9215113-0262-45da-8cd1-4fdb61eb5c14,Electronics,6.8,Other,0.808004,257.35,847,14201787-1a68-4cf4-9e7c-688a624a5b84,Supermarket,2019,Small,Urban
+1533300e-b5f8-4047-bc9c-d8b93c744f68,Food,2.1,Low Fat,0.335977,204.11,5578,8f0b3e88-5b22-4b14-8eff-b4948811ddc3,Supermarket,2008,Large,Urban
+a6d72ad6-3da5-49af-ba47-ccbdd54b5508,Food,2.1,Regular,0.070759,397.8,7676,a02be1c6-5d11-4de2-9e7c-7cc30f88a768,Electronics Store,2016,Small,Rural
+1161a92a-bf3e-4929-8fab-53f6abf82e1d,Appliances,7.14,Other,0.608763,310.13,705,3433713a-2e43-4e85-88a2-3ddba0ad3229,Fashion Store,1993,Small,Rural
+71fc99e7-9a8b-42bf-b10b-052975863812,Food,2.1,Low Fat,0.336364,207.94,2147,6b9a95ea-22ed-4ffd-8b21-e014e81b0da6,Electronics Store,1992,Medium,Rural
+4d27f50d-38b6-4d88-a052-bd3f94f41c9e,Appliances,7.14,Other,0.020473,334.31,849,c943b86a-4b84-4582-9c93-c72d72ce1264,Online,2012,Medium,Urban
+a73decf1-8595-4361-be68-52463c60e29a,Electronics,6.8,Other,0.862311,159.01,8287,eb4365cc-30bd-4fdf-90c2-fb5642f6ae70,Fashion Store,1992,Small,Rural
+047fec00-f765-481c-a0ea-9be9c8cee060,Electronics,6.8,Other,0.166916,153.32,8263,f39fa10b-9a72-486f-89e7-59d1818d6fb8,Supermarket,1997,Small,Urban
+af78879e-da0b-42c0-a822-af58bbd1414c,Appliances,7.14,Other,0.390427,438.05,9929,776c9f40-437c-4f09-b2da-055caeaf8eb8,Supermarket,2016,Large,Rural
+6b36b934-4283-4002-9399-f85ec092b045,Appliances,7.14,Other,0.978615,309.33,578,c4bf7a7b-6e04-4652-8b86-2c7bc8a39b09,Electronics Store,1994,Medium,Rural
+1d5d6207-a6c0-4ab9-892f-be6707280a07,Clothing,0.32,Other,0.765696,434.25,7124,18dab7ce-837c-4348-9f6a-03993274b5ae,Electronics Store,2017,Large,Urban
+2c08d7de-d49c-4ea1-a07b-0c7361ac13e4,Appliances,7.14,Other,0.339187,345.23,3590,47110404-535f-43de-95e5-dd19f1835479,Supermarket,2014,Small,Urban
+4bc85c3d-28c3-438a-b277-93b042ab6cc0,Food,2.1,Low Fat,0.857027,62.99,8253,ca117e02-6dba-49ad-9613-ec99eb470e6b,Online,2008,Medium,Urban
+271efb0d-ded0-46e8-9798-872c126f62bb,Appliances,7.14,Other,0.525049,421.6,6033,5f890a9c-19bd-478d-8910-78a3ea2d514a,Online,2015,Medium,Urban
+b59d8b77-7015-4492-9e2d-e99aed510e8f,Appliances,7.14,Other,0.762571,155.84,9938,3b038b23-23ff-4298-9f65-389c426cef5b,Electronics Store,1997,Large,Rural
+5fe9fb8b-5d87-4fbb-be76-f16dd21abab9,Food,2.1,Regular,0.914863,481.29,4380,c5e368fd-9669-494a-9d52-6b530c24337d,Electronics Store,2018,Large,Rural
+8ff715f1-bd39-4e17-8c41-d9c1b9920390,Appliances,7.14,Other,0.287545,160.26,6899,fe617586-5531-49da-ade8-f6693f9f5150,Supermarket,2008,Medium,Rural
+b10653d4-bc33-4814-8cf0-87242ad4e9b8,Electronics,6.8,Other,0.181534,222.56,3273,3c876a9b-cbaf-42ca-9674-0a442c64f87f,Supermarket,2007,Medium,Rural
+ce5f0481-3fd3-407d-94a3-2f0bcecab8cc,Electronics,6.8,Other,0.794639,170.36,877,4c20692d-8767-465b-b95b-658216b3ccbe,Fashion Store,2012,Medium,Rural
+9e804b2b-167d-40b8-a46c-e9866be3388d,Electronics,6.8,Other,0.816313,431.89,6800,c8c49ffa-e7b2-434f-96a8-68253ab23a20,Fashion Store,1994,Large,Urban
+8ebc692a-f031-46c9-b70a-87301809eaa3,Food,2.1,Regular,0.041384,432.45,612,851c0381-9b7e-4c9e-b9cc-43fe0bea21c4,Online,2002,Medium,Rural
+5e80cf03-98ca-4fb5-a4ce-fa6e494292ee,Electronics,6.8,Other,0.396841,114.42,2843,74432ca4-7d6c-4802-9ec8-48e556d2a756,Fashion Store,1994,Medium,Urban
+38621f76-e68a-4278-9a1b-fc0fb9d2a587,Clothing,0.32,Other,0.752335,84.43,3387,a2fa9b28-3722-4041-ba56-3552d4ebb69a,Supermarket,1991,Medium,Urban
+3e663d53-8598-475f-bfd6-bf1205102f47,Appliances,7.14,Other,0.001989,306.38,136,e3761112-0fb3-4eb7-83c0-5834c8fe1253,Fashion Store,2015,Small,Rural
+a644fd16-2ded-474c-8e3a-ec7d053ef129,Electronics,6.8,Other,0.37156,59.67,6292,d635d2b2-f923-463c-a83b-fc4a66c48da2,Supermarket,1995,Small,Rural
+fe7f08a6-b8e6-41f7-a47f-8ade493e5502,Clothing,0.32,Other,0.284389,281.42,4795,fe51772f-feb1-4ae2-902d-0d8fc57d084d,Fashion Store,2018,Small,Rural
+5e16565c-e7f0-40c4-a10f-b02015d144cf,Food,2.1,Regular,0.377904,252.36,4822,ac500ac0-dbb4-4c42-af01-a28fb665fa9b,Supermarket,2012,Small,Urban
+9662c761-9249-4eae-abc4-dd8adf46dce3,Appliances,7.14,Other,0.722258,270.08,4152,aaa96fb1-5aaa-4c95-91e3-d0ae5116a8ba,Fashion Store,2011,Large,Rural
+b2e32ec2-822f-42d3-8e9b-0fe194384a97,Appliances,7.14,Other,0.283777,215.59,9662,67359442-5d9b-4f31-aaff-6cb1b66fd3ab,Online,2012,Medium,Urban
+d3ac73ea-5968-440e-a350-c7f92e3b986a,Food,2.1,Regular,0.48836,194.53,1472,c928038e-579b-440d-abd0-932fe3df18f7,Supermarket,2011,Small,Urban
+a54ccd4f-1a57-4527-825c-22b428bfad89,Electronics,6.8,Other,0.41476,261.6,3434,d840cc77-c527-42bb-9f3b-05f96ff37135,Fashion Store,2020,Medium,Urban
+21f0eaa7-bdf2-4d3f-a8f9-3aa820fba0ae,Food,2.1,Regular,0.650746,453.87,9667,10c158b2-46ab-4e64-8657-627dd0d7bccf,Electronics Store,2015,Large,Rural
+76bbbff4-e10c-4daf-8962-b3ee30502bc8,Clothing,0.32,Other,0.650217,322.67,4198,fa460b58-f2dc-4dc7-b407-81515646a971,Electronics Store,2011,Large,Rural
+09ddb696-6ec3-40bc-9dd2-99ab31cfc987,Electronics,6.8,Other,0.65464,61.41,2346,072c4346-f3eb-49b0-bc08-a26936d2f182,Online,2008,Small,Urban
+56042b43-da96-4d0c-b901-a934c7882891,Food,2.1,Low Fat,0.402186,302.09,9872,4be73832-6d68-496f-9a19-de7a8c60d5df,Fashion Store,1991,Large,Urban
+0105c084-d734-4252-be8c-a2861d5bd6d7,Clothing,0.32,Other,0.132909,295.73,6342,b346670d-152b-430f-97ad-1cad4e516e63,Electronics Store,2017,Small,Urban
+4215ee5b-8c41-409e-b9ae-2a94c724bf64,Appliances,7.14,Other,0.235262,346.35,3802,d0b1293b-9779-48d3-9500-bfdd85a941a6,Online,2017,Small,Urban
+d5680517-6102-48f9-8361-20b4e644bf92,Electronics,6.8,Other,0.16637,466.16,5018,4fb59f65-5fea-4d34-80fb-163978330acf,Online,1990,Large,Urban
+7bf4b9a3-cc6f-49e1-a027-459ae76c54d9,Appliances,7.14,Other,0.18153,370.94,3167,f53d839c-6fcd-4898-9403-a74e0c2c77ef,Electronics Store,1992,Small,Urban
+a565c669-5676-4e9b-950d-6dc4a759ba11,Appliances,7.14,Other,0.280676,443.87,3481,0063e024-5021-4018-bfd2-e020c8850514,Supermarket,2003,Large,Rural
+1bf92c71-ab04-49ec-8ef5-c08bce1a2fc9,Food,2.1,Regular,0.857157,452.63,5595,662267a7-e3ea-472d-b61a-83cd54f723b2,Online,2004,Medium,Rural
+0e77b630-945d-4ebc-ab44-ea95bf47b89a,Electronics,6.8,Other,0.045317,494.63,8612,9f2700df-cd56-464b-9325-bb0b5696bc8a,Electronics Store,1999,Medium,Urban
+eb723e3e-0534-45d5-9612-f2f34873b4f6,Clothing,0.32,Other,0.805321,219.62,5971,0da662bf-9bc3-4c70-88e4-2adbe282db25,Online,1996,Large,Urban
+0b29a63d-6474-43e8-9d8d-3e171d5661c7,Electronics,6.8,Other,0.657347,253.71,4757,6fbd277a-8fec-4636-8743-3a953d6553e4,Online,2009,Small,Urban
+e1d0fe97-d6a1-41bf-9aec-775f8f02adda,Clothing,0.32,Other,0.256497,126.48,317,46d0f5ca-0682-41bb-833f-712ead3138aa,Fashion Store,1990,Small,Rural
+6dd2a4a0-55c2-4f87-92e5-0b90006b2802,Food,2.1,Low Fat,0.43433,243.18,4643,e4b3a401-b440-4b47-aa88-4a1698b39fa4,Supermarket,1994,Medium,Rural
+3eff59ea-3dcc-4387-95ff-228ca2c8d8ce,Clothing,0.32,Other,0.837324,174.95,5486,948f2ae0-8ff8-4059-9557-8166051c0dbb,Fashion Store,2012,Large,Rural
+a0a19bfd-5cf0-4de9-9946-a9990d4a568a,Electronics,6.8,Other,0.990776,121.5,2662,3f672db6-b389-426d-aa7a-63eb660549f6,Online,1991,Large,Rural
+5f671462-e78a-4fc5-913a-12ace0801ac9,Clothing,0.32,Other,0.800826,190.47,2624,330759b6-eba4-409b-88f9-2dfec2402082,Online,2018,Medium,Urban
+e368a30a-6f0b-4afb-81e0-3a3eed2cca20,Clothing,0.32,Other,0.878049,286.72,5683,b322cb43-b97e-443c-b9e8-d6a6afd8cd7d,Online,1997,Small,Rural
+fc1b6364-af74-450c-9459-1c50049ce35a,Clothing,0.32,Other,0.920815,65.11,1090,e916a8c7-5ea3-4509-9c18-7a78d4838188,Supermarket,1999,Large,Urban
+d499d835-6b60-4abf-be5c-6f6782b1412b,Electronics,6.8,Other,0.622926,296.54,5665,217b2835-5071-48c2-9461-fdf9df7e1bcb,Electronics Store,2010,Large,Rural
+3b1042ed-676c-4bc6-9a55-1316ec28eea5,Electronics,6.8,Other,0.843442,125.61,1088,936e4a34-4803-42c5-bd03-66c654ea7845,Online,2003,Large,Rural
+c3955061-1bb5-41d4-ae87-3a0b1354c264,Clothing,0.32,Other,0.671079,298.07,7489,6808cbe1-1471-4da6-8497-11ab346b16a7,Fashion Store,2004,Small,Urban
+cad4f148-fe7a-455a-a893-235fb20b9f47,Clothing,0.32,Other,0.520501,163.37,8308,28d8ec3f-875a-466d-8c81-e783ef21aa28,Electronics Store,2003,Medium,Urban
+15966651-f22e-42e0-9ae7-af6386d640c6,Appliances,7.14,Other,0.6395,98.66,540,5619fc54-9c0e-4fba-b6d9-ca11a284aa45,Fashion Store,2015,Medium,Urban
+25c54468-1dd6-4626-89fe-e725e886503f,Electronics,6.8,Other,0.450145,58.21,441,0424c92e-20ab-4e8e-82f0-58dd644a7e89,Electronics Store,2003,Small,Rural
+ccf7cbc4-b29f-47bd-8770-1740febf9db3,Electronics,6.8,Other,0.054085,486.57,1548,0385da03-87bc-426f-9c6c-26652669fcc5,Online,2016,Medium,Rural
+7de9e1e2-cc68-48cb-b8e0-a69d380c2d81,Electronics,6.8,Other,0.935471,362.33,8719,75791096-65b6-47d3-857e-95f2ab837095,Supermarket,1993,Medium,Urban
+911e4e66-f155-4a6e-b237-ff8006001f0a,Electronics,6.8,Other,0.081428,70.4,5126,be4a7cd0-4c1f-4dc4-8fd0-0584f8566242,Fashion Store,2015,Small,Rural
+cd9d9a49-fc18-4d07-948e-35d7e7fd0027,Clothing,0.32,Other,0.418057,357.63,145,3d1becd1-0151-4f15-8ded-81a43b2a9f4b,Electronics Store,1990,Small,Rural
+a7150db5-b78a-4f18-8b18-980703078edb,Appliances,7.14,Other,0.53927,140.03,7471,0244dd79-257f-41bc-8732-e2041606de16,Supermarket,1995,Large,Rural
+41bebcc8-18d8-4c1f-a07c-9ccf913585a5,Clothing,0.32,Other,0.801,443.75,9106,417c34c1-a337-4871-ab40-db1acfcbb162,Fashion Store,1991,Large,Rural
+696c5353-e724-4134-9afa-15f1adc45c9f,Electronics,6.8,Other,0.119839,198.24,8418,0bd18d49-0ea4-41bc-9e45-10fda1eb6f67,Electronics Store,2000,Medium,Rural
+62855985-7317-4c46-98b6-5f3dea8c119a,Electronics,6.8,Other,0.614112,362.06,406,024f2be6-14b1-4092-9a2d-fb8220608179,Online,2017,Small,Rural
+98c2e1f7-b3f8-4f9f-b252-90a7dbfadc7d,Appliances,7.14,Other,0.699507,227.09,3593,edbdac8b-fc6c-489c-80ce-df8093e24ded,Online,1991,Medium,Urban
+0509ab9e-99af-4cb2-95ee-ff61cf30f8b4,Clothing,0.32,Other,0.217044,284.81,4880,cbf587f8-29a5-417b-9c55-5a2a2d489607,Fashion Store,1996,Large,Urban
+398b4f72-b5e0-4281-b06b-2626427c4df4,Electronics,6.8,Other,0.746861,162.78,1052,534a8915-465b-4d46-bf35-844788ab7649,Online,1997,Medium,Urban
+88ba2c55-7b55-4b6e-a59d-ceec5b996c1e,Clothing,0.32,Other,0.183857,487.24,2348,79baa9c7-44e5-43a0-86f3-0ff7a95b400c,Online,2008,Small,Rural
+7161dd78-bc27-42b8-9209-dd76af194003,Food,2.1,Low Fat,0.195875,78.49,9283,805ffd23-613d-455e-bfdc-30a0315e180b,Fashion Store,2003,Small,Urban
+ae3b29e9-cd4e-48ff-8548-0b581c7994fb,Food,2.1,Low Fat,0.616558,341.98,1384,e4124bc6-ab7f-4ac5-a526-2d422b026fa9,Supermarket,2010,Small,Urban
+1d3b620f-2366-4026-903e-4fb77837eb5e,Clothing,0.32,Other,0.190542,372.17,4853,cdda2680-6ace-4931-b2c2-a8f2511e9d86,Electronics Store,1998,Small,Rural
+96d946c4-bbc9-47bf-bf1f-1a0a02e30642,Food,2.1,Low Fat,0.72684,92.3,2279,142a0f9e-f296-4097-816d-fdc1d53b37f8,Supermarket,2000,Large,Rural
+af2f4895-32b9-4b94-8617-93e4d55bd930,Electronics,6.8,Other,0.992651,366.34,272,a1e06de3-3c29-42a3-8d92-dd91219ac2c2,Fashion Store,2008,Large,Urban
+6cd9ea5d-88d8-4677-9d3f-95b950b30798,Appliances,7.14,Other,0.020562,398.0,6410,a1981640-173a-4bff-8002-72c389112565,Online,1992,Medium,Urban
+96eed302-0bf9-4fb2-934c-2d98b6e54694,Food,2.1,Regular,0.939788,183.15,8302,de795569-a78e-448c-ae59-c2fd4c4af43f,Electronics Store,2006,Large,Rural
+3fa6ce8b-1929-4890-9fbb-8f31a6d3f6f3,Appliances,7.14,Other,0.085946,326.04,3786,410c5fbb-34f9-476a-aedc-5eebb67ae65d,Fashion Store,2007,Large,Urban
+a33b4108-7576-4a54-800d-5932758b544a,Electronics,6.8,Other,0.187578,233.84,5359,e863b26d-3426-460c-8901-f9c3c0089802,Supermarket,2010,Large,Urban
+6ff348c3-93f4-4a1b-a028-4d0103f37f97,Food,2.1,Low Fat,0.790469,156.01,7737,43b4b93f-656a-4dbf-b42b-976c49f79cb8,Fashion Store,1993,Large,Urban
+5f7d0d32-854f-49f0-96c6-c085b88c805b,Appliances,7.14,Other,0.208091,416.71,7140,ca906f54-8141-462f-b64e-161a03d3e351,Online,1997,Small,Rural
+0a2b70a9-4dc0-4a6a-b37d-ffabf164c9e7,Appliances,7.14,Other,0.122416,148.7,475,b3e18e7f-4186-49ae-8287-ae6f9c7c7232,Supermarket,2007,Small,Urban
+b9dfb00e-2ab8-4e78-bcf2-9043e543edd8,Food,2.1,Low Fat,0.265288,491.19,6838,91eb84f7-b8c4-4867-b021-54fbc5a78eb3,Electronics Store,1996,Large,Rural
+422185d4-f4ea-4a15-ac3e-c9b2f8c8c2c9,Clothing,0.32,Other,0.164295,144.03,5985,cd39f6bf-6725-49fb-acd2-ee9ab2991cfa,Electronics Store,2016,Large,Urban
+f7564e0d-9ff2-43d7-be90-788d8350ce22,Appliances,7.14,Other,0.401147,481.28,5490,bf616e34-e1d9-42df-862b-91d91d91a3b3,Fashion Store,1999,Large,Urban
+ce7e17a7-f7fa-4b33-91c5-e4ca25554055,Food,2.1,Low Fat,0.154142,442.32,7480,cfc10982-70f3-4bab-8203-f1624664faf0,Supermarket,2017,Small,Urban
+ad90af1c-156b-4b7b-9c9f-676882de90b6,Clothing,0.32,Other,0.150445,241.99,6701,fd30c486-caab-4da5-b648-bd31c8b6042c,Electronics Store,2004,Small,Rural
+3c384f8c-431b-4c04-b641-84b1e2d93f60,Appliances,7.14,Other,0.147113,346.52,9229,fbedc9b7-7c84-417d-a926-eebad1e82de3,Fashion Store,1997,Large,Urban
+8deb8120-7066-4c6d-ac90-c802a2bc565e,Clothing,0.32,Other,0.673674,198.38,6923,7f76c265-3149-4390-8c86-8a7a8e0afb42,Supermarket,2016,Medium,Urban
+be2ef343-af6f-4b78-a867-bd1e327308b3,Clothing,0.32,Other,0.445485,282.68,6728,0608014d-6064-45cb-b86c-555881eb226f,Supermarket,2003,Small,Urban
+a5403706-6118-40bf-9d64-4c5b8c410ab9,Food,2.1,Low Fat,0.627685,152.87,5768,1f1eafac-003a-4bd7-b085-7d1fe3d86e07,Online,2011,Large,Urban
+2e621cad-b9db-4539-af57-de22d92da61c,Electronics,6.8,Other,0.13716,383.89,2092,b5f3c1b5-e5d5-4211-becd-1c3bf7d230ea,Supermarket,2018,Large,Urban
+c47f7618-a8a4-421b-89cd-8228a34375b6,Appliances,7.14,Other,0.23679,143.89,1509,c8b86e57-5070-4b62-be25-524c659eebd2,Online,1992,Medium,Rural
+012ff1db-d833-4eb9-9e76-114ac175d479,Clothing,0.32,Other,0.441643,56.37,6030,4b92f15a-c1c4-4b64-929c-359e1380665b,Electronics Store,2014,Large,Urban
+5eedf802-d00a-4046-a7ac-04b88f0f70fb,Appliances,7.14,Other,0.506671,76.53,3581,7e9c1d48-cd88-4927-917d-d81fe9a75cd0,Online,2003,Large,Urban
+6e97a70f-0a50-4a3f-a563-8f7ab1f822e5,Appliances,7.14,Other,0.255377,284.77,6691,100b8991-3c66-454a-b878-b70c74e33022,Supermarket,1992,Small,Rural
+4ba8bafb-8156-4a93-9a18-32187b9ec09d,Appliances,7.14,Other,0.302946,482.45,5229,11294816-b5b3-4768-bf28-3d2a367f7c0f,Supermarket,1997,Large,Urban
+99a929d2-f537-4bc8-b930-b518f2b61af6,Clothing,0.32,Other,0.99684,367.84,171,4c3fd52f-77a9-47c3-812e-76b1b200fea8,Supermarket,2010,Large,Rural
+13668113-841f-4562-aaba-f3643e4fb19f,Appliances,7.14,Other,0.073111,222.61,8341,4ed72cb0-f041-4b15-b4bb-b047c5b97ad4,Electronics Store,1993,Medium,Urban
+1cde1d84-7fad-4394-aea1-97d2958f4bcd,Clothing,0.32,Other,0.936789,453.07,981,0e7e0b29-c15b-479b-a0dc-63b2669d742b,Online,2011,Large,Urban
+57868143-f49f-4e3d-8ad9-0faf99ec2e9e,Clothing,0.32,Other,0.335047,154.28,704,a439b9f6-4daf-43f0-a1ec-c768448acdb8,Online,2012,Medium,Rural
+cc069c2b-56b5-4425-a15d-5ab80dcaaf7d,Electronics,6.8,Other,0.126806,78.58,3225,5ee922cd-2d79-4467-a865-4899e6d7785b,Fashion Store,2008,Medium,Urban
+1f3237d5-4de9-400b-89d9-545143d07194,Clothing,0.32,Other,0.230012,83.82,5157,30f4a72a-7b77-48a4-93b6-41ba264b73d8,Supermarket,2010,Medium,Urban
+72a561d4-9b0c-4d92-8417-9a3e57ce2576,Appliances,7.14,Other,0.440828,191.03,5783,e998bae8-0131-4a31-8979-e26c199b4eb2,Electronics Store,2008,Large,Rural
+ea1d89a3-623b-4174-9c2d-5a142d222562,Appliances,7.14,Other,0.645612,241.62,8076,cd41ed29-39b8-404a-93e0-7293ed61e7d1,Online,2013,Large,Urban
+6006b90e-dfce-41a8-b648-f0615e2c1211,Electronics,6.8,Other,0.803867,85.66,7261,b527df93-8bb3-4664-891f-8543284027a8,Online,2020,Medium,Urban
+7458c2c8-a53e-4ec2-b9ea-8430375a47f7,Food,2.1,Low Fat,0.037209,382.04,9721,9cbd29ea-7db4-45af-88cc-75e5d431a3d6,Electronics Store,2012,Small,Urban
+d47ab96d-5241-4411-b79d-2bceef974f85,Clothing,0.32,Other,0.646065,266.98,5848,1ae4edc7-57b5-449c-aed6-dcb863190203,Fashion Store,2016,Large,Urban
+6874f12c-e7f5-46a6-bf5c-aa51db3f5f36,Food,2.1,Low Fat,0.259168,100.74,2631,50ca988d-7547-4b17-8f52-c342a360e5c1,Supermarket,2012,Medium,Rural
+d22f6411-6e9c-4410-b78e-0ec5a2301ad4,Electronics,6.8,Other,0.239639,135.73,4333,ff004fec-1df7-44e4-b828-cf20ccaa99cc,Supermarket,2014,Small,Rural
+fa61c7a4-4ed2-41d7-8f87-8bcf3e8624a4,Electronics,6.8,Other,0.963536,120.93,8132,babaf79a-9842-43e1-b13e-46fee7714757,Online,1991,Medium,Rural
+e9e675bb-ab5a-4ff6-84e4-a1d0704579b9,Clothing,0.32,Other,0.883578,231.08,1031,55fbbad8-6735-437c-9027-2ad74604f45d,Online,1992,Small,Rural
+97c6b89c-f048-4e9a-a8ef-ae8f6afc95be,Appliances,7.14,Other,0.185772,403.74,9307,d70be16c-f2f9-4f60-a958-311166ee78e7,Supermarket,1990,Medium,Urban
+8fabd500-c619-4f8b-8b87-68957e860148,Clothing,0.32,Other,0.900441,204.9,1813,42c68611-ee6f-4a06-8f43-594758c627f4,Fashion Store,2018,Medium,Rural
+1681569a-025a-4bc6-b334-a5551f7ee1ef,Clothing,0.32,Other,0.986321,471.42,8750,c6b89cf0-b103-4d9f-b9e8-df70a79549c0,Online,2010,Large,Rural
+99bb7597-197d-477a-a7d2-febcb47a8202,Electronics,6.8,Other,0.14692,362.62,8712,b7b257b4-713f-4786-8803-fc4d1e5113f2,Supermarket,2015,Small,Rural
+804dc443-4448-4f38-97a1-5fa86700994c,Clothing,0.32,Other,0.260794,362.32,5388,97e68b38-fb23-4ad6-bfcf-9e29303c45ea,Online,1991,Medium,Rural
+8ddbf162-0a7e-4c41-b80f-0575eef48da6,Food,2.1,Regular,0.450958,59.56,6761,00994f59-ec61-4930-acd1-82e289876dc1,Supermarket,1996,Medium,Urban
+39890458-bc8c-4474-a1a4-99b864062a88,Clothing,0.32,Other,0.793347,345.9,5147,8c064a17-565b-4397-9b3c-683e4395bc44,Electronics Store,2010,Small,Rural
+c728ee53-5889-4ace-9726-bb8fe01d206b,Food,2.1,Regular,0.560553,241.55,5865,5281a2db-41b8-418c-bdf9-e61adca88d38,Fashion Store,2015,Medium,Rural
+63fb78cf-60d6-4223-9ea1-a1d972c98351,Appliances,7.14,Other,0.84818,396.25,5768,027719dd-a021-4904-8655-0be1360d32b9,Supermarket,1991,Medium,Urban
+1ca5d38f-33f1-4a74-b249-a0e9b156b2a2,Electronics,6.8,Other,0.263722,437.86,9685,46c764c3-9a86-4713-a2ff-3003aee9c4d5,Electronics Store,1992,Small,Urban
+868ad184-9c43-4b15-b5d1-c65b68c227fa,Appliances,7.14,Other,0.382742,235.97,6501,d65fc5ea-0d8b-4298-8d6a-c9f187013d38,Supermarket,1994,Medium,Urban
+e58612c0-6eb3-47bb-882a-12cd6f2a9678,Clothing,0.32,Other,0.113705,216.49,8988,e8508702-7615-4bd9-a662-68b7214466c3,Online,1990,Medium,Urban
+895540eb-79ea-4c4a-8570-3bb4348fbeac,Food,2.1,Regular,0.226193,314.69,4687,dcb1f6cb-d94a-4995-9333-30e195eec1f6,Fashion Store,2001,Medium,Rural
+ef0f26e6-45d3-4342-89e5-9e4eecac03bb,Appliances,7.14,Other,0.088712,393.75,6107,8f01af04-179b-4836-b205-7f5ecc675e94,Fashion Store,2018,Large,Urban
+ac9fd599-ac62-4192-88ee-00381a88a2f5,Food,2.1,Regular,0.829321,496.62,3180,a6d96b38-9a0c-4bbe-bb27-2162c89f6f5e,Supermarket,2003,Small,Urban
+de7480f3-bf1f-4896-a1da-10e998496dc3,Food,2.1,Regular,0.629328,439.47,9888,98f49e8d-c007-4880-b88e-beac1d78a18d,Supermarket,2010,Large,Rural
+2bcfa4da-2a4b-4e85-affd-85a7d56f4a7d,Electronics,6.8,Other,0.7162,494.47,3060,2e7e4e32-e7cf-4e54-8a45-493394b58c13,Online,2009,Large,Urban
+c484ba33-7b71-4ddc-8e03-e83330832610,Appliances,7.14,Other,0.525602,343.15,4880,8bfe9212-d1c2-47d2-bf54-274da599cdff,Electronics Store,2019,Small,Rural
+74e06f52-8dcb-444c-9888-48e84a6f6463,Food,2.1,Regular,0.737465,453.7,6718,7306459c-de5f-4f7b-8301-1d17bcfbb529,Supermarket,2005,Large,Rural
+61ebb6c9-7b7e-4b9c-9cdc-150069636847,Electronics,6.8,Other,0.965048,368.79,7807,bfbadd6b-2ee9-4870-b1b4-7e1ef37d52a7,Online,2002,Medium,Rural
+53b0fa58-3be4-4a7c-8858-dafebe55e2bb,Electronics,6.8,Other,0.390683,219.47,677,00e55412-b441-4e05-92c2-d0def6080c13,Online,1995,Large,Urban
+2b3b6aed-2ea1-4c26-a191-cf6b677fb7c9,Appliances,7.14,Other,0.034948,206.36,5089,4aef737a-fb4a-4c99-9d08-9b4dd0503b76,Online,2019,Small,Urban
+c396d7ff-c679-4fde-b176-8f203b25d4e9,Appliances,7.14,Other,0.084998,225.61,2363,41326350-ba12-4133-9e18-3d5e0a40ef80,Fashion Store,2000,Small,Urban
+1ad9d092-93ce-4db3-84ab-7f811e58a324,Appliances,7.14,Other,0.254966,363.0,9805,d4ebfbf1-4403-40a0-ac3a-b4940970e54c,Supermarket,2020,Large,Urban
+6f6efd4d-ef09-4080-9983-7355025bd1d5,Appliances,7.14,Other,0.822609,142.96,1735,3a8967b3-e5f4-47bd-b59c-96b513b8311e,Fashion Store,1997,Large,Rural
+2c7ea93d-4eaf-4111-ac4d-d4fd3e29aa0e,Clothing,0.32,Other,0.648041,278.97,9204,d9d0b357-fc36-4c3a-8990-a70ca72f94b2,Electronics Store,1996,Small,Urban
+70f5f99a-6b05-47bd-a119-540203059464,Clothing,0.32,Other,0.842483,67.51,8871,89266167-7303-4994-9298-1c2d4cf46962,Electronics Store,2006,Small,Urban
+5d507a7c-8f88-4288-90e1-7dc0d45b9f94,Electronics,6.8,Other,0.368344,153.34,9516,3efefca7-dfb6-4c24-a87f-6d9674c0ac3f,Supermarket,1994,Large,Urban
+7fbf6dac-0775-4043-81a3-a26dfe3ea938,Clothing,0.32,Other,0.466752,163.96,2231,e2f3245d-1179-4a8e-a43d-0f3616695d83,Electronics Store,2012,Medium,Urban
+59f7eddc-d588-4b16-8800-99c3767a78b1,Clothing,0.32,Other,0.740825,350.19,5035,7a4d6d21-e360-49fd-bba8-20f0e9675848,Supermarket,2016,Small,Rural
+aa060a7f-1562-477c-bc4d-7af99de70d89,Electronics,6.8,Other,0.693694,255.01,8941,3dcd168a-f76e-447f-ba8a-0cf1d488b345,Online,2003,Medium,Rural
+65ef5fde-c4e3-45f4-9360-bd861dba73a5,Appliances,7.14,Other,0.854087,216.65,1172,28766bfa-9094-4a6f-88f7-490e79e66ff5,Online,1999,Large,Rural
+3be90af5-b99d-4355-92fb-ae875243454d,Clothing,0.32,Other,0.80017,312.43,7818,1505a051-7715-4e2e-a7a8-308a8d10621d,Supermarket,2013,Medium,Rural
+3df057c4-0175-4ef2-80d5-004e9cc6d766,Electronics,6.8,Other,0.68609,358.42,4780,796cd2c7-1710-4c12-8e5d-6909eff5369d,Online,1995,Medium,Urban
+80045430-acc8-40c5-84a7-b0bd6a6b0b52,Appliances,7.14,Other,0.175069,333.41,7183,ea771740-3de7-4a60-ae88-efd40f6c174f,Supermarket,2001,Large,Rural
+746ea4da-8285-424a-a73a-6c9b6ba2e71c,Electronics,6.8,Other,0.528169,206.46,1231,16888e5b-c075-4c10-9050-60bdb21ac06c,Supermarket,2007,Small,Urban
+0a7c571b-b69e-4605-979a-33d591f26ce2,Clothing,0.32,Other,0.909657,435.13,5819,2caf71ea-8763-4273-b876-36c3a38709b2,Supermarket,1999,Small,Urban
+a9c02b3a-672c-4d31-8b9a-5275f0bb1bdf,Clothing,0.32,Other,0.201227,58.85,7284,5981a22f-56db-4db8-861d-1ecbf8956dd2,Fashion Store,2004,Small,Urban
+4050ec37-8445-43ca-92ea-1cb78d465231,Electronics,6.8,Other,0.622916,180.09,3974,4f8cb0e6-0c92-4479-92cc-59f70ac75e76,Electronics Store,2001,Large,Urban
+a9ddde57-c1f0-4871-8ed3-dae18c4c1a1e,Food,2.1,Low Fat,0.632973,86.51,2680,8e12a2a5-fa2c-4560-af89-30258d455c92,Online,2014,Large,Urban
+21c1f7ad-0f1a-4aff-8a2d-83ca5a4e6385,Electronics,6.8,Other,0.763968,475.19,8078,3595d87b-904e-45e9-b973-17b110b981b5,Fashion Store,2019,Large,Urban
+b4ab2b23-cdb5-42ff-9906-53e654e628a6,Food,2.1,Low Fat,0.660523,455.2,1385,468975b0-4a17-4c7a-95e8-bc14cb1c9751,Electronics Store,2007,Medium,Rural
+d1048ac0-a67d-470e-a844-b0675066deea,Food,2.1,Low Fat,0.059222,426.69,4807,4a8a04f1-2b49-4d9e-8246-756c81374b72,Online,2013,Medium,Rural
+bcae51db-c2f2-4a03-98f6-a0ed96a23ee5,Electronics,6.8,Other,0.020779,277.27,5471,29b09562-15dc-49e5-a67c-86e46236baf5,Electronics Store,2001,Medium,Urban
+40d6ee5a-2a82-4773-8a2c-59ce6e8e73f4,Appliances,7.14,Other,0.743681,420.23,8611,8f1198c6-f8d6-4c2f-8efb-fb6bf2b0cabc,Electronics Store,2017,Large,Urban
+9cfbdb2c-fa4a-4f60-92d1-68a9f986dacf,Food,2.1,Low Fat,0.417829,382.2,6363,846e5bf7-1700-4ebb-a9e2-0f03ad6ac113,Online,2002,Large,Urban
+4f8008c3-eb63-4e03-8597-b656af15e98e,Food,2.1,Low Fat,0.675897,135.74,111,fa04b3c9-3e8e-4f31-8c0e-5ac226051acf,Electronics Store,1990,Medium,Urban
+0554309c-964c-4856-98c9-96d32b1d4ee3,Clothing,0.32,Other,0.252612,220.88,1801,d65491a9-8ec5-48c8-8ef9-7e932244f441,Electronics Store,1994,Small,Rural
+ad584d15-4074-44ad-8167-d13185a59c2c,Clothing,0.32,Other,0.179223,435.89,9334,1e3254a0-ae5b-416d-8254-27f243a985f2,Fashion Store,2020,Large,Rural
+39362d75-c8d0-49b1-a1dd-9935ce48bbe2,Food,2.1,Regular,0.846207,492.02,8201,fe28af5a-e7bb-4775-9e7f-9488a239fcd6,Supermarket,1995,Small,Urban
+63a80561-05e0-4d55-a76b-c1446bd73867,Food,2.1,Low Fat,0.605361,179.05,9708,78f817ae-a307-462d-ba9f-7df3c2089a5f,Online,2006,Medium,Rural
+60df6438-421e-48ce-a0c1-a0e816313e80,Electronics,6.8,Other,0.675016,469.09,8564,11a79b39-ea77-4d00-bbe5-64fb75fd0eec,Electronics Store,2008,Large,Urban
+d7070a8b-4f07-4336-a19b-d3df8a23c9bc,Appliances,7.14,Other,0.519781,127.79,4874,8ea9e031-33bc-471c-bc97-e220f670fd71,Fashion Store,2017,Large,Rural
+34fbe036-9c6a-4b83-9dab-d74b8111ea0f,Food,2.1,Low Fat,0.397661,126.2,1347,08d0493c-0b2e-4f06-996d-43861302ad97,Fashion Store,2009,Small,Rural
+498adaa7-f456-48d2-a31f-a38347a9b491,Electronics,6.8,Other,0.153996,478.24,5323,0614d00d-4257-42a7-b654-62c16aa44e80,Electronics Store,2004,Small,Urban
+843b2fc6-1fb3-4aa6-83d3-1878755a9f9e,Electronics,6.8,Other,0.153763,228.39,767,58c27bab-413d-4cc0-af73-5d969e0ac652,Fashion Store,2004,Medium,Rural
+29797e98-7111-45f7-85a3-7fd48a9f102f,Food,2.1,Regular,0.024335,435.79,2541,0f1d737c-75ca-43c4-8159-b52d63b47ff7,Online,2019,Small,Urban
+3b5c28f7-c75f-4bec-91e8-2b84d0d4487e,Appliances,7.14,Other,0.487189,440.25,3562,911db165-579c-4862-9169-869cd9565c52,Fashion Store,1998,Small,Urban
+e6bd6745-fbb3-4f1d-83c3-4405c132d2bb,Appliances,7.14,Other,0.658419,100.5,2115,0194a859-1654-4717-910d-8c5877fb52ff,Fashion Store,1996,Medium,Rural
+dd0e7e15-2c49-4b6a-a65f-a46024cbf883,Appliances,7.14,Other,0.284205,499.12,4273,0efd97af-137c-4b6c-bab1-b7e3c8a50ae2,Online,2003,Large,Urban
+2e24e548-3c16-457e-bc10-6a6cdd773607,Electronics,6.8,Other,0.574199,312.77,4455,118246b4-18c6-4a89-9c42-be40747f7106,Electronics Store,2000,Large,Urban
+dc791544-ff94-4c20-a66f-dee5196611e1,Food,2.1,Regular,0.475027,270.18,6602,b55386c0-baa4-4151-bf0f-a5ccab870293,Supermarket,2014,Large,Urban
+4ef0debc-9586-49b5-a3df-a88ba6bb89b6,Clothing,0.32,Other,0.391019,432.81,2198,0a7ce4af-2a18-48d0-9915-dcf9119c59ca,Fashion Store,2000,Medium,Urban
+e792a504-1095-4224-94fd-ea24e1a821ff,Clothing,0.32,Other,0.715605,408.27,109,b09e1ecb-47c1-4321-bb4b-e96d77de9216,Fashion Store,2017,Small,Urban
+d548b491-b7eb-4466-a36c-b2edadcf73bf,Electronics,6.8,Other,0.309422,431.86,6176,64aba6ae-a91b-4449-ae9f-72c7c97d8a98,Electronics Store,2013,Small,Urban
+28defa00-e22e-43d3-bfea-67ae39df195d,Appliances,7.14,Other,0.648203,213.7,9795,7c4851d7-d69f-487f-888f-1936c3cf0ce2,Electronics Store,2019,Medium,Urban
+a9cd11de-1905-4596-9c60-8a1b01f008b5,Appliances,7.14,Other,0.193463,443.22,9295,6c46e558-b5c7-4067-b056-a24336e5dbb4,Online,2004,Small,Rural
+05cee109-f8f2-4765-af47-f101e68c2119,Appliances,7.14,Other,0.325684,465.87,7171,f02afe30-36fc-4ee4-8ddd-fdefc7c159e5,Electronics Store,2008,Large,Urban
+0db9dbdd-3288-4486-aac4-dca2072ca0df,Electronics,6.8,Other,0.358483,67.4,6199,48685bca-7d53-458b-a63d-cfcaa8a4314a,Electronics Store,2016,Small,Urban
+118ca896-bfc0-4910-abee-d2e9d08e8c93,Food,2.1,Low Fat,0.972563,227.13,1009,6dd0743e-e9a9-48ed-8b12-a328ed515723,Supermarket,2019,Large,Urban
+b0cc08c4-1cae-43ab-95cc-43f1ceb1798d,Appliances,7.14,Other,0.337595,411.23,1151,60c2c00b-831d-4873-9325-d903cef4b23e,Electronics Store,2008,Medium,Rural
+d02b80d2-ace7-4964-9e7a-9f3f8e3c5c4b,Appliances,7.14,Other,0.951885,377.29,4821,c28e4ac2-9c6e-414f-a024-65bbb7d009a6,Fashion Store,2009,Large,Rural
+675d5b24-9344-44f9-afda-ede2c26be244,Clothing,0.32,Other,0.159879,485.29,5802,10e35018-ea3c-478b-923a-64bcd72f18e5,Electronics Store,2004,Small,Urban
+6fbeb62a-0045-44a3-bf71-988f81b2bea4,Electronics,6.8,Other,0.793615,396.61,1015,19dcd1cb-b4f6-4910-8213-98c7cd137d9f,Electronics Store,2011,Medium,Urban
+261c1c49-66e5-4fc4-ab33-bf93ff1511fd,Clothing,0.32,Other,0.157201,313.36,7749,b61133e6-a52a-49f6-bab6-0d9cbaf3c444,Electronics Store,1996,Large,Rural
+5c9b3ff1-6b68-4e16-9f00-c0005c082ed0,Clothing,0.32,Other,0.154002,308.61,9095,d59cbd75-23c5-482e-9cbc-5a2f93adb41f,Online,1995,Large,Urban
+a86f28db-8153-45f6-b174-a6d59a466b62,Food,2.1,Regular,0.178468,300.74,3041,c5a37ea4-ff2d-4d5b-8a5e-0dd607d134cd,Online,2014,Small,Urban
+b5d877a1-a8bc-4b2b-adf1-7e5e1eb195b6,Electronics,6.8,Other,0.909753,332.32,5851,1be22029-4087-4803-91fb-b3aab2390f23,Supermarket,1991,Small,Urban
+06aa93df-36ef-4fd4-8e9f-a47809955e28,Clothing,0.32,Other,0.22985,107.57,2345,da765e3d-f573-4649-87f9-e1bc34037cb4,Electronics Store,2010,Small,Rural
+a3648f3e-427a-4fb2-9e08-af28915c0a70,Electronics,6.8,Other,0.406931,67.0,5722,0f61ba1a-c42c-4e54-a73b-f140b29f3cf4,Supermarket,1996,Large,Rural
+3877a932-edb3-4121-82ec-568e37617f16,Appliances,7.14,Other,0.883301,183.62,7790,54e2c75b-eeab-4286-ac63-5ec044801fd5,Supermarket,2015,Medium,Urban
+e8e7b688-2fc0-4dd7-801b-3a27f6590e7e,Appliances,7.14,Other,0.240487,420.25,2808,cf042e99-c12b-4127-a9e8-c60e8b012c87,Online,2007,Medium,Urban
+091b0fc6-7355-44bc-ab70-9084ff303278,Food,2.1,Low Fat,0.985915,362.33,496,45a23a8c-86fb-4e5b-9a12-04cc742c1222,Supermarket,2017,Medium,Urban
+133349d4-f8d3-46ff-b400-f89498034c26,Clothing,0.32,Other,0.165942,284.86,6020,52a9acfe-ba30-4a3b-942c-041cc4736db2,Online,2008,Medium,Urban
+4fc02a21-bcd7-4e7a-b90c-6aa78ead5949,Appliances,7.14,Other,0.964867,466.58,1009,222e2fee-ab32-4a48-82a4-625a9e94af68,Supermarket,2014,Large,Rural
+4f71e357-f400-437e-8bbd-ab2fdcbe11be,Food,2.1,Low Fat,0.991674,137.64,7556,8f70deea-efff-4f6b-a16c-df586227aac5,Electronics Store,2002,Large,Rural
+0de5e7da-ae6c-42e1-bd18-4248e89282d3,Food,2.1,Low Fat,0.416082,52.85,7800,e59f24dd-d90c-4409-8c8a-3b5554e6d9f6,Online,2003,Medium,Rural
+2943a0df-f018-42a0-9684-a467e0c08f9f,Food,2.1,Low Fat,0.56129,485.05,1673,24a18acf-e726-43ef-b679-f4f60000c9e0,Online,1993,Medium,Rural
+c0c18316-9749-4051-ba51-e32cdea5fff8,Clothing,0.32,Other,0.923117,357.25,3328,f43c7b4f-85ae-4ad4-b790-aeabe2772060,Supermarket,1993,Medium,Rural
+6d3dca77-2774-43d0-a460-e66b0cb6b3de,Electronics,6.8,Other,0.285125,437.67,9369,c9098237-9536-4c1c-8e9b-d64d5697bb8c,Fashion Store,1999,Small,Rural
+8c4a2545-2d94-4c2e-b052-d3bde51a6b74,Clothing,0.32,Other,0.323106,471.83,9891,7df47a98-cef9-478d-92c0-fe473748f3b1,Online,2005,Medium,Urban
+7a28f099-1b68-4738-b093-1fa0d707d1ef,Food,2.1,Regular,0.84231,113.24,2119,00783d5d-7d09-44c0-a2ee-1c52a98a1956,Supermarket,2008,Small,Urban
+b406a731-2b1e-4af4-bf85-9dbc86e4efc7,Food,2.1,Low Fat,0.136448,361.24,3308,b8676776-9545-4455-91fa-d63c958abd08,Electronics Store,2006,Small,Rural
+0db086a6-416f-48a1-a99f-76c99e956f4a,Food,2.1,Low Fat,0.640406,129.09,3990,43abdae8-942d-402d-aa10-189519643f8a,Supermarket,2015,Medium,Rural
+1c5a4389-0e8a-477a-8b57-18c6025fd8ae,Food,2.1,Regular,0.549466,163.47,5104,19b59c31-74d4-4847-bdb4-73e0d9bf9374,Electronics Store,2018,Medium,Rural
+3954e0e3-d6fd-4fb6-9cd0-86ebc61efb81,Clothing,0.32,Other,0.115639,247.89,8188,3252e3fd-782f-4a0e-b0eb-043227441e04,Online,1999,Large,Rural
+f431a19a-359d-4ba1-b56b-455769fbdb03,Appliances,7.14,Other,0.339937,344.56,6061,95d8a2da-89b5-4330-aca3-433382b4d0dc,Online,1993,Medium,Urban
+ae2e3807-3753-4f9d-b314-047b1b0edc5d,Food,2.1,Regular,0.758586,420.76,3513,5508d622-82c0-4447-95dc-caf2f4ef2d99,Fashion Store,2006,Medium,Rural
+0f99154f-cd0f-4653-9fd5-3339a7a31939,Food,2.1,Regular,0.966796,140.07,9267,e5a46a61-70f6-4a1f-b0b3-7c66a7c3d98c,Fashion Store,2011,Large,Rural
+5d5e37a2-9700-4063-95ab-b2d0ea13b840,Electronics,6.8,Other,0.409956,454.1,641,84ef3530-7873-4f2d-94a2-8e909c8de045,Electronics Store,2004,Large,Urban
+ec75db4b-1db1-4a00-a078-896a80224144,Appliances,7.14,Other,0.546576,276.03,8446,d65f6660-7e59-41eb-972d-f2b17ae0f1c0,Supermarket,1999,Large,Rural
+95a95963-6529-4a31-9f51-d670e80a38ec,Electronics,6.8,Other,0.181494,89.42,5334,a4deff8d-1f19-4da6-ba53-47bf93b2a8f2,Supermarket,1997,Medium,Urban
+386a9393-37a6-4c9e-92af-e0eee0c88ae2,Appliances,7.14,Other,0.420853,124.4,987,e561b52b-8256-4593-a8b2-5678c3a38cde,Electronics Store,2014,Small,Rural
+aa21b1a6-8759-436c-aa3e-72a7694c6a5c,Food,2.1,Low Fat,0.448859,144.18,555,4326432f-c603-4306-9429-70d496e8f0ce,Online,2018,Small,Urban
+c3e4a0ac-2820-4c40-99c7-385945b41e06,Food,2.1,Regular,0.063577,165.97,8210,5cb9029f-9e25-4d5e-844f-cb1bb8cd7577,Fashion Store,2008,Large,Urban
+dfa89cb7-4119-411e-9381-86456c9f39d3,Appliances,7.14,Other,0.29499,181.0,7552,98e3430e-7e8c-4db1-9a6a-3f7331e17f97,Electronics Store,2000,Large,Urban
+3a380fc6-cf6a-49a3-ad48-b63f0d0ca99c,Electronics,6.8,Other,0.006637,217.89,6150,66ff335c-ba71-4ad9-9fea-3bb4820ac548,Online,1994,Medium,Urban
+6a6ba1f5-0a17-4fb5-b83f-f269822418a3,Food,2.1,Low Fat,0.156598,469.86,9578,824d4cf1-2726-4b77-95eb-13849f0d51ad,Fashion Store,2016,Large,Urban
+afc3f684-7400-4c74-b8bb-a42aad7519a6,Clothing,0.32,Other,0.837302,135.83,7376,4ba536b9-4bb7-457e-9a18-9c5043e28e6d,Fashion Store,2002,Medium,Urban
+b003462e-493b-4f76-9173-6e1659bc4a98,Clothing,0.32,Other,0.835759,169.83,611,a10a0ee2-35b2-4da7-8847-d6dad23122bd,Fashion Store,2004,Medium,Rural
+78239219-41a1-4ef7-831c-76fa6ebcc3ce,Appliances,7.14,Other,0.145577,236.47,388,7faa5d28-acbd-4027-b297-cdf9cb31016d,Online,1992,Small,Urban
+91fb90e8-b7e3-4309-9132-153eca2cac3e,Food,2.1,Low Fat,0.802717,234.25,860,98f68277-c015-4b1a-9034-9dad58d69627,Fashion Store,2005,Large,Rural
+4e264621-7330-4789-8b1b-ce4a377d4c4b,Electronics,6.8,Other,0.021607,326.98,512,88c2a907-5d5c-4d28-96b8-ea2d523d37d0,Supermarket,1993,Medium,Urban
+05716938-f893-45e1-a208-79b35323c498,Electronics,6.8,Other,0.290771,82.9,9801,c2a65663-44a4-4d57-ab8e-96922e3a4d13,Fashion Store,2010,Medium,Rural
+201281d3-7b6f-482f-947a-2cdb50e231ab,Electronics,6.8,Other,0.807849,394.12,4935,5e1f14f0-659f-45ad-a49a-6c00d24b953a,Supermarket,2000,Medium,Rural
+33ff4f6b-72a0-447e-9469-54e429b31692,Clothing,0.32,Other,0.244932,156.06,3936,1dac7b72-f86d-4a3a-8dbe-384e2816b82c,Online,1999,Small,Rural
+853d56bd-337c-4ca0-8de7-19bb95000427,Food,2.1,Low Fat,0.587672,237.77,5330,e7d58987-72a9-4a07-802a-362ed724b7d3,Fashion Store,2005,Small,Rural
+bc6670cb-917d-4546-9fea-8c4a2fc1f41c,Electronics,6.8,Other,0.575305,162.4,8613,aefa2fd5-b213-4025-9997-5414bc58d90f,Fashion Store,2020,Large,Rural
+180ad23d-a9f6-40a6-a235-41005a22b6ca,Clothing,0.32,Other,0.213591,93.8,6134,f0dc995b-e2fd-41e7-9977-056be6400b8f,Electronics Store,2020,Medium,Rural
+b14b2a7e-9eae-4443-b5d0-6847ddbab68a,Food,2.1,Low Fat,0.034974,242.93,7367,59675cd4-0538-49d4-8b2b-14de26043732,Supermarket,2003,Large,Urban
+bfb839cf-0c67-4413-a619-e10c2ca36f7a,Clothing,0.32,Other,0.482165,208.33,3025,3448e99e-e500-49d0-bf04-b81dba8c0e09,Electronics Store,2005,Large,Rural
+ef2a3e19-a696-43b2-aac3-3b2b7c1db22d,Appliances,7.14,Other,0.588028,370.11,9035,fae40681-859c-4fe3-ad58-f42c3f48ad48,Electronics Store,1994,Small,Rural
+6733befd-58bc-4f93-9e05-cdc7db055832,Electronics,6.8,Other,0.883268,232.52,8961,95220ecd-4a27-4e5e-9e92-f3b81bbdc5d6,Electronics Store,2012,Large,Rural
+e89e600c-583e-46da-a32d-b1c0ee44291b,Food,2.1,Regular,0.059675,61.47,1508,163916f7-d25f-4b1e-b903-1d34d7f5f25f,Supermarket,2015,Medium,Rural
+14b01c76-b0c0-4608-b0e5-3bd8a34b42ca,Appliances,7.14,Other,0.296594,437.34,5408,022b5be9-5e86-48da-89b9-e5284b49fb36,Fashion Store,2011,Large,Rural
+a0bd6d90-4fc5-49b0-aab0-d453dc506a76,Clothing,0.32,Other,0.763519,208.63,3182,94069a41-a3b6-4136-bb98-f01acaf4109c,Electronics Store,2020,Small,Rural
+a15b960b-c5e4-41f8-b1f6-8ed22140aa28,Appliances,7.14,Other,0.158663,68.87,7111,5fc1bfb4-b119-4a79-88f4-ee9065a667d6,Fashion Store,2018,Medium,Rural
+e43345e4-15b3-4bf8-a185-bac163a205ca,Electronics,6.8,Other,0.510336,208.83,5846,a6925b0b-46c9-4866-989c-9d40656132a9,Supermarket,2000,Medium,Rural
+0fbef7c4-7fc6-40b6-9a0f-4dadcb4795ef,Appliances,7.14,Other,0.113041,79.86,6209,e16cdeec-0fa8-463d-9d81-ec7a46a25c76,Supermarket,2015,Small,Rural
+0f07196f-916c-4d22-9eec-55a299c4fc2e,Food,2.1,Regular,0.332538,124.97,6234,9183c5ad-4f43-4138-9a38-6e3264f9551b,Fashion Store,1990,Large,Urban
+7e7e0130-9608-4954-a357-a70e789733db,Food,2.1,Low Fat,0.956411,153.43,7544,df415e03-da62-4e1c-b6b1-60ab3c475c96,Online,1992,Large,Urban
+c73a60aa-95a6-4f9e-82e5-afb368584b5b,Appliances,7.14,Other,0.889078,70.41,3276,68dfb477-ce5b-4d3c-91c2-6c258e2a7145,Online,2012,Small,Urban
+de79efe8-d2e7-4734-a97e-f6b3bf9223d1,Appliances,7.14,Other,0.390259,364.23,9136,0df8295e-d871-4bc4-ac58-8d8ea0f274be,Fashion Store,1991,Small,Urban
+bd81dc35-401e-42d2-85a9-50d1f18abe65,Appliances,7.14,Other,0.597042,61.91,4626,d6892a40-8937-4b1d-966b-7e0c3d7ff316,Online,1990,Large,Rural
+4282cd72-d83e-48da-91c5-fb33b01c9fb0,Clothing,0.32,Other,0.591226,122.62,3822,d3b50a8b-f1ca-49a7-8eef-ae50fa982db6,Supermarket,1993,Medium,Rural
+5cdbee96-dcc6-438b-ae8f-4b7283f6b385,Clothing,0.32,Other,0.138045,458.46,1048,fb492407-818d-491d-af6d-5c20dcd223b1,Fashion Store,2017,Small,Rural
+cf951397-fa79-4509-ac73-ed1af2204005,Electronics,6.8,Other,0.700119,95.65,2155,538ceba7-98b9-470d-b05a-44a3314b569b,Fashion Store,2016,Large,Rural
+d013311f-e76a-49e8-ae10-3d62abf00b11,Appliances,7.14,Other,0.045004,452.22,7836,bcd13861-1ec6-46de-a2cb-ae932250cfb9,Supermarket,1993,Large,Urban
+a792b680-4c9d-47ee-b45f-4c21e157962a,Electronics,6.8,Other,0.644913,199.14,3387,e53e6d32-c0d8-4d04-b4e3-74b2789b50b3,Electronics Store,1998,Medium,Rural
+21becb2a-fa45-4cb7-bc4e-dcb959ca8c58,Appliances,7.14,Other,0.92688,297.14,3868,062f5595-1e5a-4683-938f-b1ee0146d5e4,Fashion Store,2004,Small,Urban
+e617cace-9ebc-4565-9e41-b7e5a1e989ad,Electronics,6.8,Other,0.210775,130.9,1331,6f59a44a-bebb-4057-ac79-7cf080963cf7,Online,2001,Small,Rural
+844eeef3-2291-45e3-bea9-e3dca137a9ca,Clothing,0.32,Other,0.981717,266.98,4225,9be1284a-b118-411d-bdd0-6cd09ce7255e,Electronics Store,2013,Small,Rural
+b417c535-78dd-4d95-8f51-432d4857c6ff,Clothing,0.32,Other,0.55041,138.8,1578,46f3a648-ebdc-4de2-b321-14fb65382972,Online,2019,Medium,Rural
+2c5d78e8-0395-4649-9981-164ffef86bb2,Clothing,0.32,Other,0.911079,465.79,9648,24c4af3c-52e0-410e-be69-3da050b9a51a,Electronics Store,1997,Large,Rural
+0c53e835-e269-4015-8b82-52ea0463d931,Electronics,6.8,Other,0.948676,405.41,9602,751cbf80-0a2b-4f55-8968-892e872369a1,Supermarket,1999,Small,Rural
+b9b99581-9d59-4ed0-92c9-c7ba3d981563,Appliances,7.14,Other,0.584887,342.06,5801,d2ebd729-5387-46ae-b45f-1163f4959890,Fashion Store,1994,Large,Rural
+6222cdbb-57ef-4440-8cd3-d7ce67990c5e,Appliances,7.14,Other,0.034276,367.97,9695,529956e1-bf87-4e7f-9bb0-b498fe955903,Electronics Store,2003,Small,Rural
+50cacb64-548a-4e3d-b525-a7618e766822,Clothing,0.32,Other,0.345389,384.06,5459,d2568776-63f1-49f5-b233-c7e77d5f86db,Supermarket,2017,Medium,Rural
+5006a51b-fcf3-4f43-b878-e98d16a5207c,Clothing,0.32,Other,0.553115,437.07,629,5db97926-f3a0-4f5d-91f6-522d40c176df,Online,2005,Small,Urban
+cf264d03-f156-43fc-b7d6-810b3bbbfd22,Appliances,7.14,Other,0.509857,245.98,4061,85b85f1b-dcef-4798-93a3-9d9cb8bf5ded,Online,2006,Small,Urban
+23ce6c5e-eca1-4be0-b2b1-8775e6976d9c,Food,2.1,Regular,0.489783,223.8,291,01f6bc20-d545-4539-bf16-8cb2ebc4e42e,Electronics Store,1995,Medium,Urban
+3cac7b45-2ee1-42d6-8979-885071564720,Food,2.1,Regular,0.643929,334.32,7207,1fee8e0c-9075-48e8-86e4-023a03de5d1d,Fashion Store,1992,Small,Rural
+50236225-03d1-4da3-b710-c433fff056ae,Food,2.1,Low Fat,0.586187,477.64,5186,123b8503-b865-45bb-9d6f-5d7498bda15f,Online,2018,Large,Urban
+320c71d2-8716-4e44-b233-389110ae15c4,Appliances,7.14,Other,0.272109,59.34,9325,7b2146d0-308a-4c5d-aad5-7012666b6cac,Online,1994,Large,Rural
+5db443c9-4b81-4cc0-83e7-5b73baaf785a,Clothing,0.32,Other,0.55537,109.36,7259,ab9a99d4-6b29-4271-93f9-dc7e1edc2fb1,Online,1998,Medium,Rural
+0797c451-de5a-4779-907e-4ba2e2c3db45,Food,2.1,Regular,0.964068,174.0,7176,7aa8aa3d-91f1-4af5-9db5-702103ed3cb1,Fashion Store,1996,Small,Urban
+017ca7f2-d3ed-4767-9f7f-3efcc516040d,Clothing,0.32,Other,0.760872,194.93,3046,acc08d74-c2b8-4d9c-887f-88dbc3146603,Online,1991,Small,Rural
+31c0bf8f-ed08-428f-9c1e-14468edfb478,Clothing,0.32,Other,0.278789,445.59,5175,2c20cfca-5172-47da-9c25-441f81b2afb2,Electronics Store,2007,Small,Urban
+b967ccd4-7341-474a-af19-a548704b5af4,Electronics,6.8,Other,0.895148,296.51,2973,e45b8b65-d8ef-4965-a371-8cd5eec26287,Fashion Store,2020,Small,Rural
+e48bde8c-efb4-4826-95d3-1f23f526e51e,Appliances,7.14,Other,0.946597,413.95,5341,008d3936-7321-4249-a435-0745912ed07b,Electronics Store,2015,Large,Urban
+60967bc4-1be8-4e7a-8864-8d8e9454146c,Food,2.1,Regular,0.823758,404.41,157,09b73735-8f1b-4742-bc19-523987ffe437,Fashion Store,2012,Medium,Urban
+bdcfffea-4860-4ffd-b0ca-a54f2cc2772b,Clothing,0.32,Other,0.049166,338.93,1983,f84b47aa-296d-456d-9b53-f39a9875e7a4,Supermarket,2016,Small,Urban
+1cca34ea-544f-4259-a18d-18541b5b9b7b,Food,2.1,Regular,0.620887,453.95,9742,8d6b2742-8c93-414d-b1b1-5eb23fe3e503,Electronics Store,1999,Large,Urban
+704c474d-95ca-46d8-bd32-356f1f2326c3,Appliances,7.14,Other,0.757544,324.69,9477,41c39007-b41c-47bc-ac84-60d19f596c46,Electronics Store,1996,Small,Rural
+41801b4a-987c-4312-adf5-6a3ef92dcbfe,Electronics,6.8,Other,0.544515,476.22,1348,d6fda828-cca4-4106-9897-9c176fe9cc07,Electronics Store,2001,Small,Urban
+c0fa0d23-4fe6-483a-bfee-180b74d691aa,Food,2.1,Low Fat,0.182137,317.87,7197,932c338e-7c02-4228-b2bd-4d475b1eb495,Online,2016,Small,Rural
+1fcb38b3-da47-449e-91ad-224cb972c7e8,Appliances,7.14,Other,0.215366,191.09,8429,ed04316d-4294-4ce1-8f32-2a5374718904,Fashion Store,2018,Small,Urban
+b9334b32-e39c-4806-acd6-c708fd2aa8f0,Electronics,6.8,Other,0.724125,422.6,4322,a71fd9eb-7b98-4d90-9448-6fdc72db4529,Electronics Store,2001,Medium,Rural
+43b02383-98df-44c2-9057-6b2cd1348ed4,Appliances,7.14,Other,0.279367,258.97,9693,f1e4db3c-1143-49e0-b58c-2970227ed051,Fashion Store,2018,Medium,Urban
+d97fe342-0b23-4e9d-9f7f-9057921e66e2,Appliances,7.14,Other,0.107684,189.04,427,16ea7d62-8fb7-4725-b377-34db13e93ff1,Supermarket,2017,Small,Urban
+72e749af-ffdb-4d15-85ec-05b072b87e2d,Clothing,0.32,Other,0.530898,300.0,1715,df9e6f25-3970-4e52-b9e1-b91153cbe0e3,Electronics Store,2011,Medium,Urban
+922438ac-47ec-4123-a212-4225420db767,Appliances,7.14,Other,0.082857,384.77,1007,eaa79e88-e4e5-4a0e-bada-ab09dc0af72c,Supermarket,2019,Small,Rural
+bed79498-0183-44ab-aa9e-bc343b83785a,Appliances,7.14,Other,0.240542,403.7,557,c848cbb1-3739-4b88-9ff8-54018ef491f8,Online,2018,Large,Rural
+39889f84-cb6e-4f8e-80d0-8de6f8da4d24,Food,2.1,Regular,0.122459,240.51,1948,afcd13b8-bca5-4e7b-8258-671b9c366001,Online,2012,Medium,Urban
+4f789757-bdac-4733-a6a7-744cb0fe6844,Electronics,6.8,Other,0.764538,165.22,9852,70d5325c-4ddf-4c92-8797-40f9cc4c7724,Fashion Store,1994,Large,Urban
+77f9f690-0ba8-4d22-bb96-861ff94d8df8,Electronics,6.8,Other,0.22215,344.14,4412,3e221a2c-467e-4779-b120-85a58dd89fdc,Supermarket,2006,Large,Rural
+7c6e0ab9-86b2-415b-aefa-b43fd5e84d77,Food,2.1,Regular,0.427186,476.49,5867,13ce4737-54cc-4dad-a1ff-06d87bf171ca,Fashion Store,2020,Medium,Urban
+0c844ade-8e24-45b2-8868-a3be9060105c,Food,2.1,Regular,0.590169,263.74,114,c9372029-9989-426d-bdd3-6c05271194e6,Supermarket,2002,Medium,Rural
+bfd95073-ce68-4d0d-96bb-3ff2ad2d42cc,Appliances,7.14,Other,0.393208,142.79,3232,78af2d4a-4b83-473f-b905-09beaf5b2f32,Electronics Store,1992,Medium,Urban
+c0f7fd8e-9328-46d3-aa02-d2dc2eb70108,Appliances,7.14,Other,0.352453,358.74,7108,75ae2de9-7a07-4d32-84e0-982f0c05b013,Online,1999,Large,Rural
+2f596456-6359-4fa5-9ccc-83f408852f89,Electronics,6.8,Other,0.090828,472.2,4642,605a86a1-0172-49c1-9994-7d7862412704,Electronics Store,2020,Large,Urban
+4978e142-9ddf-47a4-ba95-b0dacf7580af,Electronics,6.8,Other,0.981591,185.41,8193,ebe330bb-04e1-4953-8a71-489769dd144c,Electronics Store,2010,Medium,Urban
+0ad2a8e7-03e6-458b-b1aa-9f31fbbcf35c,Food,2.1,Regular,0.864091,346.88,7658,c5b16059-83c4-42cd-b87b-45dc4a7a9c10,Online,2007,Small,Urban
+f1ddeafc-a471-4ac0-a8a9-ae3dcc38039c,Electronics,6.8,Other,0.490529,146.68,5369,6ebbb202-5da4-488f-aa70-c7fa5de90473,Fashion Store,2017,Medium,Rural
+994cc437-ccb4-471e-8c5d-69ab87b5a41e,Appliances,7.14,Other,0.456897,482.42,3628,f1dbab6c-36e9-47a6-96c4-754fc4493796,Fashion Store,2000,Medium,Urban
+530821ba-9199-431c-8b9a-68059e0ca7bd,Appliances,7.14,Other,0.320577,296.66,8731,2ff3d4d6-74bc-4061-8ae9-cae19b1e8379,Online,2020,Small,Rural
+143509e1-1476-4265-936f-2ae717446f8c,Food,2.1,Regular,0.806784,110.61,9318,30fcb3fa-dfb9-434b-bb6e-9a485742cbb5,Online,2005,Small,Rural
+24bda369-1c16-4ca8-a843-1a9b49121be8,Appliances,7.14,Other,0.134952,206.48,8363,3852ae54-1621-4c3f-a685-b2cf93bf0954,Online,1994,Medium,Rural
+4de4f390-7f2a-4497-b529-ec0d2d29ce15,Clothing,0.32,Other,0.082103,160.3,4070,88797085-eb34-4d84-960b-35cf639212dd,Supermarket,2015,Small,Urban
+2ddae6ad-8b97-4876-8374-5761304c2d15,Electronics,6.8,Other,0.800862,374.58,6410,f6e639ca-5fcb-4087-9d05-a2eb66ca8c1f,Fashion Store,1994,Small,Urban
+ec8f97a8-c56f-4f7e-a7f6-aa29fa55349d,Food,2.1,Regular,0.646866,451.39,7582,4ace0460-97c3-4b3a-8511-c3b8111cce38,Fashion Store,2004,Medium,Urban
+498b1567-08c8-4b18-bbee-7d798426da46,Clothing,0.32,Other,0.627249,345.93,6776,2353c004-6f60-462a-8a48-d7cee04b7049,Online,2017,Medium,Rural
+b9986307-d092-4031-8c36-0fccef1a2d94,Clothing,0.32,Other,0.228484,100.88,9995,a5c74d73-3bc5-4ce9-b769-f632e5692b0a,Fashion Store,2007,Large,Rural
+56fa3d3c-7ea7-46f4-a8ab-81ee2fc674bc,Food,2.1,Regular,0.556021,248.14,5187,49500c3c-512a-431b-a0e8-f1a953a346c8,Electronics Store,2003,Small,Urban
+148ca91a-8a49-47e7-bbe9-be2de62338c8,Clothing,0.32,Other,0.4467,422.46,2327,2d05cce6-45da-4fc7-a02a-f81331311079,Online,2013,Large,Rural
+2c22c3fe-7546-495d-a62e-710333cef1fd,Food,2.1,Low Fat,0.123617,69.02,3919,5b2a0ff4-7796-426e-9fa0-8c50630e8ccf,Fashion Store,2000,Small,Rural
+ff41b986-c068-42a0-a28d-c278b0fe7e3e,Clothing,0.32,Other,0.913728,176.95,1380,cea507dc-b160-41c8-988f-f47adbbe5084,Fashion Store,2015,Medium,Urban
+65ed9dce-865f-498d-9e33-ce8147205b82,Clothing,0.32,Other,0.026334,100.64,2991,136c9979-e47f-4804-8fd1-e76c766f0c19,Fashion Store,2017,Large,Rural
+4d119c5b-b1b1-42ad-8dfb-29fa8c39d7cd,Clothing,0.32,Other,0.397919,130.42,8902,3e38b0c3-77c2-4ba0-bde8-4c9876e4fad5,Supermarket,2014,Medium,Rural
+90fdf616-54e7-4bd2-b8fc-cefafff381d1,Appliances,7.14,Other,0.855258,159.37,7584,0f69bd04-3450-412d-8501-4fda32c04d2c,Electronics Store,2006,Large,Rural
+3ae62096-8f1d-4d77-a994-188cdb34b298,Electronics,6.8,Other,0.708339,327.4,546,7fae846b-337a-4638-84e8-33133862d785,Electronics Store,1999,Medium,Rural
+e068c059-6fcd-4785-9a9b-c5ca2714d67f,Clothing,0.32,Other,0.334756,349.15,3746,c105c641-2117-4916-8fe3-e12954dc445f,Supermarket,2001,Small,Urban
+1ace1a73-7344-49fe-b0e3-0476e79d6093,Food,2.1,Low Fat,0.113059,436.73,7542,0f3631cb-35a7-4c91-a921-416dfa0ac944,Electronics Store,2010,Large,Urban
+07278b32-46fe-40c9-8ab0-85606607ef6b,Electronics,6.8,Other,0.571964,214.88,3258,32cb286d-e1c7-49f6-9d22-15e4045de393,Electronics Store,1993,Small,Rural
+9653ba4f-02a7-4a2a-8b0b-716db38d20d0,Food,2.1,Regular,0.823381,419.32,196,557de931-42a5-4029-b9ec-7d1a1f93df73,Electronics Store,2004,Small,Urban
+87fedc03-257d-4cef-89aa-58bef8ba1c90,Appliances,7.14,Other,0.742331,90.08,3194,80c8f646-9234-4de5-bec8-cd2a405dbdc0,Electronics Store,2012,Large,Rural
+a49b13ce-ae97-4e5d-a406-3e24779047cb,Appliances,7.14,Other,0.707564,312.21,8680,d449bc50-6ea5-4ffe-a7c1-384cd89a783e,Electronics Store,1991,Small,Urban
+e357686b-aed7-4c03-84bc-d145307f26ac,Electronics,6.8,Other,0.46414,344.53,1186,85b17901-ada7-477c-b131-bf214339d9cc,Online,2014,Medium,Urban
+dfc82710-497a-444b-bc4c-4f4bbe8d2599,Appliances,7.14,Other,0.525968,254.65,1225,bf6c49a9-b387-4348-bf4c-60ab1cdf6cb3,Online,1999,Small,Urban
+41919bb1-b95e-4152-a3d9-a499cb84f6f9,Appliances,7.14,Other,0.956513,94.25,7341,378b2883-2bb5-4ed1-9ea7-e5e6e9645805,Supermarket,2007,Medium,Rural
+42b80695-c9a8-4992-ad94-9ec19ddad742,Appliances,7.14,Other,0.968557,186.27,524,8ad119b0-1124-430a-ab6f-280c2e9acfb1,Online,1992,Medium,Urban
+2dba20d1-95cb-4de4-b246-ea87f5d3baab,Clothing,0.32,Other,0.85039,499.6,6254,b8aa2938-a1e3-4982-a2c3-c68d6eeca2ae,Online,1999,Small,Urban
+5cf5df46-e234-4b48-8fb3-5b698ce8517d,Clothing,0.32,Other,0.131696,396.71,5526,4189d613-8e42-420e-ac43-05c0a2e0cc31,Online,2015,Small,Urban
+c85b6c63-deab-4129-8446-75d00837d6db,Clothing,0.32,Other,0.386121,223.32,7959,92aa6b5b-2183-4532-8e8f-f0af7ccf7fa4,Supermarket,2011,Small,Rural
+935bf3af-c97d-41cc-b2df-a9f2c8bee5be,Appliances,7.14,Other,0.847114,165.26,4775,db04745b-7757-4ad2-94f5-575df2f5139b,Electronics Store,2002,Small,Rural
+bb132dbe-c5b6-4dac-847f-ec6ace807089,Electronics,6.8,Other,0.342644,255.95,770,887c3012-42c0-441c-b3b4-a637a196d3be,Supermarket,1996,Medium,Urban
+6a4ca88f-b8af-4d90-ac67-e88aede0b844,Food,2.1,Regular,0.726273,129.61,7051,dd9d78cb-5961-4486-b810-9f40c525f102,Supermarket,1996,Small,Rural
+7de5ccac-5d90-4054-b9c8-fce154e41c21,Clothing,0.32,Other,0.053275,324.47,7388,2ceccef4-7810-4c50-a217-dfdcf6951c96,Supermarket,1991,Medium,Urban
+e2e8085b-4992-4a3b-b452-eecd841851d6,Clothing,0.32,Other,0.788694,326.82,4098,744e566f-cfab-40e6-8433-b9dc60ab7189,Electronics Store,2003,Medium,Rural
+958466dd-8ef4-4fd7-b5e0-5cd177a5e1e7,Appliances,7.14,Other,0.374946,497.24,8591,98a0bc86-ff9a-4673-ba32-bdcbd72f0e9b,Electronics Store,2018,Small,Urban
+1483066c-1f79-425f-be56-3b364c43b739,Clothing,0.32,Other,0.045988,111.86,6111,a593c57b-fc7c-4484-9a69-3c457cf08b24,Online,1994,Large,Urban
+afbfc138-bd0b-4a36-80b9-7529ea679def,Clothing,0.32,Other,0.234807,249.78,2191,6ba759d4-18a9-4cee-a9ba-2468d844dd01,Fashion Store,2007,Medium,Rural
+ff38a2fa-1e44-4160-ae5d-f941d4f9dc28,Appliances,7.14,Other,0.795664,327.35,2212,eeee0bcc-fd4b-43c8-951c-7654c8729a71,Online,2020,Medium,Urban
+34896fb6-3d0d-499a-9692-0b1f70e198ec,Appliances,7.14,Other,0.845733,396.91,5246,db619141-c714-4973-a0cb-f190a086c393,Online,2006,Large,Urban
+fa42230b-6248-42bc-8a12-6c5ba40d4c46,Food,2.1,Regular,0.791084,290.37,422,2d7a052a-32db-4f4a-85d1-4bc88370963d,Online,2001,Medium,Rural
+a2831a65-0d37-4d13-b5f2-b8a3d9a8c46e,Clothing,0.32,Other,0.430484,166.87,6970,ca18e4ae-9391-4429-9aa7-6e77fdc04b08,Online,2000,Small,Urban
+45b79a50-978b-444d-85f3-a5987f2e0113,Clothing,0.32,Other,0.861149,464.7,5636,3427b7ca-4b48-4fa0-b86c-bc40d003ece5,Electronics Store,1990,Large,Rural
+fcd39d31-9a41-4638-bafb-3f7ad943db04,Food,2.1,Regular,0.705212,110.61,5476,2d9019ed-c326-409a-81e7-534aac1d9f31,Supermarket,1998,Medium,Rural
+3389f218-f8a8-4eab-b3bf-7dfb10c00e4f,Electronics,6.8,Other,0.568305,450.04,5853,94d1791a-1535-4545-9310-ef09077de204,Supermarket,1994,Large,Rural
+23865467-73a9-44dd-8479-9ecf5e37d123,Food,2.1,Regular,0.140118,239.12,6484,8c72125d-0158-412e-bdc8-403e4e1654a1,Electronics Store,2000,Large,Rural
+00efc6f7-8e02-429f-ab1f-c5b6a5ab3fc9,Electronics,6.8,Other,0.667186,326.99,2107,88b484dc-a052-4552-a583-8c5747006810,Fashion Store,2010,Small,Rural
+c370e464-243e-41e1-b819-dd37ed3a126c,Electronics,6.8,Other,0.201831,228.83,8102,d4be6093-1436-42b3-bdc9-6eb24fa120b7,Fashion Store,2019,Small,Rural
+a2a03118-a3af-4a2f-bd92-64ba1da43dc9,Clothing,0.32,Other,0.082012,154.25,4304,20f0a958-af72-411e-83d2-57a3e56a63fc,Electronics Store,2006,Small,Urban
+a806861a-89ac-4496-9cde-4349e46428e6,Electronics,6.8,Other,0.897373,198.64,4560,005ee764-24ef-4b4c-a58f-2bd7f569ad28,Supermarket,1991,Medium,Urban
+67e48c7c-12e8-4d11-8dcf-c6d59f3acc4e,Appliances,7.14,Other,0.57394,233.32,9519,09a3031e-1c45-4a92-9c12-15acba3d2081,Online,2004,Small,Rural
+ca712a40-d573-4d68-9295-481d3ac193a5,Appliances,7.14,Other,0.481736,171.26,221,a7fd7a0e-8390-47f2-be87-e85475fb091f,Online,1991,Medium,Rural
+d4b4ab05-7b04-43e3-9efe-57ae1ee67a13,Clothing,0.32,Other,0.629604,443.99,2784,3eab3dc5-7d11-4a5f-8cda-f70cb4ccbf2f,Supermarket,2009,Small,Rural
+9eaf95ab-de77-4ef1-b415-9389b4ed27e1,Food,2.1,Regular,0.620608,312.51,6718,d15a32f6-efc0-49ef-b943-db1ce05efe15,Online,1996,Medium,Urban
+64a57bf9-e470-45cd-8bf4-e7c8b0daec72,Electronics,6.8,Other,0.481201,319.92,3992,8ea2283b-66ef-412c-a82b-dff969df548c,Supermarket,2003,Medium,Urban
+736ae2d0-fc3d-4d4e-9c3f-e7febf2af1aa,Electronics,6.8,Other,0.79515,466.32,5209,41ca2ef1-17ae-4bc1-ab0a-984f4c81a358,Electronics Store,2005,Medium,Urban
+c7c7aa0b-517b-4ea0-998b-09f4c1cfaedc,Appliances,7.14,Other,0.578573,375.8,5506,3e36ce08-f553-466a-896a-cda22c990a05,Supermarket,2007,Large,Urban
+082ac25d-d2f8-4ae0-a75f-c91c3f0004c1,Appliances,7.14,Other,0.026914,286.43,4655,2d44dc5c-b44f-4e9d-bd64-650e3e2222b1,Online,2003,Medium,Rural
+fcc88b54-6abf-4d02-95a4-d3fdb93d2d22,Electronics,6.8,Other,0.373736,311.29,1071,0f516f7d-1a62-4aea-83d1-eef92ceda2ae,Electronics Store,1990,Large,Rural
+a2e32e38-ff71-43c1-b446-af374cbe1eb7,Food,2.1,Low Fat,0.459436,85.61,482,7e3728c5-a10b-4493-a58a-567e0396e02d,Supermarket,2005,Large,Urban
+fc63a761-cc9c-4b83-ad22-e72366acf4eb,Appliances,7.14,Other,0.500138,493.91,3885,30f33e63-6152-4317-a351-c904c1867fb4,Supermarket,2020,Large,Rural
+df7ed7c8-30d1-4ca7-afb7-7903f74b1a81,Appliances,7.14,Other,0.509609,169.41,7908,7996b313-f0d3-4ef7-9029-a7013918257b,Fashion Store,2005,Medium,Rural
+b67bd5e0-96fa-454f-9d55-1c72b925e785,Electronics,6.8,Other,0.946544,337.74,2935,0ab2a634-bf3b-4dcd-8e0a-744c7357048c,Supermarket,2007,Large,Rural
+389cda25-be5c-4b25-9995-2603491c2953,Electronics,6.8,Other,0.554352,328.94,4770,240b03d3-76c0-4329-b510-ae03d098e00c,Fashion Store,1999,Medium,Urban
+ef0a41a3-7e91-4f48-b020-7165ae337727,Appliances,7.14,Other,0.027752,235.4,719,1678ee3d-37a6-4244-b027-4d46979eb2b0,Electronics Store,2000,Medium,Rural
+d59bfb87-6c9a-406b-85ae-f69cba4dfc15,Food,2.1,Regular,0.06214,165.79,1633,b0f685b9-afcb-4e3c-aa3c-83a0aa869df0,Electronics Store,2005,Large,Rural
+80baa15a-37e0-4f5a-9790-f585053958c1,Clothing,0.32,Other,0.00407,335.26,1154,e0543838-e04e-4136-97a1-81ba8c4368b0,Supermarket,2010,Small,Urban
+ce6bd5c8-b2ec-48f6-96f4-5f8404bd951c,Clothing,0.32,Other,0.819474,281.37,3281,f235c9c2-08aa-4912-940b-77f21e10aef0,Supermarket,2010,Small,Urban
+c1665ac7-0542-4184-ae53-664783bcf3b6,Clothing,0.32,Other,0.432952,211.66,7988,2f09f97f-afad-4c4d-b634-4111194cb502,Supermarket,2010,Small,Urban
+af897a7a-72fd-4efc-930d-d8dbc9cc2032,Clothing,0.32,Other,0.289634,222.54,332,a5a0951f-33bc-48b1-bfc9-4b5fcff666dd,Online,2006,Small,Urban
+eb81de23-93df-408e-822d-55fde0584f48,Clothing,0.32,Other,0.502693,227.94,8214,34ad0ba5-b3f9-4721-903d-392677e71f8e,Supermarket,1997,Small,Urban
+1536bb41-658d-4fd6-bcb1-70ca5849bd9b,Appliances,7.14,Other,0.919853,77.01,5662,ae67bfe5-95c9-4745-b973-a07aa29ecc9b,Electronics Store,2020,Small,Urban
+0bdcb3fa-8b47-4eda-b16d-ee8314a2037c,Appliances,7.14,Other,0.520312,82.54,330,7c1aa586-12d9-4ef5-b294-9b0bdb50b9ff,Fashion Store,2014,Small,Urban
+755146f3-807c-4628-af22-6bc542315f26,Appliances,7.14,Other,0.202905,423.48,5833,b16695a9-3a36-4f83-b146-717f4de170ab,Electronics Store,1992,Small,Rural
+c32309e8-5e63-4450-8a88-4ca3a878fbb8,Food,2.1,Regular,0.352961,164.86,2021,2d4922f2-f505-4916-ba04-f610f0dab389,Supermarket,2003,Small,Urban
+b0157bb3-fdaa-405c-8ff6-875b7bbe5927,Electronics,6.8,Other,0.518875,208.16,3007,eeb6f7a2-11c4-4061-9cb3-5e7e29fc81c2,Online,2013,Small,Urban
+c0d5b91b-3cbe-4e33-9e9e-7b69f87787f9,Food,2.1,Low Fat,0.435904,334.95,3719,2395bbc3-88ea-4b19-8aff-712c4ada6140,Supermarket,1992,Medium,Urban
+bf88d7d9-36d9-421e-945f-233ba5644c8c,Clothing,0.32,Other,0.306704,267.16,4031,cbf73cb6-23c0-493d-8135-98c3a69542e8,Online,2005,Small,Rural
+ff2f7609-335e-46df-a14e-21b4a0197fa5,Electronics,6.8,Other,0.548261,290.54,8886,f7567e44-927a-4b5f-9193-8dc1f6c8c5eb,Online,2014,Small,Rural
+b30c5bc0-0123-4782-a9fd-20c1eabac0fe,Clothing,0.32,Other,0.26376,322.63,564,87c9e0b4-7d72-4095-bcf1-dd660b1853da,Supermarket,1994,Medium,Urban
+c673cf0d-f2d4-4032-91a0-718b86bf6444,Electronics,6.8,Other,0.64245,374.2,3403,a2fed775-ecc1-4bba-9ce9-f10ad01ac7d7,Online,2004,Medium,Rural
+f8433b9e-5009-4787-ac16-2fc18384b117,Clothing,0.32,Other,0.001413,438.95,6426,3138886a-e8b1-4d45-9a9f-3399daa3e15a,Electronics Store,2020,Small,Rural
+c585d879-1b2f-4d16-aaf2-704d4129892c,Electronics,6.8,Other,0.194546,370.09,1608,7427d7b8-8d7a-494a-8b4d-b8af73ff95e5,Fashion Store,2019,Large,Urban
+55591de9-ec99-4298-9f65-cb8edfb4a4c0,Clothing,0.32,Other,0.653996,169.98,4337,a4a11c54-91c5-4482-bd5d-e3ec3c7298f1,Supermarket,1995,Small,Urban
+1626c3d9-d6d8-48f9-8725-24f85f6481be,Food,2.1,Low Fat,0.501215,496.95,7675,1d610a1c-d3db-45ec-b8c7-76636c991d87,Supermarket,1993,Medium,Rural
+797450f8-02fd-46b1-8955-a57ea97d9ce6,Clothing,0.32,Other,0.990771,480.03,3314,c7630348-fc92-4a52-b689-4ccc55d9275a,Fashion Store,2001,Medium,Rural
+2f1a40ca-c882-4bdd-b41c-4c8ad5428c6e,Clothing,0.32,Other,0.051136,233.38,5801,e6120bbe-1d6c-44f5-97ce-821b2c859508,Supermarket,2016,Small,Urban
+75f7b1f5-9141-4971-9cb6-a2b1c217526a,Food,2.1,Regular,0.009202,220.16,5869,5c0f276b-5e41-4624-89ef-4cc7716c8e74,Electronics Store,2013,Medium,Rural
+3d2b4150-bf47-42c5-9a3a-55a5e6a47657,Food,2.1,Regular,0.356692,268.21,6891,f5924db6-c9b8-4004-a1df-1bcbd80c636d,Fashion Store,2001,Large,Urban
+c2655ccc-6f2d-406f-b5c7-e07db9ecc3ef,Electronics,6.8,Other,0.619231,74.84,1686,e0e71a44-e8bb-4e6f-967f-1f403e797cac,Electronics Store,2002,Large,Urban
+baad39db-66cc-4727-8b83-1dfe3ea68846,Food,2.1,Regular,0.454376,411.87,8775,720ae437-acab-4167-8fdb-94869b210dca,Online,1990,Large,Rural
+57d3c6a1-c1d6-4ebe-a3f2-d27239b8dc66,Food,2.1,Regular,0.33911,383.34,3694,52d42a3e-a9ef-4d61-a2a7-0056c571e776,Fashion Store,1997,Medium,Urban
+cdef902f-60f4-40a3-8d85-9f9120c9e27e,Electronics,6.8,Other,0.461894,427.02,1067,0a4bb6da-1425-418e-a56b-6bd730b42031,Supermarket,2000,Medium,Rural
+d008a34a-1826-4cfe-963f-959741d7e551,Electronics,6.8,Other,0.418307,374.22,352,f6b628df-eee7-4afe-983b-2256a74855e8,Online,2013,Large,Urban
+6d976b64-48c1-402a-ae43-350604de812c,Appliances,7.14,Other,0.765214,370.76,5086,fc8777dc-8bf7-4e49-9731-c6d442f4d188,Electronics Store,1992,Large,Urban
+ba5c1f59-6f9d-4262-97df-4f69275d0533,Clothing,0.32,Other,0.480668,341.7,2789,af5ea650-71d9-4124-b904-832c9f0e459b,Online,1992,Large,Urban
+24ef0548-8d7f-4d39-8d71-0b335cb1e07b,Electronics,6.8,Other,0.633437,58.8,3807,1418a0eb-093c-4052-8baa-338befc092f1,Electronics Store,1999,Small,Urban
+14e3c73b-8fcb-4dbb-9db0-b8b892e2a78b,Appliances,7.14,Other,0.106123,472.01,1097,d066cbe0-4996-411b-9760-8bd1feb216ab,Supermarket,2019,Medium,Rural
+d0d17fa8-0247-47cb-909a-e0b099b582d7,Clothing,0.32,Other,0.050033,57.39,9986,eed8d057-c644-42e5-8b12-8bb439d31af2,Electronics Store,2016,Medium,Urban
+18282ea8-fc4a-4f2b-924b-5195934f3190,Clothing,0.32,Other,0.935882,84.17,4720,cd15d3ae-a7f0-4483-a71a-be8e14d9179c,Fashion Store,2005,Small,Rural
+d2e6c4a8-2e98-4aae-8281-6122387e07a2,Clothing,0.32,Other,0.563072,233.52,169,098914d0-5a9a-438a-9fef-d1524db0146a,Electronics Store,2016,Small,Urban
+2a403472-db54-498a-a267-648184b2ee37,Electronics,6.8,Other,0.036641,445.32,5932,6f7e24d8-ef82-4531-8c20-667542140d37,Online,1990,Small,Rural
+222bd8a7-10f2-4d3d-801e-bf43d1eba831,Clothing,0.32,Other,0.147018,242.92,2635,8324c97a-655e-4a87-8abd-7bba72302931,Online,2015,Large,Urban
+3386ba4e-4c19-4f45-b99e-69bb890cd06c,Clothing,0.32,Other,0.224315,279.15,7996,91330fa2-f1df-4478-a67d-c1b7c0db893e,Supermarket,1991,Medium,Urban
+45403a36-7429-4391-9516-b0a901ff9fb6,Electronics,6.8,Other,0.490139,475.87,4728,656129c8-beb6-4a01-adcb-1446705b213a,Fashion Store,2009,Medium,Urban
+52b29dfa-b138-423e-b967-73f88cbefb7e,Electronics,6.8,Other,0.784641,287.73,6227,60a87b84-8711-4ef6-87dc-52229506147a,Supermarket,1999,Large,Rural
+16e6f557-167c-4660-a5db-1019bfc0ff35,Electronics,6.8,Other,0.664681,231.46,516,8581d39b-bf58-4c25-99aa-412dec4e6cd5,Electronics Store,1996,Small,Rural
+33b7967f-e463-4dba-b9f7-2a3dbe9f596b,Food,2.1,Regular,0.501209,304.99,6443,4cd36da0-ab78-432c-8c9b-238c7c0ba53a,Supermarket,1997,Small,Urban
+05869a99-67c8-4f48-9027-a38016277431,Electronics,6.8,Other,0.782515,250.13,2437,fac551fd-d702-4bd5-a296-4e61c65d280d,Online,1999,Small,Rural
+880e4f91-92b3-465b-a80f-09e0e0e6a8ba,Clothing,0.32,Other,0.712533,308.36,6647,e3e936df-2c6c-46d3-a448-09c108927f0d,Electronics Store,2018,Large,Urban
+c144ac9b-e0a4-454a-9a1a-dcf223ef4585,Clothing,0.32,Other,0.262797,323.14,7351,2e83c236-8a60-4556-b4e2-220a90db4765,Supermarket,2017,Small,Urban
+f73587f0-4d57-4007-8596-1ce9f3622e64,Electronics,6.8,Other,0.746771,341.34,545,82c56e7d-83e1-4e29-8e8c-1e37ae558567,Fashion Store,1992,Small,Rural
+3854b12a-ad6a-4b5f-a9c3-f36cee7717c3,Appliances,7.14,Other,0.953857,213.44,7370,32a720c6-079e-4f09-86b4-8c64d8a2eb71,Electronics Store,2011,Large,Urban
+1afbace6-0919-4695-99d3-01dbcb90e76b,Electronics,6.8,Other,0.501951,445.09,8540,6848d26a-e57f-432d-a818-40cb84224b09,Fashion Store,1993,Medium,Urban
+84890359-a4a3-4b1e-b3a9-ae551ed59103,Electronics,6.8,Other,0.159842,241.13,5369,d2ccf1e8-e334-400e-8bea-9a0abf4fd6f1,Online,2005,Small,Rural
+c40b6265-8b8d-453b-bb74-1ac99544bcb3,Appliances,7.14,Other,0.978081,455.97,6740,f26f1fbf-0a36-4792-9436-144ef1376a1b,Online,2006,Large,Urban
+6ab1ed6d-7823-48b3-b0c0-cff54d8c8134,Appliances,7.14,Other,0.437893,165.51,8392,ee61999c-9b89-4d03-a7bb-437e9167ff72,Electronics Store,2015,Medium,Urban
+4561e595-996c-478a-8932-ef0ae2e7ddd1,Electronics,6.8,Other,0.843001,381.77,5428,a5e94ce3-3e46-4101-94f0-074320f7b429,Online,2000,Small,Urban
+c18921f4-7d20-4738-9dec-2fad811ed57e,Clothing,0.32,Other,0.451013,389.2,7842,2fcc58f3-3397-41af-842c-0361c9d3487d,Online,2002,Large,Rural
+3adb2fcb-f1e2-4cef-9b68-eb71c2704d8a,Food,2.1,Low Fat,0.029427,396.39,605,6558f410-65ef-493a-8727-362429466130,Online,2008,Large,Urban
+ffc4f5c6-55b8-433b-97eb-abf7eecfd83e,Clothing,0.32,Other,0.797201,159.34,4110,bfaaa05c-bba1-4554-a426-93ae29c7e36c,Electronics Store,2002,Large,Rural
+5ab43412-6893-4e2e-9015-80d6baafadc4,Electronics,6.8,Other,0.291907,84.88,7596,cde8a2f6-91e8-4a36-9ace-95e4f5007801,Fashion Store,2002,Medium,Urban
+49abe215-eb3c-4c40-9283-fde79479f4cc,Appliances,7.14,Other,0.132052,132.83,7885,91b1fac7-27a4-4e7f-8473-9b027947e128,Fashion Store,1991,Large,Urban
+77c77b87-afa7-4cd7-bb54-63babe0b6732,Clothing,0.32,Other,0.113699,70.84,3263,df33d605-4af5-4b93-b69a-5dd6632824f2,Online,2006,Small,Rural
+da17893a-31a0-4389-a5ba-fc3a1625331c,Electronics,6.8,Other,0.141455,365.13,7277,8e0803db-f1b1-4f27-a6b5-18e8cdda710b,Electronics Store,2009,Small,Urban
+2af8b0ab-22a4-4b18-9cc8-70d8fb1d5737,Electronics,6.8,Other,0.60471,418.51,6284,a8523643-248e-49b7-958a-183dbd7c706b,Fashion Store,2006,Large,Urban
+027475bd-7208-43a3-a75f-0782ab46c4b7,Electronics,6.8,Other,0.51569,236.25,7298,1f1b9336-8c1f-4460-a2bb-bf5cdfbea512,Online,2016,Small,Rural
+0f001773-f125-4565-949f-786dd73f7e49,Electronics,6.8,Other,0.156559,130.16,5926,30ce0b59-3feb-4821-b9c0-12b2cfa617fd,Electronics Store,2012,Large,Rural
+18b45c5e-a371-46fc-8cee-4a51ba3c1a94,Clothing,0.32,Other,0.070628,343.81,9885,5f706e59-fefa-4294-8cf8-9437a7af8c74,Online,2005,Medium,Rural
+a0df555c-da11-4c11-b7b4-99db978b4917,Appliances,7.14,Other,0.520629,225.38,2756,0a129c2a-3a1d-4094-aee1-1aec10b1d68e,Supermarket,1990,Large,Urban
+a3372dc1-7a99-43fc-94c5-68b84cdb6a03,Electronics,6.8,Other,0.398045,68.82,1838,dbaf67f2-0430-449f-a981-c8655b182256,Supermarket,2008,Medium,Rural
+404c54f4-c5db-41c5-b9e6-301f61a4973a,Food,2.1,Regular,0.594174,412.56,450,28981745-1f9b-4a19-b2b4-6c21f4111437,Fashion Store,2020,Small,Urban
+6ae63ecd-5ad2-4d7b-9cd9-4d118aa2e55a,Clothing,0.32,Other,0.513059,333.16,6167,4ae38ded-cf60-4cfe-9181-f3706dd718a0,Fashion Store,2004,Small,Urban
+add23719-942e-4a1e-b127-3dcce448ca1e,Appliances,7.14,Other,0.194882,303.67,2416,362afa26-3bbd-4838-89b2-d6c0f56b18fd,Electronics Store,2006,Small,Urban
+734bf10f-920a-4318-87d4-f3717ee68e27,Clothing,0.32,Other,0.704477,416.13,9076,52dc26b1-a86c-4b77-9a32-956cad7fec85,Fashion Store,2007,Medium,Urban
+09180e56-23ee-4aa2-844b-184e084a48b9,Electronics,6.8,Other,0.597901,386.06,6162,32139b03-4734-4199-949d-81c21b9df705,Online,2016,Medium,Rural
+e85eda25-9a49-4efc-bcbe-544b79db95df,Food,2.1,Regular,0.538544,458.28,8153,d5bc4e39-181c-43eb-a52f-4d48ab73be5a,Supermarket,2013,Large,Urban
+1f320262-2b04-46cd-980a-0e107bcbedec,Electronics,6.8,Other,0.400433,92.87,8388,b361a218-5195-4253-ad2f-3edd36caa196,Online,2015,Large,Urban
+170cef5e-f9f1-456c-9211-241e8a3354aa,Appliances,7.14,Other,0.784355,495.95,4070,5faa93d0-cce8-431f-8f50-ae9f9bbe7073,Electronics Store,1996,Medium,Urban
+45f97b1c-ccd9-4f6b-a2db-2eb8b7477f5d,Food,2.1,Regular,0.801127,361.03,6903,1fcc3ce7-958e-412c-8b41-e56afe654e19,Online,2017,Large,Urban
+74d55c4e-5d07-4832-a6bf-160f06e23d36,Food,2.1,Regular,0.888535,325.9,1767,e8b46ab7-1806-4a3b-80b0-8ca11fb859dc,Electronics Store,2016,Medium,Urban
+70a4ab33-fb91-480a-8bfc-f2c8c1373437,Food,2.1,Low Fat,0.202362,98.31,7065,e95e238a-6fcf-45ca-b677-d24291b5e6e8,Electronics Store,2011,Medium,Rural
+c4704c88-4847-4f19-b7b1-1ba104031c3b,Food,2.1,Regular,0.102258,75.4,9834,b7201c29-36e7-42d3-b04c-7dfaedec9dea,Supermarket,1995,Small,Urban
+9f2c4488-0b04-4de3-abd2-b6d12ce095f3,Clothing,0.32,Other,0.425553,76.68,1505,ad4f454b-4a7c-4173-a7a9-bd55a9192b05,Electronics Store,2017,Medium,Rural
+06908b6a-d89f-48b9-9bb6-ba23174189aa,Electronics,6.8,Other,0.694185,134.63,481,acd2c38f-8882-4cb7-8a28-3caa9f741ab1,Supermarket,1993,Medium,Rural
+325f350c-f73f-4d2b-8ed6-233215509bd1,Appliances,7.14,Other,0.702489,105.95,7215,259a7dd7-748d-47c0-8320-85cc790ca334,Fashion Store,2001,Small,Rural
+fa8ce672-2022-4817-b852-0deef42fcd5d,Clothing,0.32,Other,0.657478,344.36,1497,f02d7f62-df18-424e-bd00-782a4dd918ee,Online,2009,Medium,Rural
+fe8cf56c-21b3-42e9-9991-dacf060304af,Clothing,0.32,Other,0.66774,374.49,8034,84a0f12f-2b7c-4859-a451-2e2cef2a883e,Electronics Store,1992,Large,Urban
+48e94d4c-14c8-4ad5-b8bc-78127f6cef0d,Clothing,0.32,Other,0.149423,287.67,9723,2be17661-0974-4fe4-b21b-22fcbcef67e2,Electronics Store,1997,Small,Rural
+b155d024-c00d-44fa-9c42-0ab6171d5913,Clothing,0.32,Other,0.534919,159.69,1749,71dc4f1c-a9bd-4aa7-be2a-cf5b13477e91,Supermarket,2007,Large,Urban
+753c3681-f03f-4445-a73e-a40ff0745226,Clothing,0.32,Other,0.24084,412.88,3743,3e3d3fa3-ee3c-46b0-93ad-f2ccab071c98,Electronics Store,2013,Large,Rural
+10187cd6-1a62-4c20-aaf7-9bf012f442ac,Electronics,6.8,Other,0.065519,480.83,5861,855d1c3c-3375-4f1a-9c5d-492e2c2c2973,Electronics Store,2006,Medium,Rural
+888f1ea9-29b7-4a7d-867c-a155c6d45e85,Food,2.1,Regular,0.918306,395.2,7934,a03aecde-5f1e-41e1-bac8-43f142315899,Fashion Store,1997,Large,Rural
+4cec7255-4bf8-41b5-822c-dc92089f70b1,Appliances,7.14,Other,0.07734,477.89,1821,5f43385f-4c40-4ec2-8dfd-6b8f7fd85d7c,Fashion Store,2002,Medium,Rural
+7ac6b4ac-7b53-4f94-826c-6581b92e14f3,Clothing,0.32,Other,0.695797,257.46,9748,04ae2135-7ed7-4a86-b930-3875854b1f47,Fashion Store,1990,Large,Rural
+b57ea23f-9cb1-4301-8ff6-e607ac82eb8d,Appliances,7.14,Other,0.635038,403.05,8226,79dad973-09b6-4472-b573-189f2d5eb3da,Electronics Store,1994,Small,Rural
+f9e99744-21b3-4b67-a7d6-132acd8c4292,Electronics,6.8,Other,0.944486,175.68,8618,7bd3070a-aa34-403f-95d6-0cf5893b23ff,Electronics Store,1997,Medium,Urban
+e51a383d-8521-46c5-ad14-204383e6f266,Appliances,7.14,Other,0.793789,239.93,7037,fb161652-73d5-45f4-822a-45bbde2f9b59,Electronics Store,2013,Large,Rural
+c242640d-f0b5-498b-9f24-5e59e0494377,Food,2.1,Low Fat,0.179668,95.18,313,db18e264-f91d-4167-8ba1-57774212475c,Fashion Store,2009,Small,Urban
+5ca6da4a-4277-42c3-961d-509618ac2205,Appliances,7.14,Other,0.978275,396.88,5454,c1795917-18f9-49cb-a80c-240d9c6cfe62,Supermarket,2000,Large,Rural
+82bb6751-cff3-4b5a-9b1c-c6df167b5c2a,Clothing,0.32,Other,0.553194,240.51,9853,dca3c162-2af4-4298-8be0-613d4858880f,Online,2003,Medium,Urban
+e9670eaa-e628-4f40-835b-46afa2cbe900,Food,2.1,Regular,0.609941,283.67,1307,07a856be-988f-4df0-bf0f-79269adff5af,Electronics Store,2012,Medium,Urban
+9c8a3dac-a68d-4927-9e1d-3b7e5da3c855,Appliances,7.14,Other,0.699926,321.25,1694,cf52f65b-00f0-4a43-a6a4-3777b9696c77,Online,1990,Small,Urban
+47301e38-3855-4201-9bf4-d85fa8e8028f,Electronics,6.8,Other,0.423376,67.27,1352,4bdbf20b-2215-49dd-a55a-6434005ef87c,Online,1995,Medium,Rural
+aaab4657-2d92-4d2c-a56d-75f846aadcc9,Clothing,0.32,Other,0.931502,478.61,702,0c813f11-949b-4089-a2be-f0963dc147e0,Supermarket,2017,Small,Urban
+950cb68a-184a-4e49-9919-4833a776bf59,Electronics,6.8,Other,0.335404,396.48,1805,acf7dd66-f7bd-4875-a619-2050d7cd4af6,Supermarket,1998,Medium,Rural
+98642308-47bd-49eb-a8a9-4f96ad6d8ad1,Electronics,6.8,Other,0.031508,242.73,9775,01d0906b-13be-47d2-9e6d-1d3eae43cfd4,Electronics Store,1993,Small,Rural
+feb84d72-4608-439b-9755-c9225a00344d,Food,2.1,Low Fat,0.460803,115.6,6886,9ff74c4a-6117-4e59-9293-d7d0e2038621,Supermarket,2014,Large,Urban
+58a72aef-6b96-4649-9060-f7549cd0dfc8,Appliances,7.14,Other,0.266585,232.15,5802,125433a3-7ad0-4b9c-81e1-4b6d2f614689,Online,2009,Small,Rural
+9c6015be-2ff0-478c-bf2f-4c54531d19c4,Food,2.1,Low Fat,0.20464,235.39,6628,03ea2659-12a4-4c36-a93d-4ee51fd7b334,Online,1992,Medium,Rural
+edc9e00e-049b-4918-ae75-4122aaab070d,Clothing,0.32,Other,0.95019,221.38,9690,de29f7c0-ee6a-4963-852c-77c0c02a4308,Fashion Store,2013,Medium,Urban
+331aa090-720c-46c6-9484-f7b95bf7a318,Clothing,0.32,Other,0.761595,101.25,6731,3f8a6a6c-0bb3-4796-9f9e-51a684432319,Online,1995,Large,Rural
+531e9567-ba93-4db5-97d7-e6dd6de8f847,Electronics,6.8,Other,0.739824,271.61,5872,ba7679ca-cffb-4547-af6c-1b56411a3104,Supermarket,2006,Small,Rural
+0a4bb93b-d58d-44bf-b1d8-9a2aaeb7700b,Electronics,6.8,Other,0.23024,160.99,8322,dda6d13c-0733-4f54-b09d-56ea71670328,Supermarket,1994,Small,Urban
+846230c7-97ac-4eea-acf1-176ce95ce7ed,Appliances,7.14,Other,0.62547,50.15,6387,305c2ad6-8589-4205-842e-7813e5888f21,Supermarket,1992,Medium,Urban
+d081444c-7abc-4c07-a2c8-c7172cc75eb1,Electronics,6.8,Other,0.823288,488.37,2513,813bb82e-e529-4039-adb5-0dd7748c5385,Online,2014,Small,Urban
+a1747348-e470-4c9c-a604-4963124eb129,Food,2.1,Regular,0.854391,153.12,318,4c98a19e-8e97-4163-b478-ab0a6204934d,Supermarket,1993,Medium,Rural
+5a01eb81-3a8f-4eeb-b6fd-c45a5ff7f2c4,Electronics,6.8,Other,0.389777,320.34,2658,6cd728eb-9187-40a5-9335-9602486f2c19,Online,2014,Large,Rural
+f2e51081-5103-4b63-97f9-7db2c39ddd3e,Clothing,0.32,Other,0.586599,492.38,8887,dbb803fa-5f13-4e9a-b4f3-dee0aac6992c,Supermarket,2002,Small,Rural
+41803428-d4f8-47aa-8c5e-110e0d086769,Electronics,6.8,Other,0.552971,328.48,7675,a2bc217b-e1eb-4ba0-9caa-9bf3a3753327,Electronics Store,1999,Medium,Rural
+00e13896-fd7e-462b-b021-7e46286697cb,Appliances,7.14,Other,0.146808,84.82,6219,2649c419-9fdc-462d-a694-dc5d5f2576c9,Electronics Store,2010,Medium,Urban
+d450db06-e138-4e09-aa58-2a51b43dd3eb,Food,2.1,Regular,0.872471,85.99,2846,16a5d887-7686-40b8-864b-525736201585,Electronics Store,1995,Large,Urban
+3f88e2cc-cea0-4014-96a5-b6bf49708c13,Electronics,6.8,Other,0.206813,220.7,3609,19b26011-4442-4745-be3e-3850a10e8fc3,Online,2011,Small,Rural
+f2425d29-3c8f-4b5f-9dd2-24361d31d7e5,Clothing,0.32,Other,0.258088,322.34,184,d230206a-d6d4-47cb-8ec0-81cd85ba7d77,Fashion Store,1991,Large,Urban
+424a3b00-e660-4f6a-927a-cbf7e3d20d09,Clothing,0.32,Other,0.251274,233.28,1340,2c42558e-f87d-429c-befc-74c423559520,Electronics Store,2001,Small,Rural
+8bd2f43e-76d6-4d82-9ef5-67dee6326765,Food,2.1,Low Fat,0.989741,212.11,9584,4507bc06-e44b-476a-9744-176c623e4615,Online,2008,Medium,Urban
+9a8e60c2-424b-49f9-9555-0b89bab9d81b,Electronics,6.8,Other,0.322092,322.53,8045,0f36c9dd-5a33-44b7-94a3-62c41351b26f,Online,1994,Small,Rural
+24677be3-b3f9-4a15-a4a9-4ab1844eb5bd,Food,2.1,Low Fat,0.856612,337.22,5531,a6440bd7-42de-46cf-8de4-128a3ac2aa41,Supermarket,2014,Large,Rural
+fedaa36b-d016-46e0-86f9-403ac2299bf7,Food,2.1,Regular,0.092768,295.02,3081,b65c93d0-363d-4b3b-abba-102f12a387a9,Fashion Store,2017,Medium,Rural
+4f28ecc8-ac0e-4d17-852c-590eba9832a5,Appliances,7.14,Other,0.41471,167.16,1088,fe2b6f3d-cfb1-4430-b0ce-c9d1f62a1039,Online,1993,Medium,Urban
+4954d784-da6a-46d8-809b-bab70f51ccbf,Food,2.1,Low Fat,0.243131,430.55,174,7ff076d6-c60a-44fb-b299-cad5b8d2c920,Fashion Store,2007,Small,Urban
+73732129-9689-4101-9e38-d3587f3b2e4e,Appliances,7.14,Other,0.054993,387.62,9586,cc692daa-392a-4982-982c-a3a69d543098,Online,2013,Small,Urban
+73ff658d-b054-445c-a8b1-57efa7cbb80f,Clothing,0.32,Other,0.917917,384.11,6841,a1ae81c3-afa1-4178-bcd5-a0955f99fe74,Online,2005,Small,Rural
+023028a3-aada-43bd-93f6-c3f73e9625df,Electronics,6.8,Other,0.812695,432.73,9002,c4e9e79d-ab2d-44d9-8f33-9191024df3ce,Fashion Store,1991,Large,Rural
+baa3df3e-bfbf-4214-8670-4b9b12f7d080,Food,2.1,Regular,0.352156,302.52,8407,8317bb7c-09ea-4220-91d4-d4883edacb42,Fashion Store,2012,Small,Urban
+d2d4cd72-8ae6-4cc9-86bb-8b72d598eda9,Appliances,7.14,Other,0.819039,342.48,2711,60b76519-efef-4ae2-ad02-3f586670c194,Electronics Store,1990,Medium,Urban
+882c92fa-f7d9-4e43-b40e-066e48853df7,Appliances,7.14,Other,0.997799,338.42,2351,a7061f9b-54ce-453c-a100-f780b036eef4,Supermarket,1990,Small,Rural
+5fa38252-fcac-45e3-a44b-24f878076b01,Electronics,6.8,Other,0.307338,211.18,4514,28b6db23-c9bf-47ea-88b7-163d661590ac,Electronics Store,2016,Large,Rural
+2b7063fc-82f0-4b8d-8cda-208ac6e4561c,Appliances,7.14,Other,0.094857,426.88,8356,8f1b3dfa-85cb-4055-a754-f135f03aef6b,Electronics Store,2005,Small,Urban
+27e03bb4-ef1e-4712-8bf3-e280da6296ba,Appliances,7.14,Other,0.738417,247.85,4201,b033b26c-b0f7-49ad-a2db-6cd5481ef4f4,Electronics Store,1991,Small,Rural
+c8728794-b025-4931-be7c-70622d3cf06d,Food,2.1,Regular,0.190992,96.67,5790,1db1ae76-250b-4a3e-b29b-c4b5e7093a65,Supermarket,2010,Small,Rural
+2dba979d-3ed7-4310-a8f5-329b011292f7,Appliances,7.14,Other,0.827302,187.34,5788,a750a8af-444a-4a1f-95a4-41a21801ac64,Supermarket,2000,Medium,Rural
+8034e1c9-75fd-4c7c-884e-9e7290fd4158,Food,2.1,Low Fat,0.461323,364.25,9496,7e286131-f8e5-4ec3-a8a3-15054c250bf2,Supermarket,2017,Small,Rural
+166e3281-8480-4ae2-b9c7-f08ebd220525,Food,2.1,Regular,0.788533,245.86,6416,27d429e0-a7e0-4736-95c9-7fd94ad2867e,Online,2014,Large,Urban
+a51cc8c3-1786-4a58-bb1f-e064ba1a571f,Electronics,6.8,Other,0.502831,427.45,4069,ef707453-ccfa-4b1a-b711-9f7e13123e16,Online,1994,Small,Urban
+37a1ffdb-5974-427c-a9b9-18771f7aa2a6,Electronics,6.8,Other,0.721491,328.23,5022,a5b2fcea-8031-4371-ba01-5cac97f027b1,Fashion Store,2013,Small,Urban
+e88740f7-7ac3-4c97-993d-a59b1a90d05e,Clothing,0.32,Other,0.722501,210.78,146,1c23cae6-e666-4823-92b4-659bceb57825,Supermarket,2017,Medium,Urban
+fb8f4e50-5682-4388-85b3-05714e44afd6,Appliances,7.14,Other,0.854364,318.31,4174,56000ae9-5452-478b-8ba0-4bb51dbc3d95,Fashion Store,2001,Medium,Rural
+a1415e83-93a6-4ebb-825e-8429aff241a1,Clothing,0.32,Other,0.359844,318.83,2211,c5816309-a125-4962-852a-2e370e5f74d2,Electronics Store,2005,Small,Urban
+a7632f65-e181-4b11-8b42-a2da00aceb60,Food,2.1,Regular,0.522601,375.61,5709,652acb77-6f4e-43b0-a8ad-da1a23b4d425,Fashion Store,2006,Large,Rural
+eea1a404-8cc4-446c-a914-cb7bd1f31623,Food,2.1,Low Fat,0.334635,172.84,1731,c08c7a6c-9dd9-45fb-947b-60b1aa593608,Online,2010,Medium,Urban
+31f2d28f-6d5f-4f15-bed2-6b2bd90ce81e,Appliances,7.14,Other,0.547885,352.45,5433,5e1466d3-3c41-4936-ba14-04526e1daeda,Electronics Store,2010,Small,Rural
+89a180f8-df02-4088-90b2-8456302bde35,Clothing,0.32,Other,0.948739,54.87,9684,b3829c80-8cfa-4566-a2f0-4ab17b6c0d0b,Fashion Store,1998,Large,Rural
+b62b265b-175f-4c08-ab06-6b2e6056b2c0,Electronics,6.8,Other,0.132424,276.96,4979,ba51fd9a-e01a-44cf-9861-ab05e7bababf,Electronics Store,2019,Large,Rural
+e9d92700-444b-4585-a91c-898841179303,Clothing,0.32,Other,0.420073,227.83,4291,3fd6d008-b890-4527-80e3-87eca69570f1,Supermarket,2017,Medium,Rural
+c688fa1e-cdc1-477e-a015-0871ebf7a8d1,Electronics,6.8,Other,0.983037,245.84,2833,670a0fa0-8a52-4247-965e-6de77754644c,Supermarket,2003,Large,Urban
+73c46c8b-5e42-4091-8528-66ba0f077bb6,Electronics,6.8,Other,0.314555,277.82,6713,dba13daf-56eb-47fa-a87b-e9a961bc82c7,Online,1995,Medium,Rural
+3a8aca61-91fa-4788-b0f9-c4ad9f897aed,Clothing,0.32,Other,0.65966,351.32,3079,453fd672-7ec9-483a-8e9f-f31d1bc8d9ea,Electronics Store,2015,Large,Rural
+af44126a-ac0d-47c9-81c4-ecd4112b1678,Clothing,0.32,Other,0.242308,246.55,988,90855d88-c3fd-4caa-af38-7c582a5f1249,Online,2004,Large,Rural
+f6f0ec3e-afce-4dd4-8e3c-c948ba0a9d2a,Food,2.1,Low Fat,0.610292,317.42,9734,f983cbf0-6c7b-4f45-9057-2ea3f8dc60ce,Supermarket,2020,Small,Urban
+e2ae2b17-29e9-4a49-bcbb-ce62f672c71e,Clothing,0.32,Other,0.785356,190.48,5831,c7a387df-984f-4fd1-92ed-5bc7fc30c732,Supermarket,2000,Small,Urban
+fedd30e5-e7ef-447b-aace-8a7ba4103cbf,Electronics,6.8,Other,0.254031,448.67,3580,11832d80-5901-4d63-a9fd-3382d16f24ce,Supermarket,2014,Large,Urban
+ac4eb898-9bfa-44be-9895-32f8bb3beb74,Appliances,7.14,Other,0.323332,479.44,1882,33798628-3014-450e-84be-d3165cf9b760,Supermarket,1997,Large,Urban
+cd61c8ec-b5de-4ec3-977b-21bf47c91dc5,Appliances,7.14,Other,0.66965,112.22,1972,0f9a3645-cca5-4cf6-9e75-a1152b0ab39c,Online,1998,Medium,Urban
+b0c83761-2d78-4b0b-8a94-f33a9cdf6e52,Electronics,6.8,Other,0.839737,282.1,7951,6a71e67b-36a5-41e5-8dca-974a39de5e2f,Electronics Store,1992,Large,Rural
+459895d5-2d84-4cd5-bb33-df883d05cb5d,Electronics,6.8,Other,0.666107,50.79,6494,4aeed679-750d-4473-be7b-e595f1f03b43,Fashion Store,1998,Medium,Urban
+4125c7c0-659d-4a52-aab0-611a3a73f99b,Clothing,0.32,Other,0.054156,129.69,4836,359b4569-22b6-4b81-a944-b3fced8e662b,Electronics Store,2017,Large,Urban
+d5533856-ab00-43cd-bfe1-60e31a195c7c,Appliances,7.14,Other,0.141484,338.78,2162,03fd2898-7546-4e68-9367-bd21b67a81ca,Supermarket,2012,Large,Rural
+46b490aa-79d6-4472-b595-a919edde71f4,Electronics,6.8,Other,0.558348,298.48,1966,e97f3eb0-9965-42c7-a444-4776de5c7ff0,Online,2008,Large,Urban
+15009acf-1693-44d6-9c1b-706f7f515621,Clothing,0.32,Other,0.362383,376.13,7629,537dc523-22d1-477b-b2bb-4d61b94270e3,Fashion Store,2002,Small,Rural
+a6eacd97-baed-4105-8f25-cccc36c2019e,Electronics,6.8,Other,0.999479,123.29,7536,fd106e3d-663a-4b6b-999b-e5f6eeff3cf6,Supermarket,2007,Large,Rural
+55a63ec1-0698-4363-a849-838d369348c5,Food,2.1,Regular,0.587167,441.93,4299,8ff3866a-552c-4456-ad79-6fbcd780862e,Fashion Store,1994,Large,Rural
+d9bf20f5-3f9f-4af5-9a76-d5ba4234e962,Clothing,0.32,Other,0.264383,386.52,9886,06ca5276-af86-4fea-8501-90a0f40c19b5,Supermarket,2008,Small,Rural
+0456f96b-8d65-4366-af1c-7dfc002eaccc,Food,2.1,Low Fat,0.896619,122.15,431,940a43f7-a9ed-4a8a-bffd-6058277724ac,Supermarket,1993,Large,Urban
+e8a92048-6729-4553-9d9f-0816820d6200,Electronics,6.8,Other,0.987512,364.49,3212,a50cdb0d-c50e-4fa3-a397-431bcdf30121,Electronics Store,1999,Medium,Urban
+f18d62cd-3fed-4b21-8fef-d8c7d2e2e4c4,Clothing,0.32,Other,0.721124,461.55,4739,34042640-a27c-4cee-a3ed-075ae2b58f21,Fashion Store,1996,Large,Urban
+9dc0c788-d803-432e-b9fe-72fa0e1c3a12,Clothing,0.32,Other,0.785942,361.75,6592,0a486e40-741a-4c4d-a385-806ac0f3538d,Online,1991,Medium,Rural
+9d2b09b4-d138-4856-ae64-13548fb71711,Appliances,7.14,Other,0.65653,217.39,8599,63b9d0b5-5b42-41c0-82da-c97d62905b60,Fashion Store,2006,Large,Rural
+597e8805-4b82-4ee2-abcb-d20bf5178978,Appliances,7.14,Other,0.552327,94.2,3666,c9f0a2bb-d700-41c9-b33a-fb88004a5cc7,Online,1999,Large,Urban
+4840b488-4d44-4aee-892a-7e6bde5add45,Electronics,6.8,Other,0.40401,429.67,698,f66b0a19-8c3b-4357-b151-e47680e4de94,Fashion Store,1993,Medium,Urban
+ed96610c-04aa-4cbb-8281-a28d3ca36a8a,Clothing,0.32,Other,0.699354,146.57,7589,e03732c7-614e-4c8d-b7b2-6f1216979f30,Fashion Store,2016,Large,Urban
+59042d28-2925-40d3-84df-4c6549dff2e2,Electronics,6.8,Other,0.904832,317.14,3246,7d058261-fec4-4c17-a679-2cedd4790ac0,Electronics Store,1998,Small,Urban
+f246ead6-5324-49b0-b75b-723b9ca52ca5,Clothing,0.32,Other,0.312423,313.14,156,f6bf0eb9-248f-460d-a5d7-8ef583e5db6a,Online,2018,Large,Rural
+968dbc04-4d50-450d-84ec-079cb56018f6,Food,2.1,Low Fat,0.867845,71.89,2694,0fb2ca30-d417-4154-bcd4-183f066ee084,Supermarket,2004,Large,Rural
+e200769c-982c-46a1-8b28-7a521fb0450b,Food,2.1,Regular,0.351974,283.55,1882,5d958deb-e259-4523-8597-27f36635e26f,Supermarket,1991,Medium,Rural
+c99d6d31-5947-4431-9c54-4d50b78e35ef,Food,2.1,Low Fat,0.552875,214.4,4673,7d385461-8d86-4fb9-b7cc-e80b65054d68,Electronics Store,1997,Small,Rural
+d7022053-fb97-463b-8489-f9fcf5010815,Appliances,7.14,Other,0.275931,420.13,1121,6183e6ff-e7b4-4304-80ca-7325fea4fe8f,Online,1990,Large,Rural
+c8fe9efe-52cc-4dc9-9933-4021b652a60d,Clothing,0.32,Other,0.009544,105.88,2054,2afd5e1c-c57a-4e04-874c-e332a45d8c4c,Online,2006,Small,Urban
+2ebf882c-6350-4dfa-8676-3910d61297ad,Clothing,0.32,Other,0.945309,216.82,6183,4ad5bc70-52c2-47a9-b3ff-54b9905dc6de,Online,1991,Large,Rural
+33a9b815-255e-4982-a352-3574843cfe76,Food,2.1,Regular,0.374807,330.15,1545,08b60e66-7466-4445-81f2-fbc1281e4ce6,Online,2011,Large,Rural
+397e8bc4-f30b-48bb-944b-9eb07a317bac,Food,2.1,Low Fat,0.356372,235.98,2285,ab494edf-dcb8-4ace-9904-ae54b195d4f7,Supermarket,1993,Large,Urban
+bb73045a-5cde-4855-9858-ffba5be077a6,Food,2.1,Regular,0.235144,436.6,1916,107d6a55-8a80-4a37-aaf1-f2441e9942a8,Fashion Store,2001,Medium,Rural
+90f4d3f0-9ad9-4b73-a369-bac599031ae0,Electronics,6.8,Other,0.432327,85.87,4813,18159c9d-9559-486c-af4a-8ebd2f8a5fb8,Supermarket,1990,Large,Rural
+4728db05-d728-481b-a17c-080e87bd8345,Food,2.1,Regular,0.035244,408.67,1490,50032562-3038-49c4-a87e-15d2a102ab90,Electronics Store,1996,Small,Rural
+3262cf79-40cc-4972-b33d-373ffa862112,Appliances,7.14,Other,0.484884,231.21,5959,6ed9d822-c4e2-46a4-9fa8-79755a36ce78,Supermarket,1998,Medium,Rural
+26e4ccc2-67b9-4f21-a169-6b5264211517,Electronics,6.8,Other,0.914576,150.71,7186,0c35d8bc-c7cd-409e-86e5-569f0632ae30,Supermarket,2020,Medium,Rural
+aea7a8ed-6781-4b9b-be1d-93ef588012fe,Food,2.1,Regular,0.410253,127.09,4416,fb07b93a-c56d-4fd6-9417-d3649a693e08,Electronics Store,2012,Small,Rural
+3b026301-08b7-44e6-a31c-7813b8f74d16,Appliances,7.14,Other,0.725288,491.92,383,7f38ae5d-7861-407d-9da2-1b777257c499,Fashion Store,2005,Large,Urban
+e048c4bc-61e1-491a-aee9-fdcf1bf2c794,Electronics,6.8,Other,0.741933,261.19,7833,f6e2fc83-c394-42cd-8b4f-310040fc2c8f,Online,2002,Medium,Rural
+2b9862c1-5c46-45e1-a040-c55fda4119ea,Clothing,0.32,Other,0.544393,207.77,5964,13d41c95-1118-4db0-9e6d-d7926542ad24,Fashion Store,1992,Medium,Urban
+97bc3a89-96d3-4a7c-a1c6-50fbcf46fb38,Appliances,7.14,Other,0.416489,177.53,2162,bf84eb43-fa74-4330-8123-9b301d8c826b,Fashion Store,2017,Large,Rural
+147da394-b8c8-4423-a77c-12eaa3bf1567,Food,2.1,Regular,0.666356,298.46,3650,cfa48c6f-0ba0-4c2c-80d5-89fc31411615,Electronics Store,2019,Small,Urban
+79a8cf53-6246-4a64-9281-bba80af5afa7,Electronics,6.8,Other,0.346076,188.86,3949,cccfe313-94f0-40d8-8d6d-d94399389d0b,Fashion Store,2016,Small,Urban
+601bc3b7-3b25-4762-b188-175967a5fae6,Electronics,6.8,Other,0.497579,95.29,5468,33f44d6b-33f5-4530-835e-cf3134f72756,Fashion Store,1997,Small,Urban
+f66f06da-5e5c-42ef-831c-958afee74f3f,Food,2.1,Regular,0.603174,113.05,2162,04050167-367a-4927-8471-c4a680996b1c,Supermarket,1991,Large,Rural
+a8cd85be-ca9f-4b88-9e31-d83bf6ad682d,Electronics,6.8,Other,0.590075,102.97,9166,61b3f356-65df-4263-9e64-e9f41b65b764,Online,2006,Large,Rural
+2261c82c-525b-47e3-b8d0-61169d870768,Food,2.1,Low Fat,0.596102,457.99,382,5c546501-6cbc-4edf-a90e-3d52992336d8,Electronics Store,1994,Large,Urban
+a4364c8e-2989-40ed-8082-6223cfa7d1cd,Appliances,7.14,Other,0.703147,184.59,9377,13b1b07d-f7a8-4ee9-b12e-1e5346857ff1,Online,2016,Small,Urban
+30e88a5b-934a-40b0-8f71-2e6d7a05e2e2,Food,2.1,Regular,0.503487,210.26,6110,ef258cd5-783c-4873-b88c-a007773e9552,Fashion Store,2008,Large,Urban
+93c34b8a-be21-46f8-be6a-d1d5a27cf8c3,Appliances,7.14,Other,0.48569,200.93,5121,948e5a0a-0491-4c5c-ae87-6f969ec84976,Electronics Store,1995,Medium,Rural
+1e2f9c4e-6024-4510-834b-8a59c5c4176a,Clothing,0.32,Other,0.667622,321.95,6034,23ff2f98-5b03-4c53-8dda-1747b9bc1b1b,Supermarket,1990,Medium,Rural
+966b9cda-fdf4-41bc-b3a7-2acb94436cdc,Clothing,0.32,Other,0.935132,190.03,3031,4db8352f-1c3f-4972-a437-e194b8572195,Fashion Store,2003,Medium,Urban
+1e581a0b-04b9-40f0-9ca1-040dea30f40c,Electronics,6.8,Other,0.583827,384.84,7701,7a3d4d83-6e92-416d-bb8a-8fac4140c0bf,Supermarket,2006,Large,Rural
+068475a9-02ac-4706-b384-5a6c9655e36d,Electronics,6.8,Other,0.165689,461.08,2004,7338aa8c-fdc6-46f4-8c34-1da10359549f,Electronics Store,2008,Medium,Urban
+218e400a-2c22-441f-b8c0-033b2e589a98,Clothing,0.32,Other,0.755426,399.33,7861,b93f15e9-444d-4b2d-8301-39d9d10bcb7c,Electronics Store,2006,Medium,Urban
+226a2fd7-4319-4d4d-94e8-c2b7c482790b,Electronics,6.8,Other,0.05596,470.23,6287,c2893a22-aa5c-4f51-87b2-b314b6e4dddc,Fashion Store,2011,Small,Rural
+6a317d1e-9457-4d26-85ab-daa1229c9698,Appliances,7.14,Other,0.368702,278.59,354,5d137855-d72a-411e-8f5c-c7aafb49b766,Fashion Store,1993,Large,Urban
+e3e78839-b0b3-4f86-9545-782bc12c707a,Clothing,0.32,Other,0.620312,165.54,4339,fe6d9922-dc8d-41a5-9ab9-90b354f78a6c,Fashion Store,2004,Large,Urban
+39dca344-0717-474a-9660-4a58a7f3a0ff,Food,2.1,Regular,0.433275,464.79,8122,23d0b5ff-e757-490a-8423-61cfb6e84ed1,Supermarket,1993,Medium,Urban
+6a5462b0-1acd-454e-8d78-61acd59ac5e9,Food,2.1,Low Fat,0.134864,384.14,7029,77a69394-51a7-4292-b4f7-8bd096faeeb7,Supermarket,2010,Small,Urban
+1ae87fee-47f1-4b1d-8f0e-fb158ef3787d,Electronics,6.8,Other,0.890374,324.37,3363,778065cc-5901-4759-b2e7-4d81d7a37121,Online,2006,Small,Rural
+2d0cd30c-5779-4502-aa43-c2cbc6764e4d,Food,2.1,Regular,0.449732,99.19,4308,6826341c-4fdf-4c72-b01c-da7839e2abbc,Supermarket,2001,Medium,Urban
+a2f11ee6-5713-402d-bac2-0daf0bbc27fa,Clothing,0.32,Other,0.079319,418.88,1543,1cb0042c-f1a1-498e-ad22-771baf7608b9,Fashion Store,1993,Medium,Urban
+32c030c9-15f2-4678-b168-19969cff39a5,Clothing,0.32,Other,0.350972,60.13,1137,fea112a0-686b-416b-aa33-cdf46d70d842,Supermarket,2003,Medium,Urban
+def8f6a4-7c91-4c7e-a07d-41a18df925fb,Electronics,6.8,Other,0.828069,222.6,231,91a78651-4a7d-4eac-a256-eeb3241ae075,Supermarket,2013,Medium,Rural
+a3576a03-8b3c-41ad-a5ac-ccf241c4ac17,Food,2.1,Regular,0.630305,243.5,2002,59b61b46-7c10-4531-8ffc-d4f250cb3508,Fashion Store,1997,Large,Rural
+7d5414df-4173-4b2f-95d3-6ff1de506454,Clothing,0.32,Other,0.312889,294.85,5777,77c82427-2517-41d6-a5b4-a513e8e3beb3,Electronics Store,1993,Large,Rural
+c491403a-5e61-4df4-add7-71ecc3998ef9,Electronics,6.8,Other,0.024464,468.45,4599,1e661702-f23f-45bf-8f8c-b0ab5fa5ebb7,Supermarket,2018,Medium,Urban
+e2828ecf-949f-4b91-ad6f-34437292c1b2,Electronics,6.8,Other,0.909428,431.73,5633,6e25c4ef-6cb9-40af-a5a9-63ed8a956c71,Online,2020,Small,Rural
+cc13742b-f8ab-4931-a9ac-c02e552054f6,Food,2.1,Regular,0.686241,378.05,7822,c62e3a58-4a2a-492a-8616-e44ef086faf6,Electronics Store,2009,Medium,Rural
+9c77f7ef-6fff-4478-8789-3482ef60e6ac,Electronics,6.8,Other,0.124005,420.84,9688,eb9cc188-24c1-4839-9b10-4654cef8acf0,Supermarket,1990,Small,Rural
+825b2338-50eb-40fb-b698-496d32179faa,Food,2.1,Low Fat,0.422254,472.1,5737,7995a42d-e0d5-4eca-bd0d-7d85f91053f8,Fashion Store,2012,Large,Rural
+6f2547ac-3e57-4d38-abaa-a1e5a191f7a5,Clothing,0.32,Other,0.866604,179.19,4592,9f5479b0-d613-4c7b-bd76-f764a1f01bdb,Online,2006,Small,Rural
+34392004-054e-49eb-a554-1322d97e6edf,Clothing,0.32,Other,0.74027,436.42,9449,8e2113ce-1180-485c-a9d5-0ababd80f0ef,Online,1996,Large,Rural
+fe437acd-2492-43ea-ba4e-e647844b65ce,Food,2.1,Regular,0.984238,152.29,1639,22acd77c-26e2-4d6f-8b01-8ddc8ea72dd9,Fashion Store,2000,Small,Rural
+a47de0b7-8bc1-4245-8cbc-42a4682cdd93,Food,2.1,Low Fat,0.188118,101.59,3029,cedcd87e-8a93-4cb0-b9fd-c734f9965df2,Online,2007,Large,Rural
+5e428755-ab7d-4e53-bef4-ea5b41d7757f,Food,2.1,Low Fat,0.392993,326.75,4870,af3c47cf-ab07-4d7d-923c-8ece6e17a536,Online,2001,Large,Urban
+472cf2ab-261d-46da-a012-3caba15e3f99,Food,2.1,Regular,0.549346,75.04,5950,44a4f765-3919-4abd-8dd8-6ceb882981d7,Supermarket,1999,Small,Urban
+9b34a400-effb-4540-8019-a9a7e96bd7cb,Electronics,6.8,Other,0.730133,95.86,842,18d8755f-c99c-4a30-b26e-48aa8122407d,Online,1997,Medium,Rural
+41c601fe-60df-4c79-bad1-cfaef02d705e,Electronics,6.8,Other,0.320023,475.97,5795,f8916ab0-2910-4ff4-b00e-87930e76d401,Online,2019,Small,Urban
+afbef589-01c0-4a7d-bdfd-056b9a507923,Appliances,7.14,Other,0.485599,342.41,5281,4f6cbda6-b624-4da6-b9c9-bbe9dacd9d83,Electronics Store,1993,Medium,Urban
+9fa83d74-1d15-41da-83d8-56e564af0215,Appliances,7.14,Other,0.890578,446.91,7186,9f227b3a-bfa1-49f1-b13e-fc8412aea962,Supermarket,1997,Medium,Urban
+46b469c6-ae9d-41c5-a557-2dba252b2ae9,Appliances,7.14,Other,0.14982,449.42,3003,99b43e5d-c1ed-4fa1-8acc-17cbd516ab1b,Electronics Store,2006,Small,Urban
+8d27053d-4db7-4652-9b0d-df6e6c21bbb3,Food,2.1,Low Fat,0.047458,452.16,6838,853c4b69-98d5-4399-a10e-a81915a0fa69,Fashion Store,2016,Medium,Urban
+935e1105-0403-4004-8d10-9f11f385f642,Food,2.1,Low Fat,0.46122,255.18,1912,3a2316c1-6637-4bd8-b5b5-05c85a0af0df,Online,2020,Small,Rural
+cfb630f6-4270-498c-a2b9-99bcc07de266,Clothing,0.32,Other,0.447245,218.12,4381,b4e297e8-08d5-4a4f-a69c-37d127ff3930,Electronics Store,1991,Small,Rural
+3e014e39-06d9-4305-941a-3a0a2e565ab6,Food,2.1,Low Fat,0.159207,443.77,476,b477b7cc-3b1d-4d0a-81d8-91361696b9df,Supermarket,2012,Small,Rural
+9ac5f5a7-e18c-4e26-88f2-6eda0f3155b6,Clothing,0.32,Other,0.608746,475.51,2657,df50f34a-7fef-4220-afe6-5e2337dcbe22,Fashion Store,2008,Small,Urban
+0714a9e0-6d72-4e77-9b31-37214f4623fe,Food,2.1,Low Fat,0.845188,165.59,1427,ccfd784f-a1fb-409f-bc55-adc695d8bd21,Online,2010,Medium,Rural
+64709be2-e6e1-4c40-905c-752c0684f196,Food,2.1,Low Fat,0.243618,361.85,2259,83347577-4420-4e0c-bf5d-cf8c06976b0f,Fashion Store,2003,Small,Rural
+9458ea91-a89a-4eb7-b1f4-45f158c6e01d,Clothing,0.32,Other,0.716364,326.07,6528,87359043-5935-48f5-a4af-634e94c55b97,Supermarket,2012,Small,Rural
+8145017a-1964-44e6-b156-2c6cba77885a,Food,2.1,Regular,0.926486,290.59,7729,ab0e485c-fa70-4cdf-ae87-d9d4f4e5cee6,Fashion Store,2004,Medium,Urban
+be95854e-7f28-423a-a156-446102622c18,Clothing,0.32,Other,0.213382,131.67,9167,78415714-5c07-4ebc-90b4-5007b659b457,Fashion Store,2014,Large,Rural
+3018dfef-ea0a-4e6d-85e7-9ba7ee16753d,Food,2.1,Regular,0.727038,136.2,2291,d37d9926-d94f-4165-8f3e-66d576701f95,Supermarket,2006,Large,Urban
+fc024411-425a-41c1-afe8-8ad865b8c961,Clothing,0.32,Other,0.591197,414.25,1690,431ae67a-d381-48ca-b601-03df85c46238,Electronics Store,2012,Large,Rural
+246732ad-afa2-48c2-a30a-5714b5a5bc31,Appliances,7.14,Other,0.90013,389.7,9404,510cca0a-6923-4bbb-b9db-0edb3c6059a4,Fashion Store,2012,Small,Urban
+ad08cd7e-2d37-407b-a4ab-03d2c6ff42cb,Food,2.1,Low Fat,0.382714,182.73,8885,f4661264-b6a4-472c-9a80-671b440b1439,Online,2017,Medium,Rural
+084935ba-c511-496e-ad7c-71c198be62f8,Electronics,6.8,Other,0.647077,254.54,3809,7ea8d665-a551-4033-8595-b75b3a763849,Fashion Store,2008,Small,Rural
+ca3bf2b9-296f-44fc-9156-5034dcf0f7e8,Electronics,6.8,Other,0.444135,451.54,3925,4d1dac4a-3196-4972-85bd-a107eb2ae61c,Online,2020,Large,Urban
+84c38d39-a60c-4718-b315-5c01bda9bdd3,Appliances,7.14,Other,0.111054,359.33,3394,067188e6-e264-48ee-86f8-b52c1bf0ac4e,Online,1997,Large,Urban
+583d70c7-0f5f-437c-a871-b61f98139274,Appliances,7.14,Other,0.526104,140.04,1972,d639757e-bbbf-4e81-bb64-c72a76d10d7b,Online,1997,Medium,Urban
+36ac4064-18ce-480c-bf97-5176aefe145c,Electronics,6.8,Other,0.036322,160.97,2341,fc29d836-d967-4abd-9a46-5d08d1e19843,Fashion Store,2001,Medium,Rural
+1713c469-93a1-43e9-ad69-52fae66f2118,Food,2.1,Regular,0.760955,162.58,4631,ea74eca2-47d2-486e-b099-f572d9e78d2f,Supermarket,2007,Large,Urban
+34319d89-86aa-411f-b966-1ef7b3bf52d8,Food,2.1,Regular,0.551433,403.92,5773,19945f51-6ea2-4e57-9cbc-1df6475e46a0,Supermarket,1999,Small,Rural
+0dfc4f66-15b9-40ae-b0bf-a3d4f9f63ed9,Clothing,0.32,Other,0.00056,311.34,622,17b8bad1-18cb-4931-b33a-583f7254bd38,Supermarket,2007,Medium,Rural
+430ca160-89c9-4852-ad37-d4ccb3b3c992,Food,2.1,Low Fat,0.081401,70.23,4888,120f0b43-ffbd-4b57-be66-ebe96a3b9a58,Electronics Store,2010,Medium,Rural
+0dcada8e-2433-4e41-957f-9ffa4d4051cb,Electronics,6.8,Other,0.898058,64.21,1148,7a126d4d-7a5d-4a78-a93e-f13dbb3d22cd,Fashion Store,2018,Medium,Urban
+ad9a5c03-9441-41c6-a409-71367ceae892,Clothing,0.32,Other,0.207534,67.23,2167,0d762e51-4847-457b-a14b-fdb204b7f0a9,Supermarket,1993,Large,Rural
+cedcb4c9-3a7d-494f-b3a6-5a6cef6ef053,Appliances,7.14,Other,0.991363,226.75,6390,2af711eb-351b-4066-829e-d45a3348578c,Fashion Store,2020,Medium,Rural
+98b2de15-65b9-4699-a281-5fbe137169d8,Appliances,7.14,Other,0.223427,350.88,9465,43950b7c-54cc-4808-a9b5-d8303a314daa,Online,2010,Small,Urban
+ed322642-1bd6-45e8-97ce-bc48d9f71279,Electronics,6.8,Other,0.942139,458.76,9606,f4078fc3-5fa0-46cf-8247-b0ee290b1dda,Fashion Store,1991,Large,Rural
+7cab5f30-4aec-4b65-bbd0-1ecf076e20cb,Appliances,7.14,Other,0.747823,445.08,7291,649a7077-41ee-463e-9464-870a6299afad,Fashion Store,2013,Small,Rural
+ae9e4577-5c0a-41dd-ae26-e78c62ae7109,Clothing,0.32,Other,0.022252,350.83,5916,6e455e03-d03f-4517-9bd7-c93fb2246f1a,Online,2017,Medium,Urban
+fbf3d65b-0535-4779-98b2-2edeb4860149,Appliances,7.14,Other,0.290801,443.53,6514,ea55e8fc-512d-4381-85bf-2189d40dab4b,Fashion Store,1998,Medium,Rural
+5a8b3a01-0a10-48f6-82fe-e871aa270f82,Appliances,7.14,Other,0.064483,475.5,5278,a02d4d24-bf46-4155-b57c-b1eab92e177e,Electronics Store,2000,Medium,Urban
+f1a18714-b2d3-458c-a3ae-68838fec7298,Appliances,7.14,Other,0.99507,64.79,5420,af0a75ea-5f15-48da-a008-657c4af46594,Fashion Store,2016,Large,Urban
+1d91d05a-0fa8-45ea-81e8-98d91ab7ad0d,Clothing,0.32,Other,0.187753,184.71,1790,c8be6145-5d89-431a-9ea0-cb97a1ed09f6,Electronics Store,2010,Large,Urban
+58177441-c47a-47bd-8a64-d70076815d5d,Electronics,6.8,Other,0.972966,184.29,7578,7ea60937-f590-4baa-830a-4441f14a8d2d,Online,2015,Small,Rural
+f028c8a2-d83e-40cf-8d74-6ef468c30be7,Electronics,6.8,Other,0.335822,257.77,6672,7ca09f4a-724d-4c8c-a6bb-62a9a95c072e,Supermarket,2012,Small,Rural
+8753ee38-b9d4-4937-b4e0-df81b999e190,Electronics,6.8,Other,0.886185,237.32,7353,8ef9426c-58c4-4959-8787-6d3c7e36a310,Online,2014,Medium,Rural
+ebcd3a91-1c69-4410-a851-81245972b6e4,Electronics,6.8,Other,0.203825,172.96,3303,477dcd10-a5dd-46c5-8b51-64d6cedeae8f,Fashion Store,2006,Small,Urban
+9d20114c-5745-4804-8048-f0f34e263efe,Food,2.1,Low Fat,0.304972,207.58,3642,92eabf70-5e8f-4101-84e3-a871a01471e1,Online,2019,Large,Urban
+e93dd614-6647-4cc1-aeca-d77198169db0,Clothing,0.32,Other,0.777585,96.24,8245,a56c7418-7549-4ff0-b244-ae931894295a,Supermarket,1990,Large,Urban
+2c85daae-3c77-4f27-8b25-43b40ed972bb,Electronics,6.8,Other,0.294985,247.1,5103,04ac329a-52df-4357-b7f2-065c7f8cd30a,Online,2020,Small,Rural
+e44d3366-1439-461d-b8b3-2b258ee15c04,Electronics,6.8,Other,0.820148,285.8,3842,bc61d231-f4a8-4255-96ca-f535212f9832,Supermarket,1994,Medium,Rural
+1775376b-cf85-4e9d-948c-76681e9eba94,Food,2.1,Low Fat,0.508804,146.57,4084,5716e5e0-1d95-4ec5-a202-24a251675bcb,Fashion Store,1991,Small,Urban
+c87f668c-baec-4c04-989b-d8b9c90b66e4,Appliances,7.14,Other,0.137469,116.95,5064,4abe661e-118c-4ada-937c-14463ba4f1d3,Electronics Store,2010,Small,Rural
+9f71664e-a42a-4d3a-a92f-12ad68f411fb,Clothing,0.32,Other,0.186694,462.08,7896,e34ea5ac-f10e-479e-a2cd-99dde90c3815,Electronics Store,2003,Large,Urban
+a5c8dab8-0f72-434d-ab78-1065639771f2,Food,2.1,Regular,0.484102,413.05,6916,becc3fd3-3813-42bf-939f-f08cb20096db,Supermarket,1999,Large,Urban
+68f81754-eca6-4779-8d67-8417a17f7a3d,Appliances,7.14,Other,0.728051,289.42,433,e5fbd205-6cff-40d9-9566-c11836856e77,Supermarket,2014,Medium,Urban
+e101843d-552a-49f8-9cf9-6bfcc4987724,Clothing,0.32,Other,0.527676,257.47,373,cec95798-5e14-4eae-80dd-1f5b31457cd6,Electronics Store,2013,Small,Rural
+fb13da97-f32e-40f0-bc85-942d6b6ae988,Appliances,7.14,Other,0.284078,187.57,9283,9b8cadda-0dc5-4855-82f2-ad8b2a4f3c6b,Online,1994,Small,Rural
+d31b5334-d0d9-4176-9f6c-d06fca11ab51,Appliances,7.14,Other,0.148304,485.28,2454,c6d79ccd-2b90-42ae-a2d8-0de9b72172ff,Electronics Store,2019,Small,Urban
+e9e09e74-311c-419e-b19a-d02978c88d0c,Clothing,0.32,Other,0.799514,481.53,7744,ba0acc8b-b572-49bf-b7b6-14aeeded4ccf,Online,2011,Large,Rural
+e9640451-f7e4-4039-97df-dcdf26f695a1,Clothing,0.32,Other,0.655114,57.73,8736,7238c99d-58cd-4c07-bbb4-d383bef4e266,Online,2016,Small,Rural
+d4b8ac27-0879-49b7-b573-4daf6ac23bff,Electronics,6.8,Other,0.906119,192.1,3563,dc23b784-263f-44bf-99c1-8d2c36f7568e,Supermarket,2008,Medium,Rural
+155a87ab-1171-4640-952d-b8a687c65eb8,Appliances,7.14,Other,0.389968,371.41,9143,545437cc-5bd9-4a84-a99c-ad515b46f9f7,Electronics Store,2002,Large,Rural
+84399c87-ad41-401d-b0f7-08eafc4ece17,Electronics,6.8,Other,0.458085,316.21,7097,46faaf38-aed6-49f2-9786-4dab80e45858,Electronics Store,2018,Small,Urban
+7f9e89c7-2dfe-494c-b436-5d0624f5a28b,Appliances,7.14,Other,0.967669,76.66,1980,40019939-347e-404e-acdd-a1affabeb6c1,Online,2018,Medium,Rural
+bf0e2d31-3fea-40df-bf29-3383c91f9f9c,Food,2.1,Low Fat,0.849918,250.97,2125,74c508b9-8227-42d9-9598-123ac924a1c4,Supermarket,1995,Large,Urban
+7c0beb5b-9a39-453b-8fff-770efed8c9ea,Appliances,7.14,Other,0.755482,277.07,6133,45322c5b-84ce-4e63-ac14-c3e00f71fd30,Electronics Store,1992,Large,Urban
+dbd4ebdb-9fac-454c-84e0-45ebc852be38,Electronics,6.8,Other,0.636975,482.53,3990,6a4fd390-1636-4ee7-b201-3e05701fbb49,Supermarket,1992,Medium,Rural
+4fc43e83-9ec2-449d-9631-8f6b7a792a6e,Food,2.1,Low Fat,0.355002,469.91,4704,c9af4ced-def4-4602-85ef-6c99c0bb6f3a,Supermarket,1992,Small,Urban
+a6d27183-2e6b-4a5e-9d90-88d183b6bad4,Food,2.1,Regular,0.173859,125.83,7544,dffc1936-faa8-4b83-8bcc-0b91cc7959b0,Online,2013,Large,Urban
+9599990a-4e45-4db5-acdd-98183b52d7a8,Food,2.1,Low Fat,0.335594,103.35,4703,4e56c8d7-4152-4ec0-bb7a-551e02c23ee5,Electronics Store,2014,Medium,Urban
+36bb73b5-53ab-4a8f-aa92-7aea55fd504c,Electronics,6.8,Other,0.080492,195.81,9305,436b5fe7-e957-41d5-bf4c-3ca1c782f5dd,Supermarket,2009,Small,Urban
+a7aeaa56-f081-4d00-a708-6dd70c338403,Clothing,0.32,Other,0.506057,295.35,8168,9c369262-c1d6-47a7-a7df-cffe044c1570,Online,1993,Medium,Rural
+4e07aadc-57f7-4a81-9f7b-1dc5ec461474,Electronics,6.8,Other,0.362114,440.79,6927,a6b1a68b-663d-4203-bd4b-85c0713bd4d2,Online,2010,Medium,Urban
+866d9f04-1f06-42ea-8ff8-8295ea43b4fd,Appliances,7.14,Other,0.639434,437.02,2086,cdb3db4a-ad60-4f4d-b931-0582f76a4feb,Supermarket,2006,Small,Urban
+1e817109-a7a9-4d72-abaf-ba30796d52fc,Food,2.1,Regular,0.898635,281.85,9760,e1510b59-185f-487e-99fd-005c0b38a785,Supermarket,2004,Medium,Urban
+9e181969-7d73-43e4-bbb2-9d113bcdb3fd,Clothing,0.32,Other,0.256919,483.6,6411,5e16e1f3-9403-4a60-8f3e-8ae941484984,Online,2001,Large,Urban
+88d5a876-afa5-45e6-8ecf-1c044c2e54bb,Clothing,0.32,Other,0.954116,479.6,2659,e0046386-6dd4-4359-8007-c66c2d310edf,Electronics Store,2015,Large,Urban
+bba31f25-1400-415f-9a65-6d9eeacd9d30,Food,2.1,Low Fat,0.304917,389.66,6010,4fa25114-a1db-4d61-bd3a-e6bfcf83692e,Online,1998,Large,Rural
+0da0ca50-25ca-4dc6-8bfa-45d254ec8db9,Appliances,7.14,Other,0.660356,426.54,553,e3cb502c-c709-46d0-b9dc-0c48598f0404,Online,2006,Large,Urban
+da5164e2-0c21-4f46-962a-1f6c2831155d,Appliances,7.14,Other,0.90287,481.73,6433,87f2a4a1-3b6c-4901-ad65-d27135b78e92,Supermarket,2017,Medium,Rural
+9deda813-9818-4b07-a5b5-cd3ada9435ab,Clothing,0.32,Other,0.67594,429.13,9917,a42799d7-ad1a-48f2-afca-c17f5ff47d95,Online,2018,Large,Rural
+811c8143-f6d5-40ec-aaab-eee12554f1e2,Appliances,7.14,Other,0.623953,298.44,5689,92110db5-ceac-4195-a9c3-930af1c33893,Online,2008,Large,Rural
+d6c1691c-0259-4cb8-b612-afd1931491ea,Electronics,6.8,Other,0.712872,133.61,2852,ccda32fb-aa02-4de9-a09d-67e6adfe8df9,Supermarket,1992,Large,Rural
+57d0ca6e-5240-4c11-98a3-24c13197702e,Appliances,7.14,Other,0.23874,472.49,9204,dc4a52c3-ab17-498f-bcf6-6711b3ce3375,Electronics Store,2007,Small,Urban
+2b282a75-d36a-483f-80fb-a79a43751078,Clothing,0.32,Other,0.438411,411.38,2440,803acfe7-7f6c-4971-9d7d-89616ccad89b,Online,2005,Medium,Rural
+93e232cb-6994-45a9-ae56-9049a827f9c0,Food,2.1,Regular,0.328974,359.28,7292,d875b5b7-2750-4b77-afe6-089d5c917365,Electronics Store,1995,Small,Rural
+c932beb2-05c9-4230-8d11-b91858da5bb6,Appliances,7.14,Other,0.611494,136.66,5937,ecea7456-cdba-4eb8-815f-0e584ff1a31e,Electronics Store,2020,Small,Rural
+a4c92609-5059-4876-9fda-a29716097fab,Food,2.1,Low Fat,0.116998,361.74,1347,d6e62d1e-bee7-4dd5-adcd-3790e5b1981f,Electronics Store,2004,Small,Rural
+47436c71-89a0-477f-82db-2a0a448c6044,Appliances,7.14,Other,0.572598,408.68,7999,441c0a65-f1c0-4958-856d-724f7ee580b8,Online,1999,Small,Urban
+b5f4c5c0-221f-4497-8bb8-1f0e45d001e7,Appliances,7.14,Other,0.41835,73.72,1303,0782597b-c7e7-4a2c-aaee-6801b1765459,Online,1996,Large,Rural
+3e32276b-c6d4-4a2e-8289-8bfb0c916ea8,Appliances,7.14,Other,0.271855,492.52,181,7b9e5751-78d4-4473-a368-71ba35e87fc0,Supermarket,2017,Large,Rural
+4ff114e8-4b4b-4106-b987-be736f378231,Appliances,7.14,Other,0.501214,98.64,510,58061efd-33fe-4367-ae91-bda77dcf6798,Electronics Store,2014,Small,Rural
+81b61063-ff6c-4a1d-aa3a-1923aeb7ed68,Electronics,6.8,Other,0.053414,459.28,6799,9361100a-6667-487f-9a76-7a73ceebc31e,Fashion Store,2016,Small,Urban
+124eb155-49b2-41e7-90d6-686d68de95e4,Appliances,7.14,Other,0.670727,178.85,9480,a91cc341-bf57-4782-bf85-b708ab23ea4b,Supermarket,2019,Medium,Urban
+b8e2db72-7bc8-4bb0-ae9e-fd212c2bcfb3,Appliances,7.14,Other,0.18754,220.86,6759,460355c7-42a6-4908-bccc-94753e915a44,Fashion Store,2016,Large,Urban
+cc5f9b47-1cd8-46c9-8a84-a333aa3d3310,Food,2.1,Regular,0.777221,491.28,1243,761e49cf-d6ff-4d4f-b7d1-620ea83b8a7c,Electronics Store,2002,Medium,Urban
+699ea11a-beb3-409e-be18-d58e305c7c53,Appliances,7.14,Other,0.667293,152.85,9616,d55bc376-ec6a-4991-879e-eb7188dbd38e,Supermarket,2006,Medium,Rural
+51b09cf4-5c7b-401f-b340-9c925ec7d38b,Clothing,0.32,Other,0.705027,130.83,9203,743cbff6-0306-4fba-8d60-fea0df8a0e22,Fashion Store,2020,Medium,Urban
+5ce85457-cc4d-4dc2-b363-83592710106f,Appliances,7.14,Other,0.925783,375.08,799,fbffcb31-c317-41ba-97fe-07a38d490f43,Supermarket,2016,Medium,Rural
+b77591c6-0eda-4295-b184-9ab39dafb565,Food,2.1,Regular,0.494488,108.4,3317,85ee02b3-929d-48ad-8b67-6ab2a5343945,Electronics Store,2006,Medium,Urban
+f4c83c3d-3322-4a73-97ab-8be43a991d29,Clothing,0.32,Other,0.191988,66.2,7978,814ebda5-a19f-4154-9083-9366b9d4daf1,Supermarket,2013,Large,Urban
+d411e082-efd6-4c40-b469-f005f46085fa,Clothing,0.32,Other,0.185083,91.13,8946,bcba9803-8dd0-432d-8297-378c050e481c,Supermarket,2008,Large,Urban
+4354f0e2-6df7-4056-97bf-9f3ed10563a4,Electronics,6.8,Other,0.385377,291.75,7573,019d6314-e5d7-47e1-99de-0714008fc631,Electronics Store,1994,Large,Urban
+b553dcb4-b5f8-485e-b9b7-2dd8c6282421,Appliances,7.14,Other,0.093211,326.92,4041,f4d523d2-c1bf-47b1-ac4d-ee1cfc5e8cd3,Fashion Store,1994,Small,Urban
+063769a9-50a4-4031-b52c-edbd2a9ced41,Appliances,7.14,Other,0.359043,439.41,9767,5aec9fa9-8df4-47a0-b93a-127a5852782f,Online,2001,Small,Rural
+b6d1021c-0c1c-4116-aebb-250b570ef237,Clothing,0.32,Other,0.791913,122.4,4928,ce9bfbb3-0cf4-442f-a7a8-28b103810704,Supermarket,2002,Small,Urban
+5a86d858-c3b3-4b12-ae13-8b89a170c07a,Clothing,0.32,Other,0.447811,165.43,3608,62c52384-49ea-4f91-af5e-b05c8a1da1ce,Supermarket,1997,Small,Urban
+8185f3ef-9eac-4870-8552-41efced277ff,Food,2.1,Low Fat,0.609283,410.76,9172,19932aa4-3df2-4f55-8729-278c4b0b0e1c,Supermarket,1995,Small,Urban
+89cb01de-1d34-4201-a282-326ae3f39b1d,Appliances,7.14,Other,0.207897,446.97,8946,d0bfae83-2e58-431e-8d45-7d45c1ad7f4d,Supermarket,2006,Medium,Rural
+c41f9a78-64da-4d5f-b415-091e27fe1760,Clothing,0.32,Other,0.096572,240.09,4412,f03e2b38-9fad-4f4b-a91d-99e0385d0e2c,Online,1998,Medium,Rural
+4451e8b0-8cc2-4dba-80d9-7de3fa4ffbba,Electronics,6.8,Other,0.455061,134.7,5939,135472de-29f1-4156-ae25-a9db723f242a,Fashion Store,1999,Small,Urban
+426414fd-af4e-4168-9e28-d70bfaff4b7c,Clothing,0.32,Other,0.414304,382.29,7145,5765fddd-fe64-4828-83c8-53aa3f71520b,Fashion Store,2009,Small,Rural
+2c34e3bb-4ebd-4622-880b-6e3a32e3b29b,Food,2.1,Regular,0.789696,97.4,1853,272f8c29-015b-4c2c-beed-944a7a9ba025,Electronics Store,2008,Large,Urban
+3181e52c-eaf7-4f1a-883a-f06a5d5c8174,Food,2.1,Low Fat,0.684527,269.79,5179,983dc38f-84ae-4bb0-98aa-4dfcfd804143,Online,2002,Large,Urban
+fe791c12-73fc-4bd8-9fee-697e43520f6d,Clothing,0.32,Other,0.616414,484.58,8275,124ce820-4ef9-4fa8-a29f-5987325fdb02,Electronics Store,1991,Medium,Urban
+e8672539-3b0b-42c6-be72-04e568ef4b76,Food,2.1,Low Fat,0.924819,283.91,693,42e76ab7-a08f-4151-92ea-2456bb64f194,Electronics Store,1999,Small,Rural
+193f7d45-30cc-4907-b978-32281e622b82,Appliances,7.14,Other,0.888108,93.28,9667,3db9b763-fe49-4347-bbc1-55cb2f626dde,Fashion Store,2017,Medium,Rural
+75d87c3f-0e2c-4331-8b19-db1e4f46e86b,Food,2.1,Low Fat,0.476121,328.96,9315,5dc83f07-673c-4f6c-95a0-c2735d0949b8,Supermarket,2005,Small,Rural
+45e32f20-67ea-4496-a608-aacb0da141e6,Appliances,7.14,Other,0.767473,418.93,5581,4221dfe2-41b2-4ad6-9e31-ce587845133e,Fashion Store,2009,Large,Urban
+6b7f87ec-0223-4f21-ad10-c20268de37c6,Food,2.1,Regular,0.815551,367.79,3502,4fb2d639-d176-427c-a2a3-254048b8c1e3,Online,2012,Large,Rural
+a3efcb41-619c-40b9-bdac-a62b6520748e,Clothing,0.32,Other,0.128343,182.3,9228,2cf8f3f8-548f-4eab-a062-5270cb4f1bff,Fashion Store,2003,Medium,Urban
+71f12c1a-9aea-4575-bd6f-209423f63a87,Electronics,6.8,Other,0.11491,417.2,4500,dca06dd0-227e-45e8-b2d1-b2f01a40868b,Online,1998,Medium,Rural
+f42877f4-6ea9-4913-aa4a-7cade2763821,Food,2.1,Low Fat,0.729526,65.28,8461,9fb40e51-0bfa-43dd-aaa8-b85c7e75b77c,Supermarket,2001,Large,Urban
+7cfc043c-543a-4cb1-8f65-863433c2162e,Appliances,7.14,Other,0.238823,62.49,7624,effff0f6-32ba-4b59-90ff-b3d09febe8a0,Fashion Store,2006,Small,Urban
+8c7506ab-368f-43e9-997a-0504fd7aeddd,Clothing,0.32,Other,0.616889,301.74,2900,00c0345b-f6ae-4efa-b8b3-4786be44b434,Fashion Store,2000,Small,Urban
+33daa2b3-34a3-49e5-9c72-be76cd21b77f,Clothing,0.32,Other,0.89105,346.83,903,b1efcc7d-51db-47c6-ba97-b0752b95066f,Supermarket,1993,Large,Rural
+ef5b8900-802f-4bf5-ab7e-4c700e68d6d5,Food,2.1,Low Fat,0.938809,233.49,4013,ce891824-2392-4e11-9e8a-2a83fdbf0877,Fashion Store,2002,Medium,Rural
+bb139dff-e959-42ab-91c0-1d0f32a8117b,Clothing,0.32,Other,0.840015,88.85,5744,028d22f2-fff0-407a-9ed1-4ce858a73c31,Electronics Store,2012,Large,Rural
+9e5b2219-c129-4759-b4df-37ca83fec4b8,Food,2.1,Low Fat,0.316866,265.97,7471,e5279b57-b875-4b09-93e2-ce931dff4aa9,Electronics Store,2005,Medium,Urban
+6c5345a2-4812-4432-8e33-db694a86a221,Electronics,6.8,Other,0.517559,393.1,6682,2398e093-78fa-4da0-98b9-57ce856c3501,Online,1999,Large,Rural
+28ce497d-456e-423f-8b51-04956af39066,Appliances,7.14,Other,0.685625,469.78,6547,cb8b25bb-f59b-4b67-8878-04d28a2fec24,Fashion Store,2002,Small,Rural
+1b5e7a91-2639-4398-8e6d-5c4e2a04227f,Food,2.1,Low Fat,0.57346,424.52,5772,9da6f055-cfaa-4773-83a0-7a1cb20f208a,Supermarket,2015,Large,Urban
+a82cdccf-7ceb-4fe8-97c5-c54e8e88b9c3,Clothing,0.32,Other,0.255192,418.49,8392,ac4666ab-28bb-4e3e-ba9f-0b85be37bd1b,Electronics Store,2006,Medium,Urban
+6e4a90ac-2c53-4178-b8bf-602bf0b35bb0,Food,2.1,Low Fat,0.020545,458.41,9301,ee57c411-227a-48ea-8844-bc55b3d6fce6,Electronics Store,2020,Small,Rural
+74e35262-9b61-4d6d-ae85-066ee85e7283,Food,2.1,Low Fat,0.42102,418.7,7753,6885d58b-f47e-4a3a-a56a-3636e40a571d,Fashion Store,2018,Large,Urban
+62059e91-573b-44cb-b501-4742fbed9baa,Electronics,6.8,Other,0.604096,379.03,2914,7895d3ad-1740-4ce2-b391-1ad3616b1f8e,Supermarket,2007,Small,Rural
+e8284f31-8add-4838-b4f5-92f16d0f4ae2,Food,2.1,Regular,0.716038,60.16,1541,877925f6-31f1-4bdd-b1f2-6ec81783534b,Electronics Store,2015,Small,Rural
+43d23c46-7b0f-4b6b-830f-ebe22910d0c4,Appliances,7.14,Other,0.919763,71.7,9170,bce54e65-75f8-4d01-9ebb-cbddc023fe6d,Fashion Store,2019,Medium,Urban
+3965df60-fe58-4465-b99b-6352d5cfff24,Food,2.1,Regular,0.545354,139.18,9406,2cc1a938-c546-4cfa-9dd4-be2e1016c17e,Fashion Store,1991,Large,Rural
+f9a775b9-e8eb-4546-98e3-2c556927dae4,Clothing,0.32,Other,0.119121,409.48,7147,96789482-90fd-403e-81f4-407fe183c6fa,Fashion Store,2019,Small,Urban
+cc045c1b-17ec-4632-b878-7000c0c1198a,Electronics,6.8,Other,0.035043,127.8,3059,3a29dd1b-fc0d-4c3f-8027-75678285a575,Supermarket,2002,Small,Urban
+53770a00-df40-4122-9e60-0e3bc4a15755,Electronics,6.8,Other,0.837434,499.8,4472,125e2dd0-35b7-4cfd-acf1-b13a03d5fe94,Fashion Store,1999,Medium,Urban
+d5c1224f-66d9-4486-8867-f319a524f4fb,Appliances,7.14,Other,0.446546,486.1,7539,309960d4-2223-41c0-a77b-93d1982f3e20,Supermarket,1999,Large,Urban
+45cb5300-8172-47ca-bfc8-177ea04b2243,Electronics,6.8,Other,0.511315,250.68,5933,49ee8220-2321-4ca3-8dea-0cd632f4a7bf,Electronics Store,2012,Small,Urban
+808c8e1e-ce76-4e84-b010-b5e5f071cf10,Food,2.1,Regular,0.71211,453.46,6915,526ad4e4-b06d-4619-b6b2-30e49c59bb62,Fashion Store,2008,Small,Urban
+221bccff-2a1d-48b3-8ab9-d6ad510d6682,Food,2.1,Regular,0.905202,250.42,1470,5b64297f-99e4-49f3-a19c-888b6d93e184,Fashion Store,1998,Medium,Rural
+4d69184a-77f1-411b-8080-5f6136f02d74,Clothing,0.32,Other,0.050838,62.26,2457,8b5b1e47-2937-4331-9309-ee331ba4d991,Supermarket,2014,Medium,Rural
+82bff27d-b459-4003-a8ab-1e82dc2e4688,Food,2.1,Low Fat,0.583549,140.37,8047,85023cd4-66a6-49bb-9982-56cad5986c89,Electronics Store,2008,Large,Urban
+e9dbcda7-ce21-4d90-b910-b61724332d43,Electronics,6.8,Other,0.400076,379.24,8540,96387bac-5a4a-4abf-8532-d11ba9d12344,Supermarket,2013,Large,Rural
+fa883e29-8da2-4730-82e7-53a1557c8d34,Electronics,6.8,Other,0.165943,285.93,7005,206733b9-218c-4e3b-93d5-a8532c20d783,Online,1995,Small,Rural
+de64f66b-5a1c-4591-b622-72419d2df58b,Electronics,6.8,Other,0.615246,242.73,6305,ef78b800-440b-45af-be94-79dae5ae53d4,Electronics Store,2015,Small,Urban
+04fb0eb8-57cd-46c0-921e-d2b87224be0a,Food,2.1,Low Fat,0.448139,362.84,9565,b72e4d02-bb49-4d0b-9497-3bd0498e4be9,Fashion Store,1999,Small,Urban
+21012def-e98f-427e-84c5-0dc357e47ebb,Appliances,7.14,Other,0.608653,478.8,5907,1ac90210-07c4-4c81-95a5-111e8cd49bbe,Online,2006,Medium,Urban
+ec7d330a-2730-4e59-b63e-31cb3ce76a2d,Clothing,0.32,Other,0.835321,280.05,5054,90b9b235-0f24-4b37-a3b7-16d9e79170d4,Supermarket,2009,Small,Urban
+ae9c38e1-5360-4476-9142-a92719176a8e,Clothing,0.32,Other,0.23959,496.9,2202,1d067611-87b5-4a71-b7de-331f474b5842,Supermarket,2018,Large,Urban
+9b82a7d6-60f1-4a1c-8468-a549c5641d72,Electronics,6.8,Other,0.644646,149.59,9715,8c14b095-abf8-40f2-9159-1be05a54e21b,Electronics Store,1997,Medium,Rural
+5e7f9662-8efc-4c3b-a780-993ce22ac409,Appliances,7.14,Other,0.23576,183.23,7607,a4f99f00-85ce-405a-84e1-69225c64293b,Fashion Store,1995,Large,Rural
+2890269b-78cd-4ddf-92a9-fb50cf0ccd5b,Appliances,7.14,Other,0.176159,323.92,3156,8c6f7746-541f-4c5f-b7f8-d4a539bb721f,Online,2015,Small,Urban
+c213976a-9444-42d0-81fc-9d2101917b26,Electronics,6.8,Other,0.364959,472.46,2217,06dabe82-d09f-4fcf-97c1-ff072c27414e,Supermarket,1999,Small,Rural
+e69a5ea0-6424-4fd2-9b40-5774f0521d74,Appliances,7.14,Other,0.147156,235.16,2764,ed63d14f-bb40-4a4e-890a-3ccbce62e470,Electronics Store,1998,Medium,Rural
+53aefc49-987a-433d-9eed-ecb50683c277,Food,2.1,Regular,0.006767,327.91,5536,b536313e-1b77-44f6-aafd-dcd0312ef61d,Online,2015,Small,Rural
+3338d058-497f-41e1-94a1-25380366a4cf,Food,2.1,Low Fat,0.736837,99.07,2889,2fd287bc-ca4c-4a4c-9118-bf0fe1575b47,Fashion Store,1990,Small,Rural
+953c9106-e4ae-4b30-967c-7ad960a82cbc,Clothing,0.32,Other,0.151197,452.35,4789,5e81c01b-aafb-4f19-ba9f-a6c7f75cda87,Supermarket,1994,Small,Rural
+ff32cdb4-b3a8-4499-b9a7-ffaa2149ca99,Appliances,7.14,Other,0.21722,287.98,5362,c033a451-2c67-445c-b244-b94c49ecdd82,Electronics Store,1990,Medium,Rural
+8eaf92fb-84d3-4743-9d73-6a068fa918ba,Clothing,0.32,Other,0.208341,205.86,4438,c28df35c-72ce-473e-81ef-e99f5d16eb07,Fashion Store,1992,Large,Urban
+c12393f8-dddc-4d4b-84ff-58ae46a779ed,Clothing,0.32,Other,0.570678,266.42,1768,ebbb60b1-ac42-4231-844a-89c55b8b5b72,Online,2020,Large,Urban
+2210b85a-22fe-4f73-b5f2-cf0185f6a819,Appliances,7.14,Other,0.069563,147.31,2952,8c0d3fb8-cfb6-42ac-8727-95e78ca74fde,Supermarket,1995,Small,Urban
+3f0ff26c-af2c-40dd-b648-8778c53ad6e5,Electronics,6.8,Other,0.672478,252.96,1034,8fe00aa4-0407-4715-b3af-0b3d5378336e,Fashion Store,1994,Large,Rural
+c7590db1-e01d-41e1-86e9-acb64686d84f,Clothing,0.32,Other,0.006753,258.78,6747,0e81378a-5324-4288-adf5-f4174ade3819,Fashion Store,2007,Medium,Rural
+29b4c8a5-554b-4500-a525-de9f3f008e27,Food,2.1,Regular,0.793156,352.67,4263,59171a06-26cb-4e11-8186-701675cf0a58,Fashion Store,2005,Large,Rural
+5cd81bd6-5c44-47d1-bb48-7421ac4dc983,Electronics,6.8,Other,0.884251,371.32,884,c08e3b21-dc0d-4ed5-b83b-824d80200bb6,Supermarket,2013,Large,Rural
+f50ad792-5c6f-408a-b91a-be0b4686a182,Food,2.1,Low Fat,0.737572,337.54,2207,277d4cc1-55a9-4752-bcb1-f41829970b94,Online,1994,Small,Urban
+7986ead4-ccf8-4c09-8e2a-b089c7f3a9da,Food,2.1,Regular,0.166871,187.43,5092,44b7911f-45db-49e1-bb20-ba08701d91c5,Electronics Store,1998,Medium,Urban
+c3fc8e87-e4eb-496c-b9cb-f406b233d0c4,Clothing,0.32,Other,0.977134,299.62,4789,4a331407-c184-4e3c-a173-c759dba8fcdd,Supermarket,2007,Small,Rural
+cb1986d2-4a14-4ddd-8dfc-e2a5dc352fac,Appliances,7.14,Other,0.543191,120.73,9477,4aacf607-97eb-48b3-aa8b-4a892d883ce8,Supermarket,2019,Medium,Rural
+82513df7-f195-40b8-af82-e95c88567d0c,Clothing,0.32,Other,0.260483,181.5,9313,cce5fb8a-eead-4445-960c-bbebea82d9bd,Fashion Store,1996,Medium,Urban
+0116430b-427f-45fd-9696-6e9f87b9fec4,Food,2.1,Low Fat,0.7212,60.06,7820,a3efe94c-e4ed-458d-b5e0-4b569cf56e09,Electronics Store,2007,Small,Rural
+01ee9014-6a6b-4b3c-a7f7-9581183364fb,Clothing,0.32,Other,0.175803,464.15,7526,4405058d-5ac7-47de-b739-a25aba012424,Fashion Store,2002,Small,Rural
+9ec6ae33-ed5a-41b1-bde9-d6bf467486f5,Food,2.1,Regular,0.455776,278.6,8259,205bd311-8c83-44e0-be15-1cca908ac1c8,Supermarket,2000,Small,Urban
+0964f1b5-19a6-4bbd-aaf2-0dc29a5016ed,Electronics,6.8,Other,0.621422,211.27,7481,0835a935-4b88-4afb-8e39-c4d1415ae0f4,Supermarket,1992,Small,Urban
+025f8c5c-9be9-4be8-94c7-4ef4bf510d40,Clothing,0.32,Other,0.352491,150.29,8575,d8a0ccb6-ac1c-4698-bb74-51c33df25bff,Fashion Store,2017,Large,Urban
+23514522-f4e8-4968-8fb7-6144b8d3d6d9,Food,2.1,Regular,0.134283,348.41,6221,a901bc4a-9a74-483b-9f9d-eb542471ae1f,Fashion Store,2017,Medium,Urban
+836f8284-b7a6-43a9-b36a-da28aefb8538,Food,2.1,Low Fat,0.541747,276.76,3577,b5d6bf56-7784-4eae-af28-3103dcc77415,Electronics Store,2004,Small,Rural
+800a2392-d6c3-4e7d-a400-8a9dcfbf465c,Food,2.1,Low Fat,0.736784,396.01,471,c19fb97a-2960-4a24-b548-4532c07f1568,Supermarket,2014,Large,Urban
+f78ba5cc-d256-4970-b2fe-cecc1b763564,Appliances,7.14,Other,0.012637,482.83,2045,b6c50176-eb9d-4e89-98fb-8f8f19e59ba0,Supermarket,1992,Small,Rural
+f476786a-bce5-4409-8349-8f9fa12b9984,Food,2.1,Low Fat,0.922646,324.44,5743,d05d149f-71eb-46a5-adb4-f0d5fd745a04,Supermarket,2016,Medium,Rural
+af8b6bfa-e533-45c7-b0a4-6ed7124be82c,Food,2.1,Regular,0.414393,96.71,8006,78375ec5-b9d7-4dcd-a5d5-87b9e9492506,Fashion Store,2015,Small,Rural
+fa28b337-032a-4781-a172-41c09b0097b3,Electronics,6.8,Other,0.639841,125.21,9902,13ed59c7-c1cf-4467-aff0-f177d287ed16,Fashion Store,2009,Medium,Urban
+1ba88566-88df-48bb-896c-2c493251c9b7,Food,2.1,Low Fat,0.665693,124.09,1622,0736c4f3-1444-4676-bac0-6686e09b1e81,Fashion Store,1991,Large,Urban
+a5a97657-f19a-4e6e-9f0e-0c758ff19593,Appliances,7.14,Other,0.985508,125.27,244,9b4b6758-54b9-4cba-a9f6-3312c8ce9ac6,Supermarket,2018,Small,Rural
+3ab830f0-b18f-49f0-953b-e617f11ce85b,Electronics,6.8,Other,0.136937,106.62,9879,0a8a8623-c5ec-4a0a-b0cd-5c958f04d53f,Supermarket,2016,Medium,Urban
+c2c3e5aa-4ce5-446d-9cee-94c68233d0de,Appliances,7.14,Other,0.251509,435.88,2969,caebbedf-a2bb-4d5f-928e-1814f215a52d,Fashion Store,2012,Small,Rural
+1b844672-d03e-4094-a8c0-6f262f00881f,Electronics,6.8,Other,0.793542,399.85,319,05e824de-99d7-4dbc-a6d0-5c48d5ac80a1,Electronics Store,1990,Small,Urban
+0ea1a043-823c-44e0-824f-4955fadf63e6,Electronics,6.8,Other,0.306809,477.65,5777,ca7c6d82-6f83-44d7-8dfa-74322633416b,Fashion Store,2019,Large,Urban
+640977ac-a461-4b0b-a58e-ca9167b18a80,Electronics,6.8,Other,0.897127,205.66,4345,2a5da274-b4f7-40a5-98dd-62d1f8cbc85b,Fashion Store,2019,Small,Rural
+67d86da0-91e1-4827-b65b-bd4320a534eb,Food,2.1,Low Fat,0.520171,59.36,4613,6a5e68a9-7863-4f84-95e2-95ff9b634636,Fashion Store,2002,Large,Urban
+f360cf28-b997-4c15-8f79-ea7c750cfe38,Appliances,7.14,Other,0.691541,372.75,9959,5c177713-22a4-4eb2-820a-38b900f624db,Fashion Store,2011,Large,Urban
+f64584d0-715f-4f6d-8630-5d10da9111a4,Appliances,7.14,Other,0.814846,304.31,794,223c58c7-20f0-4d5e-b470-de1ecece1a91,Online,1998,Medium,Rural
+3461321e-3224-4d97-875a-679a29e583e7,Food,2.1,Regular,0.094625,152.52,2581,3980f52a-6578-4d14-9189-916623e3773f,Fashion Store,2012,Small,Urban
+9cdaf3d8-d6a0-4a50-8e26-47316b6778bd,Food,2.1,Low Fat,0.156256,347.15,6769,98110aab-d57c-4ef3-9120-adeb775143bb,Fashion Store,2018,Large,Rural
+7ec34ba6-9706-4820-bdf1-5058ca59e77d,Clothing,0.32,Other,0.696152,111.74,2776,5b947681-4f6b-4eb1-b3d5-339379bc3cde,Online,1995,Small,Urban
+15304a29-b004-443b-a7b6-5d2c240ce33c,Appliances,7.14,Other,0.976811,449.16,4291,cf5a4529-2936-44b8-954b-433f8fe2b6f2,Electronics Store,2014,Small,Rural
+a71435f6-6174-418d-bf86-b350ae9554c4,Food,2.1,Low Fat,0.224252,206.25,7416,b1fa2166-1a29-406b-b450-aaed1d4f12dc,Electronics Store,1992,Small,Urban
+cceecae7-fa65-491e-9a1b-b0e99850720a,Electronics,6.8,Other,0.197861,441.17,7713,04d7f94f-2bc0-4359-bbc4-aff4c45f30c3,Supermarket,2019,Medium,Urban
+d7e2355e-7d9d-4b3f-9545-42c08fdd6a41,Clothing,0.32,Other,0.080532,104.11,5857,4010d6d1-5d29-4047-891b-511e744928f8,Electronics Store,1995,Medium,Urban
+417936ec-2b05-4b62-9c46-aa99fdc0fd68,Appliances,7.14,Other,0.428484,277.36,3357,b8176742-3f23-4f86-9447-afbd42886c70,Electronics Store,2007,Medium,Rural
+4efb82f4-d65e-4755-a2b8-13c124f92694,Clothing,0.32,Other,0.567179,297.21,9749,54ce5dd0-a2b0-45a1-bcd2-0710226561e0,Fashion Store,2002,Small,Rural
+fc35c490-7b0a-4257-b477-4446ca0821b6,Electronics,6.8,Other,0.557323,302.42,7030,c46ae51c-4b8f-4875-981e-cf9c5c113dc3,Electronics Store,2008,Medium,Urban
+4102090a-cc1c-4d51-b031-71ee1f8163df,Clothing,0.32,Other,0.156317,78.59,9646,7d8f621f-7299-4ac8-9d23-5c53f1c27dd3,Electronics Store,2004,Large,Rural
+22465638-95d4-4048-98c8-4e6f06758429,Electronics,6.8,Other,0.282943,86.22,7711,e80fe870-db37-4da5-8891-987a09487081,Online,2018,Large,Rural
+dea2a0ac-4681-4881-b8ed-0474d8b5fa48,Appliances,7.14,Other,0.726729,104.54,1946,f5ac7dc8-5e3d-4ac4-ad7f-4b1743ed2c18,Electronics Store,1996,Medium,Urban
+97b01c96-301c-463b-a33e-a7b6df735e5e,Appliances,7.14,Other,0.653007,464.41,7370,5a60e7ec-3735-45d6-b3f4-8f435801c3bf,Fashion Store,2014,Large,Rural
+f5b41c1b-d138-4e7e-93c7-e4176df64173,Food,2.1,Regular,0.490854,214.78,524,51272f78-248b-4e59-85c0-3647b4c0a1f5,Online,2001,Medium,Rural
+7d23586c-c4e3-4af7-9006-a4e40fbec296,Clothing,0.32,Other,0.230987,413.53,5377,6c439ed9-693e-49fc-9013-9f2d484bf6cd,Supermarket,1994,Small,Rural
+98726937-a39a-4b7a-bbc6-40a9404aa805,Appliances,7.14,Other,0.408811,204.42,2673,bacb7ca6-47a0-4ead-ad54-c9075af06018,Fashion Store,2003,Medium,Urban
+60ba772f-6ebf-44f7-8e57-0fb0b6f816a2,Clothing,0.32,Other,0.155451,487.36,6140,0a18de93-fcd8-426c-b893-2c905bc1ad95,Electronics Store,1993,Medium,Urban
+fc21311f-697b-43be-9f85-92ccfe35cbd5,Food,2.1,Low Fat,0.026288,205.92,1029,9299eb17-ee7f-4c5e-99a6-a2f0846fe22d,Online,2020,Large,Urban
+b7fe405d-9143-4086-8086-61f83cbd3626,Clothing,0.32,Other,0.58044,143.17,2341,7a479b70-6b2f-4d31-b8c4-1679ec33c572,Electronics Store,1994,Large,Rural
+f1d48aca-f880-49ee-87d8-ec8fd1951f85,Electronics,6.8,Other,0.862324,216.86,2413,06ceac7a-c5b8-42b8-b99c-276a8ff13b92,Fashion Store,2020,Large,Rural
+7964fc32-2a96-440a-b608-a90a549f2990,Clothing,0.32,Other,0.883829,258.15,8456,46c18a41-c3a8-45da-8b0d-b416b3fd6b81,Electronics Store,2001,Large,Urban
+a4c50e3b-d75e-4fed-a2d9-47dfe192711a,Electronics,6.8,Other,0.086348,84.42,6126,a680f84b-c0ae-4a41-8302-05b6b719495e,Fashion Store,2010,Small,Rural
+5fc75fa1-5346-4985-a5ab-dce8c7909c17,Food,2.1,Low Fat,0.482298,138.45,7796,0ba527c1-b0a2-432e-ba73-554fda96f4fc,Supermarket,1996,Large,Rural
+74ba5d78-c10d-4500-93a1-945a526f822e,Food,2.1,Regular,0.38878,353.54,1078,957d7a16-7856-484d-a215-df172eca43ad,Electronics Store,2004,Large,Urban
+d3e6cd4b-5e6b-444c-bcc4-96b3337647b3,Food,2.1,Low Fat,0.056119,253.0,1115,452b51c0-5886-416d-98ce-b060aa131e6e,Electronics Store,2008,Medium,Rural
+fd773ad3-7dec-4ccd-92c8-c29d44a8f64d,Electronics,6.8,Other,0.811264,358.57,7247,87197d21-3d63-46a0-b414-bb82157cc88c,Electronics Store,2009,Small,Rural
+a4b1ae52-ac13-43b2-a538-31d6d1787378,Electronics,6.8,Other,0.512502,150.76,1179,e7916668-017b-42d5-8de8-04c9758e8463,Online,2020,Small,Urban
+080b4304-dada-4c1f-ad69-a07d6586b28a,Appliances,7.14,Other,0.039681,302.55,6708,ecb0e557-d6b8-4870-ab35-39cc01b1c682,Fashion Store,2012,Large,Urban
+45bac8c6-d7a4-4e26-b215-f6e34ef99e7f,Electronics,6.8,Other,0.097237,285.95,6955,8a5870d0-9acc-42c4-9e52-3f40bf0871e0,Online,1992,Medium,Urban
+49e62a44-0e6f-434d-830f-f764961c06c9,Food,2.1,Regular,0.105106,315.03,4801,ddee444b-2422-4971-bc92-b9d3ac698f88,Online,2002,Small,Urban
+a1298e30-0085-434f-89e1-2a4a10a888da,Electronics,6.8,Other,0.500834,143.9,8639,4042e03b-0817-4d44-b01b-0cd9a7c50243,Online,1993,Large,Rural
+e3b51b09-e0b3-45c4-8276-6726cfc0322d,Electronics,6.8,Other,0.743773,486.9,9649,563622c1-ae00-4d62-88a8-d9424896fc26,Online,2010,Large,Rural
+e01951c9-e944-434a-a7a4-8982775b5844,Appliances,7.14,Other,0.637343,219.39,4249,37b97fd6-fd59-4c0e-b0b0-32549dd0ce48,Fashion Store,2011,Medium,Urban
+634944e5-3ed0-4fed-9531-7532740d4234,Appliances,7.14,Other,0.69351,403.84,7201,3736d3bb-2cf5-4733-8d70-d7ca9587b8cd,Electronics Store,2011,Small,Urban
+4eab8a75-e934-4183-99f6-bd2997530065,Appliances,7.14,Other,0.005558,449.22,7558,04d0d62e-88f0-4c0f-b6e2-901de902a8da,Electronics Store,1998,Large,Urban
+d6810d9b-c73a-407e-b2c1-277582053a0a,Food,2.1,Regular,0.643835,288.79,3994,0ae5308c-bb75-4c41-b631-5f9a0496b2c7,Electronics Store,2012,Small,Rural
+c35ba19a-e27e-4eaa-a6df-dc4c15c08e29,Clothing,0.32,Other,0.724369,128.73,1897,d51c27e8-3087-48d2-9a04-bff1597a8a21,Electronics Store,1995,Medium,Urban
+1559f58a-6825-4131-880a-167d498fd8d7,Food,2.1,Regular,0.886376,379.55,401,c5fced25-7bc8-4522-87f1-da5ee08e957a,Fashion Store,2012,Medium,Rural
+98ccb073-3013-437b-9ee7-867a46a21361,Appliances,7.14,Other,0.029501,139.58,3459,e0dcfecf-e587-424a-8b21-a03afa70ac8c,Online,2003,Medium,Rural
+2c4a7a95-cd12-4de6-a7f2-68c54a9434fc,Food,2.1,Low Fat,0.452074,408.78,6472,e72487e8-cee7-4644-83fa-880ac5fae1c6,Online,2004,Large,Urban
+fe9b7664-2b7f-41b7-9a5f-9f838323cc88,Food,2.1,Low Fat,0.917719,415.19,6539,88b71d10-18fb-4960-9655-96060f80917d,Online,2014,Small,Rural
+8dfb8b91-6a59-44cf-a711-d15b1c99dabb,Appliances,7.14,Other,0.176591,131.87,1986,05aba943-bda0-4903-9013-386efcbdd6b0,Online,2010,Small,Rural
+945edfd2-7902-404d-aa31-750ef6cba2a4,Appliances,7.14,Other,0.775313,294.06,3966,5206ecbf-6a18-4785-98d4-fe51f1b66e6f,Supermarket,1990,Medium,Rural
+c6a43256-48b8-4b4f-b9a2-0b20347c741b,Clothing,0.32,Other,0.873073,273.76,7169,53a71226-9369-47ce-bd56-e84fd32d3a28,Electronics Store,1994,Small,Rural
+3a9bf772-9c59-4d93-b049-234915951fbf,Clothing,0.32,Other,0.548184,358.68,4818,6799bf31-8fa0-4406-b993-08a581bd4de1,Electronics Store,2008,Small,Rural
+8606ab2b-b4da-4985-8536-a6f1c1cf66b9,Food,2.1,Regular,0.923286,196.35,1295,8b2adae9-95de-4cb4-8bb7-66a454f75387,Supermarket,2003,Small,Urban
+3b3d481e-1c52-4afb-b509-77c1f84f0236,Electronics,6.8,Other,0.710963,153.6,8611,24bbea27-8609-4d8e-9ee5-cd655a3b6475,Fashion Store,1996,Medium,Urban
+839ee299-342f-4a50-bb42-7459e39bbf28,Appliances,7.14,Other,0.262872,225.63,8370,ea383bd3-bfd4-4bdf-ae9d-1a40da5874da,Online,2018,Medium,Urban
+18a8d9c8-a08b-41c6-9d76-856bfcdc4d18,Electronics,6.8,Other,0.072387,370.16,3512,bcd7bd03-5d3d-43c5-af84-1b167599515c,Online,1991,Large,Urban
+59f5275c-1b08-460a-aaba-67fee9dfb51b,Electronics,6.8,Other,0.849361,288.11,2063,2735c8cd-98d7-4177-8b07-d190df3ea647,Supermarket,2016,Small,Rural
+2af77bf6-5983-46e3-a5b2-e1c7aca18271,Appliances,7.14,Other,0.900854,133.14,2290,6c8c1ce9-12bb-4eb8-b2b6-9ce5765bbdc7,Fashion Store,2015,Large,Urban
+d03314d8-f8fb-4c0c-8706-51d581018f9b,Clothing,0.32,Other,0.935252,236.97,4087,1ff6748f-9305-480e-be37-eb45e2be0734,Online,1991,Large,Urban
+4dcd10c6-a5a5-451c-ac71-bda6d54f2afb,Electronics,6.8,Other,0.260243,136.3,6905,6ab47f1e-2317-42f2-af86-f2599941d459,Online,1993,Large,Urban
+15834c0b-ee82-4420-ae15-722ca674aba3,Food,2.1,Regular,0.329112,154.24,7599,8e4670c7-aeb7-403c-ba14-9e9e2cdab085,Electronics Store,2012,Large,Rural
+a103aee1-05f4-4ea2-b209-2b1d14c73aa1,Food,2.1,Regular,0.523445,237.48,8727,feb7d4f1-d695-4a42-a01e-d6c6138b9e07,Supermarket,2003,Small,Rural
+8be36089-dfcb-4859-b70b-e03189ea899d,Food,2.1,Regular,0.781152,57.9,6007,0d5d6902-50be-4d7b-8e5c-7fac025f646e,Supermarket,1990,Large,Urban
+40c231a3-b2b6-4321-996c-1ad6c569f965,Clothing,0.32,Other,0.482865,395.36,3544,5a8d8e7c-8f16-4462-9806-34b9f2967c09,Electronics Store,1992,Medium,Rural
+4506ed33-1f76-4493-b79a-ed22d7b5b89b,Appliances,7.14,Other,0.607743,345.85,9844,32558c7b-c6bf-4098-8601-27ff40cbeabb,Online,2016,Small,Rural
+eac5e690-2d55-4893-847e-5a8cc4b904af,Clothing,0.32,Other,0.826268,179.95,5046,f658a26e-7282-460f-bd6f-3c79cd076855,Fashion Store,2017,Large,Urban
+3d5ef142-cea7-4527-bead-bae38ac3e6cd,Appliances,7.14,Other,0.900926,362.99,4491,446c1a2e-43a2-4bc3-b345-2f7ff6933010,Supermarket,1998,Small,Urban
+d913c097-046e-4865-b68f-08a123cb728e,Food,2.1,Regular,0.208996,174.52,1254,3be9c44c-73f1-4eb6-9ab2-ec2d3aa38913,Fashion Store,2015,Large,Rural
+c7605334-e6f3-4f6b-8aa7-5b981bc14771,Electronics,6.8,Other,0.522597,386.06,6091,5fa47c5c-a85a-47f0-91d4-29022410b117,Supermarket,2009,Medium,Urban
+04b9cbe4-3910-40b3-b92f-aee3ec75fb05,Food,2.1,Low Fat,0.959666,368.66,9590,74820f6f-0bdb-4ae7-8a0e-113a8a4885f6,Electronics Store,1994,Small,Rural
+23f988d9-4761-461c-8178-b9df6471d940,Clothing,0.32,Other,0.906581,227.17,9816,db4df91f-0980-4df8-b295-d6a2b73a8693,Fashion Store,2008,Large,Rural
+cd7efeea-dd1b-4a08-8d31-184837392c77,Clothing,0.32,Other,0.44155,111.04,9291,f40fafea-e545-4859-924c-6209530bd0e5,Electronics Store,2002,Small,Rural
+02241097-934d-4270-a443-4e2f1ea46f6f,Clothing,0.32,Other,0.827366,203.1,3104,b5e57110-5b7d-432e-806a-56fe876c1e8b,Online,1997,Small,Rural
+77a16b73-f470-4f91-a912-afb8b1706b79,Electronics,6.8,Other,0.774664,344.43,3480,c538290f-342d-48d5-add6-2e497d45cb17,Online,2008,Large,Rural
+e6308546-608e-4b54-90ec-6e1f93d1858f,Food,2.1,Regular,0.527032,441.65,4521,577b2791-1f2c-4953-a259-9647fbcd5651,Fashion Store,2005,Large,Rural
+e1cb9d08-85ff-4d80-a79a-d51f9c82df8f,Electronics,6.8,Other,0.355091,309.07,7094,2133f5df-80de-49b0-b81c-c4a5abe81bd0,Online,1998,Medium,Rural
+63c156db-e933-4a97-a3e8-d9ad57fbd6c8,Electronics,6.8,Other,0.832288,247.38,6382,ed583e60-5a3e-4c60-9a1e-bc6f861670c9,Electronics Store,1995,Large,Rural
+7edb2474-7ba9-4d87-9668-c0128c76de80,Electronics,6.8,Other,0.362365,340.67,637,d97b7073-5607-457f-9cd3-ef8167068891,Supermarket,1992,Small,Rural
+146d8333-d8b8-4a99-8afb-4930367e6fb9,Clothing,0.32,Other,0.765045,281.31,8321,fe5b3ed4-ac61-4335-bdc1-83b511e776cf,Electronics Store,2014,Small,Rural
+33e07ed8-a3bf-4715-a0b1-25865605eab1,Appliances,7.14,Other,0.79415,283.43,8246,9b4cdbeb-0235-46de-8c4f-fbcda1b288d8,Electronics Store,1997,Small,Rural
+fe0aaa3c-59f6-4e7d-95dc-4f507e0fd172,Electronics,6.8,Other,0.462149,248.56,2648,d6dfddec-1762-43c3-a390-6bd2f23128c3,Fashion Store,2020,Medium,Rural
+261fbc55-c40c-43c2-abfe-1d9a8280748a,Appliances,7.14,Other,0.089006,149.28,4318,ec4e91dc-3c58-4811-87de-59d6adaed522,Fashion Store,2016,Large,Rural
+2011a439-eb07-4c30-9b66-f7ed1a848565,Clothing,0.32,Other,0.891149,64.62,7901,df18a60a-b648-4a67-8bae-0f3490914670,Supermarket,2001,Small,Urban
+e77117e2-ddb7-4f99-9b30-2ab2cfa22141,Food,2.1,Regular,0.219206,77.98,4616,78a32614-91a6-43af-ae14-f5191fa14996,Electronics Store,2008,Small,Urban
+cbd553ba-9dac-4b5e-a44a-5097992fd1d3,Clothing,0.32,Other,0.8787,181.78,8325,d78bd911-cdd0-4a39-8a4b-edb68e5ff545,Supermarket,1992,Large,Urban
+e1d5d292-b291-4e53-9da1-c3d67a2716cd,Electronics,6.8,Other,0.13101,287.0,4614,96b8e283-820b-4b17-b2a1-5db486f7084e,Fashion Store,2007,Small,Urban
+e6fb8b7d-adaf-4663-8b1d-db28455d778d,Food,2.1,Low Fat,0.741871,299.83,9848,6fd77cb1-aee8-425c-9d2b-1e44e6a7bf8e,Supermarket,2004,Medium,Rural
+dfc9f716-6a6d-471b-bade-47ac6a5ce47f,Electronics,6.8,Other,0.065748,236.92,3384,ba011b79-8502-4103-8b36-91cb45551599,Supermarket,2019,Small,Rural
+b6a5b1d9-3b60-49b2-9d34-80db585468fc,Clothing,0.32,Other,0.084769,126.78,2048,9b3867bb-39f0-459b-bd96-63d5c5aeaa37,Online,2002,Medium,Rural
+1b55ccaf-6121-47b9-9e63-9343ec7784b8,Appliances,7.14,Other,0.936452,202.15,7281,9c95a1d2-209e-4e3b-b836-0546b4d21369,Electronics Store,2016,Large,Urban
+50be5dbd-53b7-4662-a857-e3de2f17f7c5,Clothing,0.32,Other,0.32357,305.94,5764,c514e5f9-a1fe-4c24-a6f1-5998cc1a3359,Fashion Store,2003,Small,Rural
+a34bea04-e795-4c69-be7c-9edad772ba6a,Clothing,0.32,Other,0.263507,174.94,2850,f2075631-240a-4df2-bcde-511c80431d82,Supermarket,2018,Medium,Rural
+d916a686-be8f-4a10-abc1-bcb627094f0d,Clothing,0.32,Other,0.575083,151.88,9906,01cabe61-f79b-4d25-bc2d-c383fa78f348,Supermarket,2018,Medium,Rural
+c145543a-5fcf-4ada-9022-f37cef633083,Electronics,6.8,Other,0.844981,490.32,6875,a11d39c5-f696-4f4e-924d-af9e9730ab1b,Online,2004,Medium,Urban
+fe4d46b6-c684-4735-a654-04d84c1dc654,Appliances,7.14,Other,0.911589,258.8,1462,10bca641-4c99-4bc4-b68a-e19ba6f25db9,Fashion Store,2005,Medium,Urban
+cb84b07d-84f5-4d1c-af6d-772e6fb9f467,Electronics,6.8,Other,0.570954,152.6,1279,4cd24bfd-8a6f-44f8-a0f8-39bdc03f08eb,Fashion Store,2018,Medium,Rural
+7c5dd827-7211-4cb0-b7a3-7372e30093ef,Electronics,6.8,Other,0.261303,332.87,3119,8cd49a2e-bcce-454e-acbf-539da0172459,Supermarket,2007,Large,Rural
+a7204ecf-0ca5-4de8-8fec-8b4a01fd2ef4,Clothing,0.32,Other,0.800533,458.93,1462,fb68b539-f52b-4773-b1cc-d249ee889f55,Online,2003,Large,Urban
+331a9bb8-ab15-45b1-84c6-ed711424ef43,Appliances,7.14,Other,0.147668,113.11,6372,70d67edd-a1fc-4980-8667-c4699bcdc129,Fashion Store,2008,Medium,Urban
+7c560c4a-534d-418d-9b2a-1d75611f8b72,Clothing,0.32,Other,0.695165,61.44,5305,96464d34-2840-4048-8e50-43c3438a9632,Supermarket,2001,Large,Urban
+ebfd406b-6063-40ed-b382-fc6f6231753a,Electronics,6.8,Other,0.564667,459.28,4455,e61f5e59-6343-418d-9b8e-dea24b0ac51d,Online,2017,Small,Urban
+173c3351-fa3a-4527-b713-fed0014504ae,Electronics,6.8,Other,0.422872,152.39,1793,566b2ff0-a18a-45b3-b872-06bcb971fab3,Electronics Store,1991,Medium,Urban
+0c8cdb0a-fc77-4597-8185-24067cba5c8d,Food,2.1,Regular,0.387962,188.41,664,cc89a744-72f5-4ea6-86ae-74350ebb3f86,Fashion Store,2005,Medium,Rural
+c2f3ffe5-4ef9-4ae9-9b70-d7afaea6d9d4,Electronics,6.8,Other,0.332495,229.27,1805,f518e19c-cdff-49fc-b22b-324124f2d9e1,Electronics Store,2006,Large,Rural
+0c405591-ad0b-4507-a340-567905412c47,Electronics,6.8,Other,0.412482,286.27,7329,ce212416-c724-4946-8f2d-2a32f63d811e,Supermarket,2008,Small,Urban
+8142f6bb-938a-4821-a401-00316c9d26c2,Clothing,0.32,Other,0.983955,145.48,9604,958f1845-b2bd-46d5-a461-b4edc4eb2a98,Online,2018,Large,Rural
+da4917b1-c9ce-4212-b67e-e4fc712ad642,Appliances,7.14,Other,0.15449,360.34,7182,bdfe82b9-ea7d-4c82-9b8a-42a927bf0d5a,Fashion Store,2003,Large,Urban
+df7d48ca-db2e-47a1-af55-3052754bfe9f,Clothing,0.32,Other,0.023425,215.74,6531,3397bf02-583a-4eba-b282-5810c47ed59c,Supermarket,2001,Medium,Urban
+173a1fb9-fdcc-47e0-bb74-5fa68f5cc299,Appliances,7.14,Other,0.494577,379.16,1026,4459796e-e321-47db-95f6-af1835052566,Online,2019,Small,Urban
+fce61caf-3b7d-4394-9c82-c550ad37b173,Electronics,6.8,Other,0.811396,487.33,8662,010c2130-79fd-4e21-92fe-3cd87c6d7797,Electronics Store,2000,Small,Urban
+e86c8bf6-7204-4509-aff3-a8a0c7db2300,Clothing,0.32,Other,0.074094,233.81,3262,62ebc5b4-5671-4b5b-bb87-c5a51e2dbc3c,Supermarket,1992,Medium,Rural
+ab50e1b4-a025-47fa-adae-d545a90427d2,Food,2.1,Low Fat,0.870104,124.88,3198,243f9f0d-3292-4c5c-b24d-78aba737a7e3,Electronics Store,2003,Medium,Rural
+6c29e32c-4e77-4aa2-b061-c6caf3449b57,Clothing,0.32,Other,0.181153,130.02,8675,c62971f8-63eb-4a48-9eb7-58f72c576e19,Fashion Store,2012,Medium,Urban
+886ed887-53d4-4cd2-bfc6-2fd2b9ade0b5,Clothing,0.32,Other,0.398927,170.99,8634,efb05238-1637-4280-ba9a-dbaa8ba83277,Supermarket,2017,Medium,Rural
+df3da7dc-1343-47ea-82c9-86cc32fff7b0,Clothing,0.32,Other,0.51048,149.57,2544,71e5e026-df0f-45d1-94a5-8114a591be30,Electronics Store,2015,Small,Urban
+6b57c82d-fc27-47f0-92fb-fd6fea958332,Clothing,0.32,Other,0.248442,361.34,5174,f707b9ea-3200-4cb1-9ae4-ecd9733ed07b,Online,1994,Medium,Rural
+20fd2117-4275-48df-87c9-6f45ee6e3ac9,Appliances,7.14,Other,0.710484,50.62,1041,4ee74eac-bb3f-4819-82a7-d17b7fcd5098,Fashion Store,2018,Large,Urban
+0ea08593-b3d0-4def-9a8b-b04192a3d5a4,Appliances,7.14,Other,0.922159,289.87,1851,ba93d2a2-d99d-4901-882e-dd1f90a25e86,Supermarket,2020,Large,Rural
+90477fc7-92e9-44df-a8c2-384025f38788,Electronics,6.8,Other,0.437224,97.2,838,d5883eec-ab45-44b1-8c96-762d58a2b828,Electronics Store,2019,Small,Rural
+c8b8051c-e219-405c-b82f-3e3756a54d27,Clothing,0.32,Other,0.492882,259.62,2247,ecb45e73-fac8-4620-9a1c-659bc08e96f4,Online,2020,Medium,Urban
+6e0da974-5311-4ea9-8fb4-6e8c66959b2c,Electronics,6.8,Other,0.271475,397.03,8916,7031357f-c379-4447-a320-1135c684036c,Online,2017,Small,Rural
+e1be9582-2359-4a2a-9111-9add8f01a43c,Appliances,7.14,Other,0.463035,103.38,1297,f1787ad3-7daa-4b96-8270-430c019122e1,Electronics Store,1999,Medium,Rural
+19ecf1c4-7cb4-43c1-913d-3a718302417b,Food,2.1,Regular,0.251765,407.2,4791,9c034221-57c5-4679-a8c9-880788715749,Supermarket,2014,Large,Urban
+3c3278c4-7b6d-42dc-bc4f-0d8e80ae917a,Food,2.1,Low Fat,0.041825,329.25,434,1df6cdbc-21e6-4599-83f4-e989263e45ca,Electronics Store,2002,Medium,Rural
+5071fb6f-9c99-43a5-bf3c-a67d968568fe,Appliances,7.14,Other,0.659345,229.34,7534,caa30d9d-47fd-419f-8b70-b81fe55ed3fe,Online,1993,Large,Rural
+5738774b-dc73-4a66-90fb-b3f7573fe4f7,Appliances,7.14,Other,0.620659,201.96,8327,384cd423-48ec-47e2-a007-24efdf1dc736,Fashion Store,1998,Large,Urban
+7db29160-bd56-4901-b29e-70bb7a8cc45f,Clothing,0.32,Other,0.499786,236.71,3335,934f4902-bd75-4477-802a-c1c2329a831a,Electronics Store,2007,Medium,Rural
+ca148831-6a62-4452-8bf6-6d44b01d06b6,Appliances,7.14,Other,0.594418,394.04,4227,f5a7c63b-343d-4a86-9d0b-645d9b734851,Supermarket,2008,Large,Rural
+ad5a0c18-8d79-47c4-a506-efe973091e31,Food,2.1,Regular,0.57761,483.75,5789,58b6781f-dacf-4e80-bd7d-4e693d4a2d99,Electronics Store,2005,Large,Urban
+2ef8d806-1cd5-4901-a04c-cd4c056bef3f,Food,2.1,Regular,0.536914,376.64,4977,c57e7e55-f4bd-4d1a-a634-f51a337a7cea,Electronics Store,1999,Small,Urban
+4225dcf7-46b2-4613-9f84-d1e030ebff0d,Clothing,0.32,Other,0.514871,241.77,3964,56984b95-56f3-4944-8a62-d43304417a5a,Fashion Store,2019,Small,Rural
+86477651-9c2b-4444-9e1f-eaabafcf36a5,Electronics,6.8,Other,0.94419,78.94,4333,d47182ef-9591-4eb0-b961-f5403192e830,Supermarket,2008,Small,Rural
+9debef02-2a22-4aed-9f9b-a741bd381c81,Clothing,0.32,Other,0.046859,215.1,2814,4212bcc2-eede-4d91-923e-a5160f678c43,Fashion Store,2001,Large,Urban
+3a984c97-693f-4aa0-a6d2-9cc900ec8810,Food,2.1,Regular,0.316239,448.26,291,49af977f-3253-4bad-83e3-33b7eca617a3,Supermarket,1990,Small,Rural
+94ba12ab-8065-4def-848e-4674363d079b,Food,2.1,Low Fat,0.14268,406.83,4064,53d1b0ad-38e3-4f9b-88da-0c3fd2c69d73,Electronics Store,1996,Small,Urban
+1eda0013-8e45-4632-9074-7a819b1ef350,Clothing,0.32,Other,0.435275,384.09,9975,8c2f91ec-a9d4-434c-b333-f064f8a66d8a,Electronics Store,2001,Large,Rural
+ff7250d6-b7a4-4e2d-9a0c-dee7249c509d,Clothing,0.32,Other,0.136365,465.7,8237,c6872b1b-c582-4b67-9792-ef9970784248,Fashion Store,2006,Small,Urban
+eabf79d5-7b0d-4f68-bbec-1292669a6c1e,Clothing,0.32,Other,0.898824,476.83,7347,81add131-a0c8-45bd-b031-819c86cfdb1f,Electronics Store,2016,Large,Rural
+38700df3-b50f-4045-b926-f1d75a591f2c,Clothing,0.32,Other,0.047977,442.3,2407,866fb4ad-b80d-468c-a94e-271aae1a095e,Online,2017,Medium,Rural
+c1d53c9d-64ea-4f24-a1fc-bc9757ee28b0,Food,2.1,Regular,0.970429,70.54,7923,c609b39f-9d2b-49cd-9383-10694fac57ac,Fashion Store,1990,Medium,Rural
+9e48fb61-2d4a-4028-b19d-138a928117e8,Clothing,0.32,Other,0.230578,296.15,4963,3613741e-541f-4802-ba30-6b5026963ce3,Fashion Store,1991,Medium,Urban
+b8d03cf5-b63b-4cbc-832b-14be13225494,Electronics,6.8,Other,0.089859,224.36,8775,b282724f-44f0-4746-af9e-e9d357e6c5cf,Online,2007,Small,Rural
+ce083589-255a-4772-97f2-c79f55414477,Clothing,0.32,Other,0.939021,330.12,2561,7fe5522d-8846-4bf5-b146-27793603f048,Fashion Store,2013,Small,Urban
+421694d1-fe32-40ca-bec4-c5c0286cd72f,Appliances,7.14,Other,0.074016,481.37,6478,3bfa1d34-c6f2-45f1-b52a-3c6d2313ed4d,Supermarket,1995,Medium,Urban
+a090c2ac-d998-4d4e-b33d-cb70619278a0,Food,2.1,Low Fat,0.969952,399.63,6265,aebfc4fa-0e43-472b-9b66-4bceb0128ae4,Supermarket,1992,Small,Urban
+3a36709c-26ba-4b12-88cf-a5da10282fd9,Food,2.1,Low Fat,0.494633,295.61,6396,93e56b9e-fe8c-440a-a5d7-5c8268d72c9f,Fashion Store,1996,Medium,Urban
+3e85f99c-ca02-46f0-9cb6-73a9b7fb1232,Electronics,6.8,Other,0.071303,63.34,9742,9633bac9-2d3d-4d4a-9fa8-45b526e0a5fa,Electronics Store,2004,Large,Urban
+1d378038-d99e-480c-882d-039918064614,Clothing,0.32,Other,0.507364,143.7,5058,831ca677-47bf-4b73-82fd-f56423847541,Electronics Store,1997,Large,Urban
+9db7850a-ad31-47c1-a179-a22ebba26174,Appliances,7.14,Other,0.618943,473.5,6392,663cf7de-4237-41d5-abc7-cb50a69da005,Supermarket,1990,Medium,Rural
+0cf29a5a-a411-4bed-a1b8-3e99962c1dbd,Appliances,7.14,Other,0.859418,121.75,2388,0aa025ce-4131-4c95-936c-d3eaea539bc0,Fashion Store,1992,Small,Urban
+f2ba16bd-f427-460b-81db-4252bd9cb2a8,Electronics,6.8,Other,0.240975,257.65,5602,f2c00337-3483-49a2-8a91-bdb9a1a90c26,Electronics Store,2019,Large,Urban
+4bea8d41-aeaf-4107-924b-c255b3426452,Food,2.1,Regular,0.826081,279.0,1966,dea2d790-17bc-4e47-b989-1843cabe82e5,Supermarket,2010,Large,Rural
+c99e36a0-7cb4-4b09-8ee3-5f6ae191e502,Food,2.1,Regular,0.921158,160.71,6324,59535c23-ae1d-4c13-9029-dbc5c31e7a5d,Online,2015,Large,Urban
+031474a1-3735-498c-94f5-36e28cb4169b,Appliances,7.14,Other,0.091889,416.26,4651,ac82a283-90e8-49ff-bad7-56cca2bfeab7,Electronics Store,2002,Medium,Urban
+8316839f-b571-4df0-bfa9-5e9ebd9e26e2,Electronics,6.8,Other,0.386472,140.72,939,cd3e877d-c3cc-44ad-ab05-d56b420311e8,Electronics Store,1994,Large,Urban
+ee320d95-3747-4828-8117-2ed09e16dc89,Food,2.1,Regular,0.186764,233.98,959,f70abe95-6720-492a-b53b-133232089221,Online,2011,Small,Rural
+201f9e2f-d526-4046-a3a1-39b3320a6693,Food,2.1,Low Fat,0.822034,327.62,8822,d2e970a0-5620-47ae-addd-5ff25ce52eb3,Fashion Store,1993,Medium,Rural
+f7b87b98-77c1-479b-b0ce-5f7d79579936,Electronics,6.8,Other,0.199289,145.89,2428,38745058-0e60-42bc-b014-9091433be937,Supermarket,1996,Small,Urban
+7c358294-3531-4050-82cc-fc869a0e338e,Electronics,6.8,Other,0.367113,391.4,4764,50514dcb-9633-4c56-8ec7-73c35011b61e,Electronics Store,2019,Small,Urban
+a8b2781e-48dc-4724-afd5-862d2404bd58,Food,2.1,Regular,0.974513,262.96,3485,fb563f2a-b3ab-4f8d-b87e-3f1247e505cc,Fashion Store,2013,Small,Urban
+676d8e3e-cc4e-4fbe-a58e-6d8f43f00337,Electronics,6.8,Other,0.959362,485.89,6415,791e90c9-35e1-49af-bfa4-0c7f9534038c,Electronics Store,2018,Large,Rural

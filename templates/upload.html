@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload CSV</title>
+</head>
+<body>
+    <h2>Upload CSV file for Sales Prediction</h2>
+    
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <h3>User Guidelines for CSV Upload</h3>
+    <ol>
+        <li><strong>Ensure Required Columns:</strong> Your CSV file must contain the following columns for the sales prediction model to function correctly:
+            <ul>
+                <h3>User Guidelines for CSV Upload</h3>
+
+                <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; font-size: 12px; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Item_Identifier</th>
+                            <th>Item_Weight</th>
+                            <th>Item_Fat_Content</th>
+                            <th>Item_Visibility</th>
+                            <th>Item_Type</th>
+                            <th>Item_MRP</th>
+                            <th>Outlet_Identifier</th>
+                            <th>Outlet_Establishment_Year</th>
+                            <th>Outlet_Size</th>
+                            <th>Outlet_Location_Type</th>
+                            <th>Outlet_Type</th>
+                            <th>Sales</th>
+                            <th>Predicted_Sales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FDA15</td>
+                            <td>9.3</td>
+                            <td>Low Fat</td>
+                            <td>0.016047</td>
+                            <td>Fruits and Vegetables</td>
+                            <td>249.8092</td>
+                            <td>OUT049</td>
+                            <td>1999</td>
+                            <td>Medium</td>
+                            <td>Tier 1</td>
+                            <td>Supermarket Type1</td>
+                            <td>3000</td>
+                            <td>12000</td>
+                        </tr>
+                        <tr>
+                            <td>FDN15</td>
+                            <td>17.5</td>
+                            <td>Low Fat</td>
+                            <td>0.016760</td>
+                            <td>Frozen Foods</td>
+                            <td>141.618</td>
+                            <td>OUT049</td>
+                            <td>1999</td>
+                            <td>Medium</td>
+                            <td>Tier 1</td>
+                            <td>Supermarket Type1</td>
+                            <td>500</td>
+                            <td>5000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </ul>
+        </li>
+        <li><strong>Data Representation:</strong> Each row in the CSV file should represent a distinct item, with all corresponding data filled in accurately.</li>
+        <li><strong>Successful Upload:</strong> Once the CSV file is successfully uploaded, the sales prediction model will process the data and generate predicted sales outputs based on the existing sales data and features provided.</li>
+    </ol>
+
+    <h3>Sample CSV File</h3>
+    <p>To help you get started, you can download a sample CSV file <a href="{% url 'download_sample_csv' %}">here</a>.</p>
+    
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" accept=".csv" required>
+        <!-- First button for basic upload and prediction -->
+        <button type="submit" formaction="{% url 'upload_file' %}">Upload and Predict</button>
+
+        <!-- Second button for group by and graph functionality -->
+        <button type="submit" formaction="{% url 'upload_file_group_by' %}">Upload and Show Grouped Results</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Prediction Results</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        .increasing {
+            background-color: #65f687;
+        }
+
+        .decreasing {
+            background-color: #ff858f;
+        }
+
+        .center-graph {
+            display: flex;
+            justify-content: center;  /* Horizontally center the graph */
+            align-items: center;      /* Vertically center the graph */
+            min-height: 100vh;        /* Make sure the div takes the full viewport height */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sales vs Predicted Sales by Item Type</h1>
+    <form method="POST" action="{% url 'download_predictions' %}">
+        {% csrf_token %}
+        <button type="submit">Download Predictions as CSV</button>
+    </form>
+    
+    <hr>
+    <div id="bar-graph" class="center-graph"></div>
+    
+    <script>
+        // Parsing the JSON to ensure it's a valid JavaScript object
+        var graphData = JSON.parse('{{ graph_json|escapejs }}');
+        Plotly.newPlot('bar-graph', graphData.data, graphData.layout);
+    </script>
+
+<hr>
+
+    <h1>Sales Prediction Results</h1>
+
+    {% if predictions %}
+        <table>
+            <tr>
+                <th>Item Type</th>
+                <th>Average Item MRP</th>
+                <th>Total Actual Sales</th>
+                <th>Total Predicted Sales</th>
+            </tr>
+            {% for prediction in predictions %}
+            <tr>
+                <td>{{ prediction.Item_Type }}</td>
+                <td>{{ prediction.Item_MRP|floatformat:2 }}</td>
+                <td>{{ prediction.Actual_Sales|floatformat:2 }}</td>
+                <td class="{% if prediction.Status == 'increasing' %}increasing{% else %}decreasing{% endif %}">
+                    {{ prediction.Predicted_Sales|floatformat:2 }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No predictions available.</p>
+    {% endif %}
+
+   
+</body>
+</html>
