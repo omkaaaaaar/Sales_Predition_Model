@@ -73,7 +73,7 @@ def upload_file(request):
             data.loc[valid_labels, 'Item_Type'] = item_type_encoder.inverse_transform(data.loc[valid_labels, 'Item_Type'])
 
             # Replace any invalid labels (-1) with a placeholder such as 'Unknown'
-            data['Item_Type'].replace(-1, 'Unknown', inplace=True)
+            data['Item_Type'].replace(-1, 'Cloths', inplace=True)
         except ValueError as e:
             return render(request, 'upload.html', {'error': f"Error decoding 'Item_Type': {str(e)}"})
 
