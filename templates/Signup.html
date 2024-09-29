@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    E-Commerce Sales Prediction
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1f2e;
+    }
+    .container {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #003356;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(2, 96, 159, 0.262);
+    }
+    h2 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+    label {
+        font-size: large;
+        font-weight: 300;
+    }
+    input[type=text], input[type=email], input[type=password], input[type=tel], select {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: large;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    .remember-me {
+        display: flex;
+        align-items: center;
+    }
+    .remember-me input {
+        margin-right: 10px;
+    }
+    .error {
+        color: red;
+        margin-bottom: 10px;
+    }
+    .toggle-link {
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        color: rgb(228, 228, 233);
+        font-size: large;
+        background-color: #00111C;
+        border-radius: 10px;
+        padding: 15px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <!-- Signup Form -->
+        <form id="signupForm" method="post" action="{% url 'signup' %}">
+            {% csrf_token %}
+            <h2>Signup</h2>
+            <div class="error">{{ form.non_field_errors }}</div>
+
+            {{ form.fullname.label_tag }}
+            {{ form.fullname }}
+
+            {{ form.email.label_tag }}
+            {{ form.email }}
+
+            {{ form.username.label_tag }}
+            {{ form.username }}
+
+            {{ form.password1.label_tag }}
+            {{ form.password1 }}
+
+            {{ form.password2.label_tag }}
+            {{ form.password2 }}
+
+            {{ form.phone.label_tag }}
+            {{ form.phone }}
+
+            {{ form.role.label_tag }}
+            {{ form.role }}
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Login Form -->
+        <form id="loginForm" style="display:none;" method="post" action="{% url 'login' %}">  <!-- Use the correct URL name -->
+            {% csrf_token %}
+            <h2>Login</h2>
+            <div class="error">{{ login_form.non_field_errors }}</div>
+
+            {{ login_form.email_or_username.label_tag }}
+            {{ login_form.email_or_username }}
+
+            {{ login_form.password.label_tag }}
+            {{ login_form.password }}
+
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="toggle-link" onclick="toggleForm()">Switch to Login</div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        // Toggle between signup and login forms
+        function toggleForm() {
+            const signupForm = document.getElementById('signupForm');
+            const loginForm = document.getElementById('loginForm');
+            const toggleLink = document.querySelector('.toggle-link');
+
+            if (signupForm.style.display === 'none') {
+                signupForm.style.display = 'block';
+                loginForm.style.display = 'none';
+                toggleLink.textContent = 'Switch to Login';
+            } else {
+                signupForm.style.display = 'none';
+                loginForm.style.display = 'block';
+                toggleLink.textContent = 'Switch to Signup';
+            }
+        }
+    </script>
+{% endblock %}

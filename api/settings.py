@@ -52,6 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'api.urls'
+AUTH_USER_MODEL = 'sales_prediction.CustomUser'
 
 TEMPLATES = [
     {
@@ -70,6 +71,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'api.wsgi.application'
+
+
 
 
 # Database

@@ -4,17 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Sales Prediction Website - Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>{% block title %}E-commerce Sales Prediction Website - Homepage{% endblock %}</title>
+
+    <!-- Load static files -->
+    {% load static %}
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/custom_styles.css' %}">
+
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1c1f2e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
 </head>
+
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="{% url 'index' %}">E-Commerce Sales Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                </li>
+               
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'upload_file' %}">upload file</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <!-- Main Content Block -->
+    {% block content %}
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-container">
-            <h1 class="hero-heading">E-commerece  Sales Prediction</h1>
-            <p class="hero-subheading">Get accurate sales predictions and make data-driven decisions</p>
-            <button class="hero-btn">Get Started</button>
-        </div>
+      <div class="hero-container">
+          <h1 class="hero-heading">Boost Your Sales with Accurate Predictions</h1>
+          <p class="hero-subheading">Leverage AI to make smarter, data-driven decisions for your e-commerce business.</p>
+          <!-- HTML -->
+          <a href="{% url 'signup' %}">
+            <button class="hero-btn"></button>
+          </a>
+          <p class="hero-text">Start your free trial today and unlock the power of predictive analytics.</p>
+      </div>
     </section>
 
     <!-- Features Section -->
@@ -38,19 +87,16 @@
             </div>
         </div>
     </section>
-
-    <!-- Call-to-Action Section -->
-    <section class="cta">
-        <h2 class="cta-heading">Ready to Boost Your Sales?</h2>
-        <p class="cta-text">Sign up for our free trial and start predicting your sales today!</p>
-        <button class="cta-btn">Sign Up</button>
-    </section>
+    {% endblock %}
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 E-commerce Sales Prediction Website</p>
+        <p>&copy; 2024 E-commerce Sales Prediction Website | <a href="#">Privacy Policy</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JS Files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

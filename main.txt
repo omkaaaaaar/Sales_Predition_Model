@@ -173,3 +173,8 @@ print("Model saved as sales_prediction_model.pkl")
 # Save the label encoders to a file
 joblib.dump(label_encoders, 'pickle_models/label_encoders.pkl')
 print("Label encoders saved as label_encoders.pkl")
+
+
+
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

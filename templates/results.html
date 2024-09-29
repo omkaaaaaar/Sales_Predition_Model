@@ -1,57 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sales Prediction Results</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+{% extends 'base.html' %}
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
+{% block title %}
+    Sales Prediction Results
+{% endblock %}
 
-        th {
-            background-color: #f2f2f2;
-            text-align: left;
-        }
-
-        .increasing {
-            background-color: #65f687; /* Light green */
-        }
-
-        .decreasing {
-            background-color: #ff858f; /* Light red */
-        }
-    </style>
-</head>
-<body>
+{% block content %}
+<div class="container">
     <h2>Sales Prediction Results</h2>
     
     {% if predictions %}
-        <table>
-            <tr>
-                <th>Item Type</th>
-                <th>Average Item MRP</th>
-                <th>Total Actual Sales</th>
-                <th>Total Predicted Sales</th>
-            </tr>
-            {% for prediction in predictions %}
-            <tr>
-                <td>{{ prediction.Item_Type }}</td>
-                <td>{{ prediction.Item_MRP|floatformat:2 }}</td>
-                <td>{{ prediction.Actual_Sales|floatformat:2 }}</td>
-                <td class="{% if prediction.Status == 'increasing' %}increasing{% else %}decreasing{% endif %}">
-                    {{ prediction.Predicted_Sales|floatformat:2 }}
-                </td>
-            </tr>
-            {% endfor %}
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Item Type</th>
+                    <th>Average Item MRP</th>
+                    <th>Total Actual Sales</th>
+                    <th>Total Predicted Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for prediction in predictions %}
+                <tr>
+                    <td>{{ prediction.Item_Type }}</td>
+                    <td>{{ prediction.Item_MRP|floatformat:2 }}</td>
+                    <td>{{ prediction.Actual_Sales|floatformat:2 }}</td>
+                    <td class="{% if prediction.Status == 'increasing' %}increasing{% else %}decreasing{% endif %}">
+                        {{ prediction.Predicted_Sales|floatformat:2 }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
         </table>
     {% else %}
         <p>No predictions available.</p>
     {% endif %}
-    
-</body>
-</html>
+</div>
+{% endblock %}

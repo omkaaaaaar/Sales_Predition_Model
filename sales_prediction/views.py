@@ -11,6 +11,10 @@ import json
 import plotly.graph_objects as go
 import json
 import numpy as np
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login
+from .forms import CustomUserCreationForm,LoginForm
+from .models import CustomUser
 
 
 # Get the absolute path of the pickle file
@@ -192,10 +196,10 @@ def upload_file_group_by(request):
         fig.update_layout(
             barmode='group',
             width=1200,  # Increase width
-            height=900,  # Adjust height
-            title='Comparison of Actual vs Predicted Sales by Item Type',
-            title_x=0.3,  # Center the title
-            title_y=1.0,
+            height=970,  # Adjust height
+            title='Comparison of Actual vs Predicted Sales',
+            title_x=0.5,  # Center the title
+            title_y=0.9,
             font=dict(size=20),  # Font size for readability
             title_font=dict(size=24),  # Title font size
             xaxis_tickangle=-45,  # Rotate x-axis labels
@@ -276,3 +280,51 @@ def download_sample_csv(request):
             return response
     else:
         raise Http404("Sample CSV file not found.")
+
+
+def index(request):
+    return render(request,'index.html')
+
+
+def signup(request):
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)  # Automatically log in the user
+            return redirect('home')  # Redirect to the home page or any other page
+    else:
+        form = CustomUserCreationForm()
+
+    return render(request, 'Signup.html', {'form': form, 'login_form': LoginForm()})  # Include the login form in context
+
+def login_view(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            email_or_username = form.cleaned_data['email_or_username']
+            password = form.cleaned_data['password']
+            
+            # Check if input is email or username
+            if '@' in email_or_username:
+                try:
+                    user_obj = CustomUser.objects.get(email=email_or_username)
+                    username = user_obj.username
+                except CustomUser.DoesNotExist:
+                    form.add_error(None, "Invalid email")
+                    return render(request, 'index.html', {'form': CustomUserCreationForm(), 'login_form': form})
+
+            else:
+                username = email_or_username
+
+            user = authenticate(username=username, password=password)
+
+            if user is not None:
+                login(request, user)
+                return redirect('index')  # Redirect to the home page or dashboard after successful login
+            else:
+                form.add_error(None, "Invalid login credentials")
+    else:
+        form = LoginForm()
+
+    return render(request, 'index.html', {'form': CustomUserCreationForm(), 'login_form': form})  # Include the signup form in context
