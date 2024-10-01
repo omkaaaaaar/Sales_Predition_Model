@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Signup - E-Commerce Sales Prediction
+    Login - E-Commerce Sales Prediction
 {% endblock %}
 
 {% block extra_css %}
@@ -27,7 +27,7 @@
         font-size: large;
         font-weight: 300;
     }
-    input[type=text], input[type=email], input[type=password], input[type=tel], select {
+    input[type=text], input[type=password] {
         width: 100%;
         padding: 12px;
         margin: 8px 0;
@@ -50,6 +50,13 @@
     button:hover {
         background-color: #45a049;
     }
+    .remember-me {
+        display: flex;
+        align-items: center;
+    }
+    .remember-me input {
+        margin-right: 10px;
+    }
     .error {
         color: red;
         margin-bottom: 10px;
@@ -57,7 +64,7 @@
 
     .other {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
         cursor: pointer;
         color: rgb(228, 228, 233);
         font-size: large;
@@ -70,35 +77,25 @@
 
 {% block content %}
     <div class="container">
-        <form id="signupForm" method="post" action="{% url 'signup' %}">
+        <form id="loginForm" method="post" action="{% url 'login' %}">
             {% csrf_token %}
-            <h2>Signup</h2>
+            <h2>Login</h2>
             <div class="error">{{ form.non_field_errors }}</div>
 
-            {{ form.fullname.label_tag }}
-            {{ form.fullname }}
+            {{ form.email_or_username.label_tag }}
+            {{ form.email_or_username }}
 
-            {{ form.email.label_tag }}
-            {{ form.email }}
+            {{ form.password.label_tag }}
+            {{ form.password }}
 
-            {{ form.username.label_tag }}
-            {{ form.username }}
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
 
-            {{ form.password1.label_tag }}
-            {{ form.password1 }}
-            <p>Password must be at least 8 characters long, not common, and not entirely numeric.</p>
-
-            {{ form.password2.label_tag }}
-            {{ form.password2 }}
-
-            {{ form.phone.label_tag }}
-            {{ form.phone }}
-
-            {{ form.role.label_tag }}
-            {{ form.role }}
-
-            <button type="submit">Sign Up</button>
+            <button type="submit">Login</button>
+           
         </form>
-        <a  href="{% url 'login' %}"><button class="other">Switch to Login</button></a>
+        <a  href="{% url 'signup' %}"><button class="other">Switch to Login</button></a>
     </div>
 {% endblock %}

@@ -1,67 +1,48 @@
+# Signup Form
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import authenticate
-from .models import CustomUser
+from .models import CustomUser  # Import the custom user model
 
-# Signup form for CustomUser model
-class CustomUserCreationForm(UserCreationForm):
+class SignupForm(UserCreationForm):
+    fullname = forms.CharField(max_length=100, required=True, label='Full Name')
+    email = forms.EmailField(max_length=254, required=True)
+    phone = forms.CharField(max_length=15, required=True, label='Phone Number')
+    
+    ROLE_CHOICES = [
+        ('Employee', 'Employee'),
+        ('admin', 'Admin'),
+        ('Developer','Developer'),
+    ]
+    role = forms.ChoiceField(choices=ROLE_CHOICES, required=True)
+
     class Meta:
-        model = CustomUser
-        fields = ['fullname', 'email', 'username', 'phone', 'role', 'password1', 'password2']
+        model = CustomUser  # Use the custom user model
+        fields = ('fullname', 'email', 'username', 'password1', 'password2', 'phone', 'role')
 
-    fullname = forms.CharField(max_length=255, required=True, widget=forms.TextInput(attrs={
-        'placeholder': 'Enter full name',
-        'id': 'fullname'
-    }))
-    
-    email = forms.EmailField(required=True, widget=forms.EmailInput(attrs={
-        'placeholder': 'Enter email address',
-        'id': 'signupEmail'
-    }))
-    
-    username = forms.CharField(max_length=150, required=True, widget=forms.TextInput(attrs={
-        'placeholder': 'Enter username',
-        'id': 'signupUsername'
-    }))
-    
-    phone = forms.CharField(max_length=15, required=False, widget=forms.TextInput(attrs={
-        'placeholder': 'Enter phone number',
-        'id': 'phone'
-    }))
-    
-    role = forms.ChoiceField(choices=CustomUser.ROLE_CHOICES, widget=forms.Select(attrs={
-        'id': 'role'
-    }))
-    
-    password1 = forms.CharField(label="Password", widget=forms.PasswordInput(attrs={
-        'placeholder': 'Enter password',
-        'id': 'signupPassword'
-    }))
-    
-    password2 = forms.CharField(label="Confirm Password", widget=forms.PasswordInput(attrs={
-        'placeholder': 'Confirm password',
-        'id': 'confirmPassword'
-    }))
+    def save(self, commit=True):
+        user = super(SignupForm, self).save(commit=False)
+        user.email = self.cleaned_data['email']
+        user.fullname = self.cleaned_data['fullname']
+        user.phone = self.cleaned_data['phone']
+        user.role = self.cleaned_data['role']
+        if commit:
+            user.save()
+        return user
 
 
-# Login form
+
+# Login Form
 class LoginForm(forms.Form):
-    email_or_username = forms.CharField(label="Email Address or Username", widget=forms.TextInput(attrs={
-        'placeholder': 'Enter email or username',
-        'id': 'emailOrUsername'
-    }))
-    password = forms.CharField(widget=forms.PasswordInput(attrs={
-        'placeholder': 'Enter password',
-        'id': 'loginPassword'
-    }))
-    
+    email_or_username = forms.CharField(max_length=254, label='Email or Username', required=True)
+    password = forms.CharField(widget=forms.PasswordInput, label='Password', required=True)
+
     def clean(self):
-        email_or_username = self.cleaned_data.get('email_or_username')
-        password = self.cleaned_data.get('password')
+        cleaned_data = super().clean()
+        email_or_username = cleaned_data.get('email_or_username')
+        password = cleaned_data.get('password')
 
-        user = authenticate(username=email_or_username, password=password)
-
-        if not user:
-            raise forms.ValidationError("Invalid login credentials")
+        # Perform any custom validation or data cleaning here
+        if not email_or_username or not password:
+            raise forms.ValidationError("Please provide both email/username and password.")
         
-        return self.cleaned_data
+        return cleaned_data

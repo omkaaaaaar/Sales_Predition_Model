@@ -13,8 +13,11 @@ import json
 import numpy as np
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from .forms import CustomUserCreationForm,LoginForm
-from .models import CustomUser
+from .forms import SignupForm, LoginForm
+from django.contrib.auth import login, authenticate
+from django.contrib.auth import get_user_model
+
+User = get_user_model()  # Reference to your CustomUser model
 
 
 # Get the absolute path of the pickle file
@@ -285,46 +288,51 @@ def download_sample_csv(request):
 def index(request):
     return render(request,'index.html')
 
+def sample(request):
+    return render(request,'sample.html')
 
-def signup(request):
+
+def signup_view(request):
     if request.method == 'POST':
-        form = CustomUserCreationForm(request.POST)
+        form = SignupForm(request.POST)
         if form.is_valid():
-            user = form.save()
-            login(request, user)  # Automatically log in the user
-            return redirect('home')  # Redirect to the home page or any other page
+            print("Form is valid, saving user...")
+            form.save()
+            return redirect('login')  # Redirect to login after signup
+        else:
+            print("Form errors:", form.errors)  # Print out form errors
     else:
-        form = CustomUserCreationForm()
+        form = SignupForm()
+    return render(request, 'signup.html', {'form': form})
 
-    return render(request, 'Signup.html', {'form': form, 'login_form': LoginForm()})  # Include the login form in context
+
 
 def login_view(request):
+    print("Login view accessed")
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
-            email_or_username = form.cleaned_data['email_or_username']
+            username_or_email = form.cleaned_data['email_or_username']
             password = form.cleaned_data['password']
-            
-            # Check if input is email or username
-            if '@' in email_or_username:
-                try:
-                    user_obj = CustomUser.objects.get(email=email_or_username)
-                    username = user_obj.username
-                except CustomUser.DoesNotExist:
-                    form.add_error(None, "Invalid email")
-                    return render(request, 'index.html', {'form': CustomUserCreationForm(), 'login_form': form})
 
-            else:
-                username = email_or_username
+            # Check if the input is an email or username
+            try:
+                if '@' in username_or_email:
+                    user = User.objects.get(email=username_or_email)
+                else:
+                    user = User.objects.get(username=username_or_email)
 
-            user = authenticate(username=username, password=password)
+                # Authenticate using the username (Django uses 'username' for login)
+                user = authenticate(request, username=user.username, password=password)
 
-            if user is not None:
-                login(request, user)
-                return redirect('index')  # Redirect to the home page or dashboard after successful login
-            else:
-                form.add_error(None, "Invalid login credentials")
+                if user is not None:
+                    login(request, user)
+                    return redirect('sample')  # Redirect to the dashboard after successful login
+                else:
+                    form.add_error(None, 'Invalid credentials')
+            except User.DoesNotExist:
+                form.add_error(None, 'User does not exist')
     else:
         form = LoginForm()
 
-    return render(request, 'index.html', {'form': CustomUserCreationForm(), 'login_form': form})  # Include the signup form in context
+    return render(request, 'login.html', {'form': form})

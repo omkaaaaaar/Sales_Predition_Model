@@ -18,6 +18,9 @@ urlpatterns = [
     # Route for uploading a file, grouping by Item_Type, and showing the grouped results
     path('upload-group/', views.upload_file_group_by, name='upload_file_group_by'),
 
-    path('signup/', views.signup, name='signup'),  # Use 'signup' here
-    path('login/', views.login_view, name='login'),  # Ensure 'login' matches
+    path('signup/', views.signup_view, name='signup'),
+    path('login/', views.login_view, name='login'),
+
+    path('sample/', views.sample, name='sample'),
+
 ]

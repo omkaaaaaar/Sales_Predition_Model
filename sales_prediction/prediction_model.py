@@ -45,4 +45,3 @@ def predict_sales(data):
     predictions = model.predict(X)
     
     return predictions
-
