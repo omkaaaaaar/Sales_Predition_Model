@@ -25,7 +25,7 @@ urlpatterns = [
 
     path('contact_us/',views.contact,name='contact_us'),
     path('sample/', views.sample, name='sample'),
-      # URL for the contact form
-    \
+    path('admin/', views.admin_view, name='admin'),
+    
     
 ]
