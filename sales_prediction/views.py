@@ -13,9 +13,10 @@ import json
 import numpy as np
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from .forms import SignupForm, LoginForm
+from .forms import SignupForm, LoginForm , ContactForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth import get_user_model
+from django.utils import timezone
 
 User = get_user_model()  # Reference to your CustomUser model
 
@@ -336,3 +337,29 @@ def login_view(request):
         form = LoginForm()
 
     return render(request, 'login.html', {'form': form})
+
+
+def about(request):
+    return render(request,'about.html')
+
+
+def contact(request):
+    success_message = None  # Initialize message as None
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            # Create an object from the form but don't save it yet
+            contact = form.save(commit=False)
+            # Set the current timestamp for submission
+            contact.submitted_at = timezone.now()
+            # Save the contact to the database
+            contact.save()
+            # Display success message
+            success_message = "Form submitted successfully. Thank you for contacting us!"
+            form = ContactForm()  # Reset the form after submission
+        else:
+            success_message = "There was an error submitting the form. Please try again."
+    else:
+        form = ContactForm()
+
+    return render(request, 'contact_us.html', {'form': form, 'success_message': success_message})

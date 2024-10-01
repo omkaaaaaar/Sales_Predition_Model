@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/custom_styles.css' %}">
 
+    {% block extra_css %}
     <style>
         /* General Styles */
         body {
@@ -22,6 +23,7 @@
             color: #fff;
             margin: 0;
             padding: 0;
+            font-weight: bold;
         }
         .footer {
             text-align: center;
@@ -36,8 +38,12 @@
             color: #ffffff;
             text-decoration: none;
         }
+
+        .nav-item {
+            font-weight: bold;
+        }
     </style>
-    {% block extra_css %}
+    
     <!-- Block for additional CSS (if any) -->
     {% endblock %}
 </head>
@@ -58,10 +64,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'upload_file' %}">Upload File</a>
                 </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                    <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
                 </li>
             </ul>
+            
         </div>
     </nav>
 

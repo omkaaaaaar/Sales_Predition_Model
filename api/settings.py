@@ -41,10 +41,6 @@ INSTALLED_APPS = [
     'sales_prediction',
 ]
 
-AUTHENTICATION_BACKENDS=[
-    'django.contrib.auth.backends.ModelBackend'
-]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,8 +53,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'api.urls'
 AUTH_USER_MODEL = 'sales_prediction.CustomUser'
-
-
 
 TEMPLATES = [
     {
@@ -101,9 +95,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-        'OPTIONS': {
-            'min_length': 8,  # You can reduce this to a lower value if desired
-        }
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',

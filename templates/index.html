@@ -38,13 +38,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{% url 'index' %}">Home</a>
                 </li>
-               
-               
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'upload_file' %}">upload file</a>
+                    <a class="nav-link" href="{% url 'upload_file' %}">Upload File</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
                 </li>
             </ul>
             

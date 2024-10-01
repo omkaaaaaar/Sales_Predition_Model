@@ -2,6 +2,8 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from .models import CustomUser  # Import the custom user model
+from django import forms
+from .models import Contact
 
 class SignupForm(UserCreationForm):
     fullname = forms.CharField(max_length=100, required=True, label='Full Name')
@@ -46,3 +48,23 @@ class LoginForm(forms.Form):
             raise forms.ValidationError("Please provide both email/username and password.")
         
         return cleaned_data
+    
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = ['full_name', 'email', 'message']  # Specify the fields to include in the form
+
+        # Add custom widgets and field attributes if necessary
+        widgets = {
+            'full_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Your Full Name'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Your Email'}),
+            'message': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Your Message', 'rows': 5}),
+        }
+
+        labels = {
+            'full_name': 'Full Name',
+            'email': 'Email Address',
+            'message': 'Message',
+        }
+        

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | E-commerce Sales Prediction Website</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1c1f2e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c2f3e;
+            color: #fff;
+            position: relative;
+            width: 100%;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+
+        .developer-profiles {
+            margin-top: 50px;
+        }
+        .developer-card {
+            background-color: #2c2f3e;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .developer-card h3{
+            padding-top: 10px;
+        }
+
+        .developer-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            
+        }
+        .developer-card a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .developer-card a:hover {
+            color: #6be585;
+        }
+
+        .faq-section {
+            margin-top: 50px;
+            padding: 40px;
+            background-color: #2c2f3e;
+            border-radius: 8px;
+        }
+        .faq-section h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        /* Add spacing between FAQs */
+        .faq {
+            margin-bottom: 30px; /* Adjust the value as needed */
+        }
+        
+        /* Add spacing between FAQ section and footer */
+        .faq-section {
+            margin-bottom: 50px; /* Adjust the value as needed */
+        }
+        .faq-question {
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 20px;
+            background-color: #343a40;
+            border-radius: 10px;
+        }
+        .faq-answer {
+            color: #000000;
+            display: none;
+            margin-top: 5px;
+            padding: 17px;
+            background-color: #6b8194;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        /* Show the answer when clicking on the question */
+        .faq-question:hover + .faq-answer {
+            display: block;
+        }
+
+        hr {
+            background-color:wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="{% url 'index' %}">E-Commerce Sales Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'upload_file' %}">Upload File</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Developer Profiles -->
+        <section class="developer-profiles">
+            <h2 class="text-center mt-5">Meet Our Developers</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="developer-card">
+                        <img src="https://i.postimg.cc/fRNBnRw2/Whats-App-Image-2024-03-18-at-22-53-17-7710f7dc.jpg" alt="Developer 1">
+                        <h3>Nikhil.M.Sutar</h3>
+                        <p>Email: nikihilsutar621@gmail.com</p>
+                        <hr>
+                        <p><a href="https://github.com/carpentrycoder/" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a></p>
+                        <hr>
+                        <p><a href="https://www.linkedin.com/in/nikhil-sutar-b5471b2b7/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="developer-card">
+                        <img src="path-to-image2.jpg" alt="Developer 2">
+                        <h3>Developer 2</h3>
+                        <p>Email: developer2@example.com</p>
+                        <hr>
+                        <p><a href="https://github.com/developer4" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a></p>
+                        <hr>
+                        <p><a href="https://www.linkedin.com/in/developer4" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="developer-card">
+                        <img src="path-to-image3.jpg" alt="Developer 3">
+                        <h3>Developer 3</h3>
+                        <p>Email: developer3@example.com</p>
+                        <hr>
+                        <p><a href="https://github.com/developer4" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a></p>
+                        <hr>
+                        <p><a href="https://www.linkedin.com/in/developer4" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="developer-card">
+                        <img src="path-to-image4.jpg" alt="Developer 4">
+                        <h3>Developer 4</h3>
+                        <p>Email: developer4@example.com</p>
+                        <hr>
+                        <p><a href="https://github.com/developer4" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a></p>
+                        <hr>
+                        <p><a href="https://www.linkedin.com/in/developer4" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq">
+                <p class="faq-question">Q: What is the purpose of this website?</p>
+                <p class="faq-answer">A: This website helps e-commerce businesses predict sales using data analytics and machine learning models.</p>
+            </div>
+            <div class="faq">
+                <p class="faq-question">Q: How do I upload my data for prediction?</p>
+                <p class="faq-answer">A: Simply navigate to the "Upload File" section in the top menu, and follow the instructions to upload your sales data.</p>
+            </div>
+            <div class="faq">
+                <p class="faq-question">Q: How accurate are the sales predictions?</p>
+                <p class="faq-answer">A: Our predictions are based on advanced machine learning algorithms, but the accuracy depends on the quality of the data you provide.</p>
+            </div>
+            <div class="faq">
+                <p class="faq-question">Q: How can I contact support?</p>
+                <p class="faq-answer">A: You can use the contact form above or reach out to our developers directly through their provided email addresses and GitHub profiles.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 E-commerce Sales Prediction Website | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -18,9 +18,14 @@ urlpatterns = [
     # Route for uploading a file, grouping by Item_Type, and showing the grouped results
     path('upload-group/', views.upload_file_group_by, name='upload_file_group_by'),
 
-    path('signup/', views.signup_view, name='signup'),
-    path('login/', views.login_view, name='login'),
+    path('signup/', views.signup_view, name='signup'),  # Use 'signup' here
+    path('login/', views.login_view, name='login'),  # Ensure 'login' matches
 
+    path('about/',views.about,name='about'),
+
+    path('contact_us/',views.contact,name='contact_us'),
     path('sample/', views.sample, name='sample'),
-
+      # URL for the contact form
+    \
+    
 ]
