@@ -14,6 +14,7 @@ model = joblib.load(model_path)
 label_encoders = joblib.load(label_encoders_path)
 
 def predict_sales(data):
+    
     # Ensure necessary columns are present
     required_columns = [
         'Item_Identifier', 'Item_Weight', 'Item_Fat_Content', 'Item_Visibility',

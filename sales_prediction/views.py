@@ -2,6 +2,7 @@ import pandas as pd
 import joblib
 from django.shortcuts import render,HttpResponse
 from django.http import HttpResponse, Http404
+from django.contrib import messages
 from django.core.files.storage import FileSystemStorage
 from .prediction_model import predict_sales
 import os 
@@ -12,12 +13,13 @@ import json
 import numpy as np
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from .forms import SignupForm, LoginForm , ContactForm
+from .forms import SignupForm, LoginForm , ContactForm , ResetPasswordForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth import get_user_model
+from django.contrib.auth.hashers import make_password
 from django.utils import timezone
 from django.contrib.auth.decorators import user_passes_test
-from .models import Contact  # Import your Contact model
+from .models import Contact,Forgot_User  # Import your Contact model
 
 CustomUser = get_user_model()
 User = get_user_model()  # Reference to your CustomUser model
@@ -377,3 +379,57 @@ def admin_view(request):
     users = CustomUser.objects.all()  # Fetch all users
 
     return render(request, 'admin.html', {'contacts': contacts, 'users': users})
+
+def forgot_password_view(request):
+    if request.method == 'POST':
+        form = ResetPasswordForm(request.POST)  # Use ResetPasswordForm for validation
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            email = form.cleaned_data['email']
+            phone = form.cleaned_data['phone']
+
+            # Check if the user exists with the provided username, email, and phone
+            try:
+                user = Forgot_User.objects.get(username=username, email=email, phone=phone)
+                # Once verified, redirect to the password reset form
+                request.session['reset_user_id'] = user.id  # Store user id in session
+                return redirect('reset_password')  # Redirect to reset password form
+            except Forgot_User.DoesNotExist:
+                messages.error(request, "User with the provided details does not exist.")
+    else:
+        form = ResetPasswordForm()  # Render the reset password form
+
+    return render(request, 'forgot_password.html', {'form': form})
+
+
+def reset_password_view(request):
+    if 'reset_user_id' not in request.session:
+        return redirect('forgot_password')  # Redirect to forgot password if no user in session
+
+    user_id = request.session['reset_user_id']
+    try:
+        user = Forgot_User.objects.get(id=user_id)
+    except Forgot_User.DoesNotExist:
+        messages.error(request, "User does not exist.")
+        return redirect('forgot_password')
+
+    if request.method == 'POST':
+        form = ResetPasswordForm(request.POST)
+        if form.is_valid():
+            # Update the user's password
+            new_password1 = form.cleaned_data['new_password1']
+            new_password2 = form.cleaned_data['new_password2']
+            
+            # Ensure passwords match
+            if new_password1 != new_password2:
+                messages.error(request, "Passwords do not match.")
+            else:
+                user.set_password(new_password1)  # Set the new password
+                user.save()
+                del request.session['reset_user_id']  # Clear the session after password is changed
+                messages.success(request, "Your password has been reset successfully.")
+                return redirect('login')  # Redirect to login after successful password reset
+    else:
+        form = ResetPasswordForm()
+
+    return render(request, 'sample.html', {'form': form}) #reset password page

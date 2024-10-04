@@ -1,7 +1,7 @@
 # Signup Form
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from .models import CustomUser  # Import the custom user model
+from .models import CustomUser, Forgot_User # Import the custom user model
 from django import forms
 from .models import Contact
 
@@ -68,3 +68,38 @@ class ContactForm(forms.ModelForm):
             'message': 'Message',
         }
         
+
+
+
+class ResetPasswordForm(forms.ModelForm):
+    new_password1 = forms.CharField(widget=forms.PasswordInput, label="New Password")
+    new_password2 = forms.CharField(widget=forms.PasswordInput, label="Confirm New Password")
+
+    class Meta:
+        model = Forgot_User  # Use Forgot_User model instead of CustomUser
+        fields = ['email', 'username', 'phone', 'new_password1', 'new_password2']  # Include relevant fields
+
+    def clean(self):
+        cleaned_data = super().clean()
+        new_password1 = cleaned_data.get("new_password1")
+        new_password2 = cleaned_data.get("new_password2")
+
+        if new_password1 and new_password2 and new_password1 != new_password2:
+            raise forms.ValidationError("Passwords do not match")
+
+        return cleaned_data
+
+    def save(self, commit=True):
+        """
+        Override save method to handle password update and save other user details.
+        """
+        user = super().save(commit=False)  # Save the user instance without committing yet
+        new_password1 = self.cleaned_data.get("new_password1")
+
+        # Use the model method to set and save the new password
+        user.set_passwords(new_password1, new_password1)
+
+        if commit:
+            user.save()  # Commit the user instance to the database
+
+        return user

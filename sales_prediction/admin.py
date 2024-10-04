@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser, Contact  # Import your models
+from .models import CustomUser,Contact,Forgot_User  # Import your models
 
 # Register your models here.
 # Register CustomUser with the admin site
@@ -19,3 +19,33 @@ class ContactAdmin(admin.ModelAdmin):
     ordering = ('-submitted_at',)  # Order contacts by submission date, newest first
 
 admin.site.register(Contact, ContactAdmin)  # Register the Contact model
+
+# Customize the admin form for Forgot_User
+class ForgotUserAdmin(admin.ModelAdmin):
+    model = Forgot_User
+
+    # Define which fields should be displayed in the list view
+    list_display = ('username', 'email', 'phone', 'is_staff', 'password_change_time')
+    search_fields = ('username', 'email', 'phone')
+    readonly_fields = ('password_change_time',)  # Make password_change_time read-only
+
+    # Specify the fieldsets to display fields in sections
+    fieldsets = (
+        (None, {'fields': ('username', 'password')}),
+        (('Personal info'), {'fields': ('email', 'phone')}),
+        (('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        (('Important dates'), {'fields': ('last_login', 'password_change_time')}),
+    )
+
+    # Fields to be displayed when creating a new user
+    add_fieldsets = (
+        (None, {
+            'classes': ('wide',),
+            'fields': ('username', 'email', 'phone', 'password1', 'password2')}
+        ),
+    )
+
+    ordering = ('username',)
+
+# Register your custom user model with the admin
+admin.site.register(Forgot_User, ForgotUserAdmin)

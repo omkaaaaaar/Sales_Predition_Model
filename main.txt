@@ -186,3 +186,46 @@ def about(request):
 
 def contact(request):
     return render(request,'contact_us.html')
+
+
+
+
+
+
+class ResetPasswordForm(forms.ModelForm):
+    new_password1 = forms.CharField(widget=forms.PasswordInput, label="New Password")
+    new_password2 = forms.CharField(widget=forms.PasswordInput, label="Confirm New Password")
+
+    class Meta:
+        model = ForgotCustomUser
+        fields = ['email', 'username', 'phone']  # Include email, username, and phone fields
+
+    def clean(self):
+        cleaned_data = super().clean()
+        new_password1 = cleaned_data.get("new_password1")
+        new_password2 = cleaned_data.get("new_password2")
+
+        if new_password1 and new_password2 and new_password1 != new_password2:
+            raise forms.ValidationError("Passwords do not match")
+
+        return cleaned_data
+
+    def save(self, commit=True):
+        """
+        Override save method to handle password update and save other user details.
+        """
+        # Save the user instance without committing to the database yet
+        user = super().save(commit=False)
+        
+        # Get new passwords from cleaned data
+        new_password1 = self.cleaned_data.get("new_password1")
+        new_password2 = self.cleaned_data.get("new_password2")
+
+        # Use the model method to set and save the new password
+        user.set_passwords(new_password1, new_password2)
+
+        # Optionally commit the user instance to the database
+        if commit:
+            user.save()
+
+        return user

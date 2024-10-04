@@ -72,6 +72,13 @@
         border-radius: 10px;
         padding: 15px;
     }
+
+    .forgot-password{
+        font-weight: bold;
+        font-size: large;
+        color: wheat;
+        text-align: center;
+    }
 </style>
 {% endblock %}
 
@@ -97,5 +104,8 @@
            
         </form>
         <a  href="{% url 'signup' %}"><button class="other">Switch to Login</button></a>
+        <div class="forgot-password"></div>
+            <a class="forgot-password" href="{% url 'forgot_password' %}">Forgot Password?</a>
+        </div>
     </div>
 {% endblock %}
