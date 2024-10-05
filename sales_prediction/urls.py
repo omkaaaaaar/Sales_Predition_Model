@@ -26,8 +26,8 @@ urlpatterns = [
     path('contact_us/',views.contact,name='contact_us'),
     path('sample/', views.sample, name='sample'),
     path('admin/', views.admin_view, name='admin'),
-     path('forgot-password/', views.forgot_password_view, name='forgot_password'),
-    path('reset-password/', views.reset_password_view, name='reset_password'),
+    path('forgot-password/', views.forgot_password_view, name='forgot_password'),
+    
     
     
 ]

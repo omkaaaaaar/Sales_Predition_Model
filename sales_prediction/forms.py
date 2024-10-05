@@ -71,13 +71,12 @@ class ContactForm(forms.ModelForm):
 
 
 
-class ResetPasswordForm(forms.ModelForm):
+class ResetPasswordForm(forms.Form):  # Use forms.Form instead of forms.ModelForm for flexibility
+    email = forms.EmailField(label="Email")
+    username = forms.CharField(max_length=150, label="Username")
+    phone = forms.CharField(max_length=15, label="Phone")
     new_password1 = forms.CharField(widget=forms.PasswordInput, label="New Password")
     new_password2 = forms.CharField(widget=forms.PasswordInput, label="Confirm New Password")
-
-    class Meta:
-        model = Forgot_User  # Use Forgot_User model instead of CustomUser
-        fields = ['email', 'username', 'phone', 'new_password1', 'new_password2']  # Include relevant fields
 
     def clean(self):
         cleaned_data = super().clean()
@@ -89,17 +88,10 @@ class ResetPasswordForm(forms.ModelForm):
 
         return cleaned_data
 
-    def save(self, commit=True):
+    def save(self, user):
         """
-        Override save method to handle password update and save other user details.
+        Save the new password for the user.
         """
-        user = super().save(commit=False)  # Save the user instance without committing yet
         new_password1 = self.cleaned_data.get("new_password1")
-
-        # Use the model method to set and save the new password
-        user.set_passwords(new_password1, new_password1)
-
-        if commit:
-            user.save()  # Commit the user instance to the database
-
-        return user
+        user.set_password(new_password1)
+        user.save()

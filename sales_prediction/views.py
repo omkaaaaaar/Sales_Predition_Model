@@ -380,56 +380,53 @@ def admin_view(request):
 
     return render(request, 'admin.html', {'contacts': contacts, 'users': users})
 
-def forgot_password_view(request):
-    if request.method == 'POST':
-        form = ResetPasswordForm(request.POST)  # Use ResetPasswordForm for validation
-        if form.is_valid():
-            username = form.cleaned_data['username']
-            email = form.cleaned_data['email']
-            phone = form.cleaned_data['phone']
 
-            # Check if the user exists with the provided username, email, and phone
-            try:
-                user = Forgot_User.objects.get(username=username, email=email, phone=phone)
-                # Once verified, redirect to the password reset form
-                request.session['reset_user_id'] = user.id  # Store user id in session
-                return redirect('reset_password')  # Redirect to reset password form
-            except Forgot_User.DoesNotExist:
-                messages.error(request, "User with the provided details does not exist.")
+
+def forgot_password_view(request):
+    User = get_user_model()  # Get the CustomUser model
+    if request.method == 'POST':
+        if 'reset_user_id' in request.session:
+            # We're at the password reset stage
+            form = ResetPasswordForm(request.POST)  # Use the same form for resetting the password
+            if form.is_valid():
+                new_password1 = form.cleaned_data['new_password1']
+                new_password2 = form.cleaned_data['new_password2']
+                
+                # Ensure passwords match
+                if new_password1 != new_password2:
+                    messages.error(request, "Passwords do not match.")
+                else:
+                    user_id = request.session['reset_user_id']
+                    try:
+                        user = User.objects.get(id=user_id)
+                        user.set_password(new_password1)  # Set the new password
+                        user.save()
+                        del request.session['reset_user_id']  # Clear the session
+                        messages.success(request, "Your password has been reset successfully.")
+                    except User.DoesNotExist:
+                        messages.error(request, "User does not exist.")
+                        del request.session['reset_user_id']  # Clear the session if something goes wrong
+
+        else:
+            # We're at the user verification stage
+            form = ResetPasswordForm(request.POST)  # Use the form to validate user information
+            if form.is_valid():
+                username = form.cleaned_data['username']
+                email = form.cleaned_data['email']
+                phone = form.cleaned_data['phone']
+
+                # Check if the user exists with the provided username, email, and phone
+                try:
+                    user = User.objects.get(username=username, email=email, phone=phone)
+                    # Once verified, save user id in session and prepare for password reset
+                    request.session['reset_user_id'] = user.id  # Store user id in session
+                    messages.info(request, "User verified. Please enter a new password.")
+                except User.DoesNotExist:
+                    messages.error(request, "User with the provided details does not exist.")
     else:
-        form = ResetPasswordForm()  # Render the reset password form
+        form = ResetPasswordForm()
 
     return render(request, 'forgot_password.html', {'form': form})
 
 
-def reset_password_view(request):
-    if 'reset_user_id' not in request.session:
-        return redirect('forgot_password')  # Redirect to forgot password if no user in session
 
-    user_id = request.session['reset_user_id']
-    try:
-        user = Forgot_User.objects.get(id=user_id)
-    except Forgot_User.DoesNotExist:
-        messages.error(request, "User does not exist.")
-        return redirect('forgot_password')
-
-    if request.method == 'POST':
-        form = ResetPasswordForm(request.POST)
-        if form.is_valid():
-            # Update the user's password
-            new_password1 = form.cleaned_data['new_password1']
-            new_password2 = form.cleaned_data['new_password2']
-            
-            # Ensure passwords match
-            if new_password1 != new_password2:
-                messages.error(request, "Passwords do not match.")
-            else:
-                user.set_password(new_password1)  # Set the new password
-                user.save()
-                del request.session['reset_user_id']  # Clear the session after password is changed
-                messages.success(request, "Your password has been reset successfully.")
-                return redirect('login')  # Redirect to login after successful password reset
-    else:
-        form = ResetPasswordForm()
-
-    return render(request, 'sample.html', {'form': form}) #reset password page
