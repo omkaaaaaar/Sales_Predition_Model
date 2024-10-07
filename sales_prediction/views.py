@@ -1,6 +1,6 @@
 import pandas as pd
 import joblib
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render,HttpResponse,get_object_or_404
 from django.http import HttpResponse, Http404
 from django.contrib import messages
 from django.core.files.storage import FileSystemStorage
@@ -13,13 +13,14 @@ import json
 import numpy as np
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from .forms import SignupForm, LoginForm , ContactForm , ResetPasswordForm
+from .forms import SignupForm, LoginForm , ContactForm , ResetPasswordForm,BlogPostForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import make_password
 from django.utils import timezone
 from django.contrib.auth.decorators import user_passes_test
-from .models import Contact,Forgot_User  # Import your Contact model
+from .models import Contact, BlogPost # Import your Contact model
+from django.contrib.auth.decorators import login_required
 
 CustomUser = get_user_model()
 User = get_user_model()  # Reference to your CustomUser model
@@ -430,3 +431,12 @@ def forgot_password_view(request):
 
 
 
+def blog_list(request):
+    """View to display all published blog posts."""
+    posts = BlogPost.objects.filter(status='published').order_by('-date_posted')
+    return render(request, 'blog_list.html', {'posts': posts})
+
+def blog_detail(request, post_id):
+    """View to display the full content of a single blog post (fetches via AJAX or display on same page)."""
+    post = get_object_or_404(BlogPost, id=post_id)
+    return render(request, 'blog_detail.html', {'post': post})

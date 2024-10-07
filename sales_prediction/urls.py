@@ -27,6 +27,8 @@ urlpatterns = [
     path('sample/', views.sample, name='sample'),
     path('admin/', views.admin_view, name='admin'),
     path('forgot-password/', views.forgot_password_view, name='forgot_password'),
+    path('blogs/', views.blog_list, name='blog_list'),  # Main page displaying all blog posts
+    path('blog/<int:post_id>/', views.blog_detail, name='blog_detail'),  # AJAX or same-page content 
     
     
     

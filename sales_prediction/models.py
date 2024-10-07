@@ -56,4 +56,25 @@ class Forgot_User(AbstractUser):
         self.save()
 
 
+class BlogPost(models.Model):
+    STATUS_CHOICES = [
+        ('draft', 'Draft'),
+        ('published', 'Published')
+    ]
+
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    image_url = models.URLField(max_length=500, blank=True, null=True)  # URL for the hosted image
+    date_posted = models.DateTimeField(default=timezone.now)
+    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE)  # Linking to your CustomUser
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    tags = models.CharField(max_length=100, blank=True)  # Optional field for tags
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ['-date_posted']  # Latest posts first
+
+
 

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog Posts{% endblock %}
+
+{% block extra_css %}
+
+<style>
+
+.card {
+    border-radius: 10px;
+} 
+/* Card Title (Blog Post Title) */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.75rem;
+    text-transform: capitalize;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+/* Card Text (Blog Content Preview) */
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    /* Adds a slight shadow to the text */
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Text (Author and Date) */
+.card-text small.text-muted {
+    font-size: 0.875rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Hover effect for card */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+{% endblock %}
+
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <!-- Blog Post Cards -->
+        {% for post in posts %}
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    {% if post.image_url %}
+                        <img class="card-img-top" src="{{ post.image_url }}" alt="{{ post.title }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.content|truncatewords:20 }}</p> <!-- Short preview of content -->
+                        <p class="card-text"><small class="text-muted">Posted by {{ post.author }} on {{ post.date_posted }}</small></p>
+                        <button class="btn btn-primary" onclick="showPostDetail('{{ post.id }}')">Read More</button>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Blog Post Detail Section (Dynamic Content) -->
+    <div id="blogDetailSection" style="display: none; margin-top: 50px;">
+        <div class="card shadow-sm">
+            <div class="card-body" id="blogDetailContent">
+                <!-- Blog details will be dynamically inserted here via JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Function to fetch and display the full blog post detail in the detail section
+    function showPostDetail(postId) {
+        fetch(`/blog/${postId}/`)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('blogDetailContent').innerHTML = data;
+                document.getElementById('blogDetailSection').style.display = 'block';  // Show the detail section
+                window.scrollTo(0, document.getElementById('blogDetailSection').offsetTop);  // Scroll to the detail section
+            })
+            .catch(error => console.error('Error fetching blog post:', error));
+    }
+</script>
+{% endblock %}

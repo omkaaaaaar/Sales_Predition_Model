@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser,Contact,Forgot_User  # Import your models
+from .models import CustomUser,Contact,Forgot_User,BlogPost  # Import your models
 
 # Register your models here.
 # Register CustomUser with the admin site
@@ -49,3 +49,20 @@ class ForgotUserAdmin(admin.ModelAdmin):
 
 # Register your custom user model with the admin
 admin.site.register(Forgot_User, ForgotUserAdmin)
+
+class BlogPostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'author', 'date_posted', 'status')  # Fields to display in the admin list view
+    list_filter = ('status', 'date_posted')  # Filters to apply in the list view
+    search_fields = ('title', 'content', 'tags')  # Fields to search through
+    ordering = ('-date_posted',)  # Default ordering for the list view
+
+    # Fields to show in the detail view
+    fieldsets = (
+        (None, {
+            'fields': ('title', 'content', 'image_url', 'author', 'status', 'tags')
+        }),
+    )
+
+    # Optional: Add inline editing for related models (if needed)
+
+admin.site.register(BlogPost, BlogPostAdmin)  # Register the BlogPost model with the admin interface

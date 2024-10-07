@@ -1,7 +1,7 @@
 # Signup Form
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from .models import CustomUser, Forgot_User # Import the custom user model
+from .models import CustomUser, BlogPost # Import the custom user model
 from django import forms
 from .models import Contact
 
@@ -95,3 +95,13 @@ class ResetPasswordForm(forms.Form):  # Use forms.Form instead of forms.ModelFor
         new_password1 = self.cleaned_data.get("new_password1")
         user.set_password(new_password1)
         user.save()
+
+class BlogPostForm(forms.ModelForm):
+    class Meta:
+        model = BlogPost
+        fields = ['title', 'content']
+
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter the title'}),
+            'content': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Enter the content'}),
+        }
