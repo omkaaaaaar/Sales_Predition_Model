@@ -6,45 +6,81 @@
 
 <style>
 
-.card {
-    border-radius: 10px;
-} 
-/* Card Title (Blog Post Title) */
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.75rem;
-    text-transform: capitalize;
-}
+    .card {
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 1rem;
+        padding-bottom: 10px;
+    }
+    
+    .card img {
+        border-radius: 10px;
+        max-height: 150px; /* Limits image height to ensure uniformity */
+        object-fit: cover; /* Ensures the image covers the specified space without stretching */
+    }
+    
+    /* Card Title (Blog Post Title) */
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.75rem;
+        text-transform: capitalize;
+    }
+    
+    /* Card Body Content */
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    
+    /* Card Text (Blog Content Preview) */
+    .card-text {
+        font-size: 1rem;
+        color: #151515;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1);
+        flex-grow: 1; /* Forces card content to stretch equally */
+        max-height: 80px; /* Ensures uniform preview size */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    /* Card Footer (Author and Date) */
+    .card-footer {
+        margin-top: auto; /* Ensures the footer is placed at the bottom */
+        text-align: left;
+        font-size: 0.875rem;
+        color: #0d0c0c;
+        font-style: italic;
+        padding-bottom: 10px;
+    }
 
-.card img {
-    border-radius: 10px;
-}
-
-/* Card Text (Blog Content Preview) */
-.card-text {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    /* Adds a slight shadow to the text */
-    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Card Text (Author and Date) */
-.card-text small.text-muted {
-    font-size: 0.875rem;
-    color: #777;
-    font-style: italic;
-}
-
-/* Hover effect for card */
-.card:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0); /* Initial position */
+        }
+        50% {
+            transform: translateY(-10px); /* Moves the card up slightly */
+        }
+    }
+    
+    
+    /* Hover effect for card */
+    .card:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease-in-out;
+        animation: bounce 1s ease-in-out infinite; /* Keeps bouncing while hovered */
+        box-shadow: 0 8px 16px rgba(245, 222, 179, 0.8); 
+    }
+    
+    .btn {
+        border-radius: 7px;
+    }
 
 </style>
 {% endblock %}
@@ -55,21 +91,25 @@
     <div class="row">
         <!-- Blog Post Cards -->
         {% for post in posts %}
-            <div class="col-md-4">
+            <div class="col-md-4 mb-5 d-flex">
                 <div class="card mb-4 shadow-sm">
                     {% if post.image_url %}
                         <img class="card-img-top" src="{{ post.image_url }}" alt="{{ post.title }}">
                     {% endif %}
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text">{{ post.content|truncatewords:20 }}</p> <!-- Short preview of content -->
-                        <p class="card-text"><small class="text-muted">Posted by {{ post.author }} on {{ post.date_posted }}</small></p>
-                        <button class="btn btn-primary" onclick="showPostDetail('{{ post.id }}')">Read More</button>
+                        <div class="card-footer">
+                            <small class="text-muted">Posted by {{ post.author }} on {{ post.date_posted }}</small>
+                        </div>
+                        <button class="btn btn-primary mt-2" onclick="showPostDetail('{{ post.id }}')">Read More</button>
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
+</div>
+
 
     <!-- Blog Post Detail Section (Dynamic Content) -->
     <div id="blogDetailSection" style="display: none; margin-top: 50px;">
