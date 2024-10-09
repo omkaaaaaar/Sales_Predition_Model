@@ -54,10 +54,20 @@
     .card-footer {
         margin-top: auto; /* Ensures the footer is placed at the bottom */
         text-align: left;
-        font-size: 0.875rem;
-        color: #0d0c0c;
+        font-size: 10px;
+        color: #000000;
         font-style: italic;
         padding-bottom: 10px;
+    }
+
+    .text-muted {
+        color: #161616 !important;
+        font-weight: bold;
+    }
+
+    .text-muted {
+        /* Change this to your desired color */
+        font-size: 15px;
     }
 
     @keyframes bounce {
@@ -67,6 +77,35 @@
         50% {
             transform: translateY(-10px); /* Moves the card up slightly */
         }
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: whitesmoke;
+        text-align: center;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+    }
+    
+    h1:hover {
+        color: #faf5f4; /* Change this color to whatever you prefer */
+        transform: scale(1.05); /* Slightly enlarges the h1 on hover */
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    h1:hover {
+        animation: bounce 0.5s ease-in-out;
     }
     
     
@@ -82,12 +121,18 @@
         border-radius: 7px;
     }
 
+    hr {
+        color: wheat;
+    }
+
 </style>
 {% endblock %}
 
 
 {% block content %}
 <div class="container mt-4">
+    <h1>Sales Prediction Blog: Insights and Trends in E-Commerce</h1> <!-- Added H1 Title -->
+    <hr>
     <div class="row">
         <!-- Blog Post Cards -->
         {% for post in posts %}

@@ -16,6 +16,33 @@
 
     {% block extra_css %}
     <style>
+
+        /* Custom scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering over the thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Set scrollbar width */
+    scrollbar-color: #888 #f1f1f1; /* thumb color and track color */
+}
+
+
         /* General Styles */
         body {
             font-family: 'Poppins', sans-serif;

@@ -275,8 +275,6 @@ def download_predictions(request):
         return response
 
 
-
-
 def download_sample_csv(request):
     # Define the path to the CSV file based on the provided location
     file_path = os.path.join('sales_prediction', 'new_data_file.csv')
