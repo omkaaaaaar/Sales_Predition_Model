@@ -46,7 +46,7 @@ dist/
 *.egg-info/
 
 # Ignore Vercel deployment configuration (if you don’t want to track it)
-vercel.json
+
 
 # Ignore node_modules (if using npm or yarn for frontend)
 node_modules/
