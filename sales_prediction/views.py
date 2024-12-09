@@ -9,7 +9,6 @@ import os
 import plotly.utils
 import json
 import plotly.graph_objects as go
-import json
 import numpy as np
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
@@ -111,8 +110,6 @@ def upload_file(request):
         return render(request, 'results.html', {'predictions': prediction_results})
 
     return render(request, 'upload.html')
-
-
 
 
 #Grouped by Code

@@ -14,6 +14,7 @@ class SignupForm(UserCreationForm):
         ('Employee', 'Employee'),
         ('admin', 'Admin'),
         ('Developer','Developer'),
+        
     ]
     role = forms.ChoiceField(choices=ROLE_CHOICES, required=True)
 

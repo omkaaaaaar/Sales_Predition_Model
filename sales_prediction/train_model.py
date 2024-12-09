@@ -91,5 +91,5 @@ def preprocess_and_train_model(csv_file_path):
         print("No target ('Sales') column found in the dataset. Only preprocessing completed.")
 
 # Example usage: dynamically upload and preprocess any CSV file
-csv_file = 'path_to_uploaded_sales_csv.csv'  # Replace with the path to the uploaded CSV file
+csv_file = 'new_data_file.csv'  # Replace with the path to the uploaded CSV file
 preprocess_and_train_model(csv_file)
