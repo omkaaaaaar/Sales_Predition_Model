@@ -52,7 +52,7 @@ def upload_file(request):
 
         # List of required columns in the uploaded CSV
         required_columns = [
-            'Item_Identifier', 'Item_Weight', 'Item_Fat_Content', 'Item_Visibility',
+            'Item_Identifier', 'Item_Weight', 'Item_Visibility',
             'Item_Type', 'Item_MRP', 'Outlet_Identifier', 'Outlet_Establishment_Year',
             'Outlet_Size', 'Outlet_Location_Type', 'Outlet_Type', 'Sales'
         ]
@@ -85,7 +85,7 @@ def upload_file(request):
             data.loc[valid_labels, 'Item_Type'] = item_type_encoder.inverse_transform(data.loc[valid_labels, 'Item_Type'])
 
             # Replace any invalid labels (-1) with a placeholder such as 'Unknown'
-            data['Item_Type'].replace(-1, 'Cloths', inplace=True)
+            data['Item_Type'].replace(-1, 'Unknown', inplace=True)
         except ValueError as e:
             return render(request, 'upload.html', {'error': f"Error decoding 'Item_Type': {str(e)}"})
 
@@ -129,7 +129,7 @@ def upload_file_group_by(request):
 
         # List of required columns in the uploaded CSV
         required_columns = [
-            'Item_Identifier', 'Item_Weight', 'Item_Fat_Content', 'Item_Visibility',
+            'Item_Identifier', 'Item_Weight',  'Item_Visibility',
             'Item_Type', 'Item_MRP', 'Outlet_Identifier', 'Outlet_Establishment_Year',
             'Outlet_Size', 'Outlet_Location_Type', 'Outlet_Type', 'Sales'
         ]

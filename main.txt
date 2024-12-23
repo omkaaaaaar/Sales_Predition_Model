@@ -229,3 +229,9 @@ class ResetPasswordForm(forms.ModelForm):
             user.save()
 
         return user
+
+
+admin name : nikhil1
+password : Shift + sutar1979
+
+
