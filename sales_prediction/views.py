@@ -15,11 +15,10 @@ from django.contrib.auth import authenticate, login
 from .forms import SignupForm, LoginForm , ContactForm , ResetPasswordForm,BlogPostForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth import get_user_model
-from django.contrib.auth.hashers import make_password
 from django.utils import timezone
 from django.contrib.auth.decorators import user_passes_test
 from .models import Contact, BlogPost # Import your Contact model
-from django.contrib.auth.decorators import login_required
+
 
 CustomUser = get_user_model()
 User = get_user_model()  # Reference to your CustomUser model
@@ -50,7 +49,7 @@ def upload_file(request):
         except Exception as e:
             return render(request, 'upload.html', {'error': 'Error reading CSV file: {}'.format(str(e))})
 
-        # List of required columns in the uploaded CSV
+        # List_of_required_columns_in_the_uploaded_CSV
         required_columns = [
             'Item_Identifier', 'Item_Weight', 'Item_Visibility',
             'Item_Type', 'Item_MRP', 'Outlet_Identifier', 'Outlet_Establishment_Year',
