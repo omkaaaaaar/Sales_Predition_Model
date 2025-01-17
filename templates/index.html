@@ -1,109 +1,136 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}E-commerce Sales Prediction Website - Homepage{% endblock %}</title>
-
-    <!-- Load static files -->
+    <title>{% block title %}Sales Gyan{% endblock %}</title>
     {% load static %}
-    
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'css/custom_styles.css' %}">
-
-
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #1c1f2e;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        
-    </style>
+    <link rel="shortcut icon" href="https://i.postimg.cc/Hx573hMf/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/new_styles.css' %}">
 </head>
-
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="{% url 'index' %}">E-Commerce Sales Prediction</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'index' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'upload_file' %}">Upload File</a>
-                </li>
-                <li class="nav-item"></li>
-                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blog_list' %}">Blog</a>
-                </li>
-            </ul>
-            
-        </div>
-    </nav>
-
-    <!-- Main Content Block -->
     {% block content %}
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-container">
-          <h1 class="hero-heading">Boost Your Sales with Accurate Predictions</h1>
-          <p class="hero-subheading">Leverage AI to make smarter, data-driven decisions for your e-commerce business.</p>
-          <!-- HTML -->
-          <a href="{% url 'signup' %}">
-            <button class="hero-btn"></button>
-          </a>
-          <p class="hero-text">Start your free trial today and unlock the power of predictive analytics.</p>
-      </div>
-    </section>
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <a class="navbar-brand" href="{% url 'index' %}"><img src="https://i.postimg.cc/90hwkYtz/sale.png"></a>
+                <div id="nav-part2">
+                    <h4><a class="nav-link" href="{% url 'index' %}">Home</a></h4>
+                    <h4><a href="{% url 'signup' %}">Join Us</a></h4>
+                    <h4><a class="nav-link" href="{% url 'upload_file' %}">Upload File</a></h4>
+                    <h4><a class="nav-link" href="{% url 'about' %}">About Us</a></h4>
+                    <h4><a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a></h4>
+                    <h4> <a class="nav-link" href="{% url 'blog_list' %}">Blog</a></h4>
+                </div>
+                
+            </nav>
+            <div id="center">
+                <div id="left">
+                    <h3>
+                        Sales Gyan delivers key insights into companies, empowering informed decisions and strategic growth.                    </h3>
+                </div>
+                <div id="right">
+                    <h1>INSIGHTS<br>
+                         THAT<br>
+                          INSPIRE
+                    </h1>
+                </div>
+            </div>
+            <div id="hero-shape">
+                <div id="hero1"></div>
+                <div id="hero2"></div>
+                <div id="hero3"></div>
 
-    <!-- Features Section -->
-    <section class="features">
-        <h2 class="features-heading">What We Offer</h2>
-        <div class="features-container">
-            <div class="feature-card">
-                <i class="fas fa-chart-line"></i>
-                <h3 class="feature-heading">Accurate Sales Predictions</h3>
-                <p class="feature-text">Our AI-powered algorithm provides accurate sales predictions, helping you make informed decisions.</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-shopping-cart"></i>
-                <h3 class="feature-heading">Product Recommendations</h3>
-                <p class="feature-text">Get personalized product recommendations based on customer behavior and sales trends.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-clock"></i>
-                <h3 class="feature-heading">Real-time Insights</h3>
-                <p class="feature-text">Stay ahead of the competition with real-time insights into sales trends and customer behavior.</p>
-            </div>
+            {% load static %}
+            <video autoplay loop muted>
+                <source src="{% static 'css/video.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
         </div>
-    </section>
-    {% endblock %}
+        <div id="page2">
+            <div id="moving-text">
+                <div class="con">
+                    <h1>INSIGHTS</h1>
+                    <div id="gola"></div>
+                    <h1>PROFITS</h1>
+                    <div id="gola"></div>
+                    <h1>LOSS</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>INSIGHTS</h1>
+                    <div id="gola"></div>
+                    <h1>PROFITS</h1>
+                    <div id="gola"></div>
+                    <h1>LOSS</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>INSIGHTS</h1>
+                    <div id="gola"></div>
+                    <h1>PROFITS</h1>
+                    <div id="gola"></div>
+                    <h1>LOSS</h1>
+                    <div id="gola"></div>
+                </div> 
+             </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 E-commerce Sales Prediction Website | <a href="#">Privacy Policy</a></p>
-    </footer>
+             <div class="faq">
+                <h2>Frequently Asked Questions</h2>
+        
+                <div class="faq-item">
+                    <h3>What is this project about?</h3>
+                    <div class="answer">This project focuses on predicting e-commerce sales using advanced machine learning models.</div>
+                </div>
+        
+                <div class="faq-item">
+                    <h3>How can I contribute to this project?</h3>
+                    <div class="answer">You can contribute by submitting pull requests on GitHub, reporting issues, or suggesting improvements.</div>
+                </div>
+        
+                <div class="faq-item">
+                    <h3>Where can I find the documentation?</h3>
+                    <div class="answer">The documentation is available in the project's GitHub repository under the "docs" folder.</div>
+                </div>
+                <div class="faq-item">
+                    <h3>Where can I find the documentation?</h3>
+                    <div class="answer">The documentation is available in the project's GitHub repository under the "docs" folder.</div>
+                </div>
+                <div class="faq-item">
+                    <h3>Where can I find the documentation?</h3>
+                    <div class="answer">The documentation is available in the project's GitHub repository under the "docs" folder.</div>
+                </div>
+            </div>
 
-    <!-- JS Files -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <div class="content">
+                <!-- Main content goes here -->
+            </div>
+            <footer>
+                <p>&copy; 2025 Sales Gyan All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </footer>
+
+        </div>
+
+        {% endblock %}
+       
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- LocomotiveScroll Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('#main'),
+                smooth: true
+            });
+        });
+    </script>
+    
 </body>
 </html>
