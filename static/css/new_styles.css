@@ -1,7 +1,8 @@
 @font-face {
-    font-family: 'neu';
-    src: url('/static/css/NeueHaasDisplayMediu.ttf') format('truetype');
+    font-family: neu;
+    src: url("./NeueHaasDisplayMediu.ttf");
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -31,8 +32,8 @@ nav{
    justify-content: space-between;
 }
 nav img {
-    height: 120px; /* Adjust the height of the image as needed */
-   width: 120px;
+    height: 90px; /* Adjust the height of the image as needed */
+   width: auto;
 }
 #nav-part2{
     display: flex;
@@ -226,7 +227,7 @@ nav img {
 
 .faq {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     width: 100%;
     background: #EFEAE3;
 }
@@ -251,7 +252,7 @@ nav img {
 .faq-item h3 {
     margin: 0;
     cursor: pointer;
-    color: #007BFF;
+    color: #bc7819;
     transition: color 0.3s ease;
 }
 .faq-item h3:hover {
@@ -260,7 +261,7 @@ nav img {
 .faq-item .answer {
     display: none;
     position: absolute;
-    background: #f0f8ff;
+    background: #b9a59e;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -275,15 +276,17 @@ nav img {
 }
 
 footer {
-    background-color: #007BFF;
+    background-color: #cf994e;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     font-size: 14px;
-    position: relative;
+    position: absolute; /* Changed from absolute */
     bottom: 0;
     width: 100%;
 }
+
+
 footer a {
     color: #FFD700;
     text-decoration: none;
