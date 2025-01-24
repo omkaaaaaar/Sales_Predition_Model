@@ -49,4 +49,3 @@ def predict_sales(data):
 
 
 
-
