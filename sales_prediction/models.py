@@ -6,16 +6,17 @@ from django.utils import timezone
 class CustomUser(AbstractUser):
     fullname = models.CharField(max_length=100, blank=True, null=True)
     phone = models.CharField(max_length=15, blank=True, null=True)
-    
     ROLE_CHOICES = [
         ('Employee', 'Employee'),
         ('admin', 'Admin'),
-        ('Developer','Developer')
+        ('Developer', 'Developer')
     ]
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='user')
+    password_change_time = models.DateTimeField(auto_now=True)  # Merged field from Forgot_User
 
     def __str__(self):
         return self.username
+
     
 
 class Contact(models.Model):

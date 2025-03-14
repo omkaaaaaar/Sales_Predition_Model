@@ -235,3 +235,70 @@ admin name : nikhil1
 password : Shift + sutar1979
 
 
+
+vri cmds :
+Set-ExecutionPolicy Unrestricted -Scope Process
+jupytr 
+
+
+
+def filter_predictions(request):
+    filter_value = request.GET.get("filter_value", "").lower()
+
+    # Load the grouped data from session
+    grouped_data = request.session.get("grouped_data", [])
+
+    # Apply filtering
+    if filter_value:
+        filtered_data = [
+            row for row in grouped_data 
+            if any(filter_value in str(value).lower() for value in row.values())
+        ]
+    else:
+        filtered_data = grouped_data
+
+    # Store filtered data in session for visualization use
+    request.session["filtered_data"] = filtered_data
+
+    print("Filtered Data:", filtered_data)  # Debugging: Check filtered data
+
+    return render(request, "grouped_predictions.html", {"grouped_data": filtered_data})
+
+
+def visualize_filtered_data(request):
+    # Retrieve filtered data from session
+    filtered_data = request.session.get("filtered_data", [])
+
+    if not filtered_data:
+        print("No filtered data found in session.")
+        return JsonResponse({"error": "No filtered data available to visualize."})
+
+    # Convert to DataFrame
+    df = pd.DataFrame(filtered_data)
+
+    if df.empty:
+        print("DataFrame is empty after filtering.")
+        return JsonResponse({"error": "No filtered data available to visualize."})
+
+    print("Filtered Data for Visualization:", df.head())  # Debugging
+
+    # Ensure required columns exist
+    if "category" in df.columns and "Predicted_Sales" in df.columns:
+        fig = go.Figure(
+            data=[
+                go.Bar(
+                    x=df["category"],
+                    y=df["Predicted_Sales"],
+                    marker=dict(color="blue"),
+                    name="Predicted Sales",
+                )
+            ]
+        )
+        fig.update_layout(title="Filtered Predicted Sales by Category", xaxis_title="Category", yaxis_title="Predicted Sales")
+    else:
+        return JsonResponse({"error": "Required columns are missing in the dataset."})
+
+    # Convert Plotly figure to HTML
+    chart_html = fig.to_html(full_html=False)
+
+    return JsonResponse({"chart_html": chart_html})

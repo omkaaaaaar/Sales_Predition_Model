@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouped Predictions</title>
+    {% load static %}
+    <link rel="shortcut icon" href="https://i.postimg.cc/Hx573hMf/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/new_styles.css' %}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        /* Ensure the whole page is scrollable */
+        body {
+            height: 100vh; /* Full viewport height */
+            overflow: auto; /* Enable scrolling */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Table Container */
+        .table-container {
+            width: 100%;
+            max-width: 1300px;
+            margin: auto;
+            overflow-x: auto; /* Ensures horizontal scroll */
+            overflow-y: auto; /* Allows vertical scrolling */
+            max-height: 500px; /* Limits height so vertical scroll works */
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Table Styling */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            text-align: left;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-width: 1000px; /* Forces horizontal scroll */
+        }
+        
+        .styled-table thead {
+            background-color: #343a40;
+            color: white;
+            position: sticky;
+            top: 0; /* Keeps table headers fixed */
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            white-space: nowrap; /* Prevents text wrapping */
+        }
+
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: #d6d6d6;
+            transition: 0.3s;
+        }
+
+        /* Scrollbar Styling */
+        .table-container::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        .table-container::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 5px;
+        }
+        .table-container::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        /* Filter Section */
+        .filter-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #search {
+            padding: 8px;
+            width: 250px;
+            font-size: 14px;
+        }
+
+        .filter-container button {
+            padding: 8px 12px;
+            font-size: 14px;
+            background-color: #343a40;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .filter-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">📊 Grouped Sales Predictions</h2>
+
+    <!-- Filter Input -->
+    <div class="filter-container">
+        <form method="GET" action="{% url 'filter_predictions' %}">
+            <input type="text" id="search" name="filter_value" placeholder="Enter value to filter...">
+            <button type="submit">Apply Filter</button>
+        </form>
+    </div>
+
+    <!-- Visualize Data Button -->
+    <div id="chart-container" style="text-align: center; margin-top: 20px;">
+        {{ chart_html|safe }}
+    </div>
+    
+
+    <!-- Grouped Table with Scrollbar -->
+    <div class="table-container">
+        <table class="styled-table" id="salesTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Item</th>
+                    <th>Location</th>
+                    <th>Month</th>
+                    <th>Total Sales</th>
+                    <th>Predicted Sales</th>
+                    <th>Difference</th> <!-- New Column Added -->
+                    <th>Trend</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                {% for row in grouped_data %}
+                <tr>
+                    <td>{{ row.category }}</td>
+                    <td>{{ row.item }}</td>
+                    <td>{{ row.location }}</td>
+                    <td>{{ row.month }}</td>
+                    <td>Rs.{{ row.total_sales_value }}</td>
+                    <td>Rs.{{ row.Predicted_Sales }}</td>
+                    <td>Rs.{{ row.Difference }} </td>
+                     <!-- Difference Calculation -->
+                    <td>{{ row.Trend }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </div>
+    <script>
+        document.getElementById("visualize-btn").addEventListener("click", function () {
+    let filterValue = document.getElementById("search").value; // Get filter input
+
+    fetch("{% url 'visualize_filtered_data' %}?filter=" + encodeURIComponent(filterValue))  // Pass filter
+        .then(response => response.json())
+        .then(data => {
+            let chartContainer = document.getElementById("chart-container");
+            chartContainer.innerHTML = ""; // Clear previous chart
+            
+            if (data.error) {
+                chartContainer.innerHTML = `<h3>${data.error}</h3>`;
+            } else {
+                chartContainer.insertAdjacentHTML('beforeend', data.chart_html);
+            }
+        })
+        .catch(error => console.error("Error fetching visualization:", error));
+});
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+
+
+
+{% block title %}
+    Sales Data
+{% endblock %}
+
+{% block content %}
+<style>
+.container {
+    margin-top: 20px;
+    padding: 2vw;
+    background-color: #efeae3; /* Matching main theme */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(248, 242, 242);
+    color: rgb(19, 18, 18);
+    text-align: center;
+    font-family: 'neu'; /* Using the custom font */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid rgb(19, 18, 18);
+    padding: 12px;
+    font-size: 16px;
+}
+
+.styled-table thead {
+    background-color: #f3eeee;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .styled-table th, .styled-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+</style>
+
+<div class="container">
+    <h2>Filtered CSV Data</h2>
+    
+    {% if csv_data %}
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    {% for col in selected_columns %}
+                        <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in csv_data %}
+                <tr>
+                    {% for col in selected_columns %}
+                        <td>{{ row|get_item:col }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p style="color: red;">No data available. Check backend.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

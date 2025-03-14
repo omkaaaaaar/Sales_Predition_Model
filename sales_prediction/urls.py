@@ -31,5 +31,11 @@ urlpatterns = [
     path('blog/<int:post_id>/', views.blog_detail, name='blog_detail'),  # AJAX or same-page content 
     
     
-    
+    path('prediction/', views.predict_sales_from_csv, name='predict_sales'),
+    path('prediction_grouped/', views.csv_grouped, name='predict_sales_grouped'),
+    path("grouped-predictions/", views.csv_grouped_view, name="grouped_predictions"),
+    path('filter_predictions/', views.filter_predictions, name='filter_predictions'),
+    path("visualize/", views.visualize_filtered_data, name="visualize_filtered_data"),
+
 ]
+
