@@ -36,6 +36,12 @@ urlpatterns = [
     path("grouped-predictions/", views.csv_grouped_view, name="grouped_predictions"),
     path('filter_predictions/', views.filter_predictions, name='filter_predictions'),
     path("visualize/", views.visualize_filtered_data, name="visualize_filtered_data"),
-
+    path("generate_trend_explanation/", views.generate_trend_explanation, name="generate_trend_explanation"),
+    path("clear-trend/", views.clear_trend_explanation, name="clear_trend_explanation"),
+    path("ai-business-insights/", views.ai_business_insights, name="ai_business_insights"),
+    path("ai-sales-summary/", views.Quick_AI_Sales_Summary, name="ai_sales_summary"),
+    path('customer-segmentation/', views.customer_segmentation, name='customer_segmentation'),
+    path("confidence-score/", views.confidence_score, name="confidence_score"),
+    path('ai_inventory_optimization/', views.ai_inventory_optimization, name='ai_inventory_optimization'),
 ]
 

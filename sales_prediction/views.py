@@ -19,6 +19,19 @@ from django.utils import timezone
 from django.contrib.auth.decorators import user_passes_test
 from .models import Contact, BlogPost # Import your Contact model
 import plotly.express as px
+import re
+from django.http import JsonResponse
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.messages import SystemMessage, HumanMessage
+import time 
+from sklearn.linear_model import LinearRegression
+from sklearn.cluster import KMeans
+from django.core.cache import cache
+from sklearn.preprocessing import StandardScaler
+from collections import defaultdict
+from tabulate import tabulate
+from django.contrib.sessions.models import Session
+
 
 
 CustomUser = get_user_model()
@@ -246,6 +259,7 @@ def csv_grouped_view(request):
 
             # Store column names for selection
             available_columns = df.columns.tolist()
+            request.session["available_columns"] = available_columns
 
             # Check if user selected features and target
             if not selected_features or not target_column:
@@ -265,6 +279,10 @@ def csv_grouped_view(request):
             # Prepare data for training
             X = df[selected_features]
             y = df[target_column]
+
+            # Store selected features, target column, and preprocessed data in session
+            request.session["selected_features"] = selected_features
+            request.session["target_column"] = target_column
 
             # Train-test split
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -305,6 +323,7 @@ def csv_grouped_view(request):
             # Convert Predicted_Sales to integer (whole number)
             grouped_data["Predicted_Sales"] = grouped_data["Predicted_Sales"].astype(int)
 
+
             # Add Trend Column (Increase/Decrease) after grouping
             grouped_data["Trend"] = grouped_data.apply(
                 lambda row: "🟢 Increasing" if row["total_sales_value"] > row["Predicted_Sales"] else "🔴 Decreasing",
@@ -324,7 +343,6 @@ def csv_grouped_view(request):
             request.session["grouped_data"] = grouped_data_list  
             print(grouped_data.head())  # Debugging: Check if Difference column exists
 
-
             return render(
                 request,
                 "grouped_predictions.html",
@@ -340,15 +358,16 @@ def csv_grouped_view(request):
     return render(request, "upload.html", {"available_columns": available_columns})
 
 
-
-
 def filter_predictions(request):
     filter_value = request.GET.get("filter_value", "").lower()
 
-    # Load the grouped data from session
+    # ✅ Load the grouped data from session
     grouped_data = request.session.get("grouped_data", [])
 
-    # Apply filtering
+    # ✅ Debugging: Print initial data size
+    print(f"\n🔍 Initial Grouped Data Size: {len(grouped_data)}")
+
+    # ✅ Apply filtering
     if filter_value:
         filtered_data = [
             row for row in grouped_data
@@ -357,12 +376,28 @@ def filter_predictions(request):
     else:
         filtered_data = grouped_data
 
-    # Convert filtered data to DataFrame
+    # ✅ Debugging: Print filtered data preview
+    print(f"\n🔍 Filter Value: {filter_value}")
+    print("📊 Filtered Data Preview:\n", filtered_data[:5])
+
+    # ✅ Store filtered data in session for verification
+    request.session["debug_filtered_data"] = filtered_data
+    request.session.modified = True
+
+    # ✅ Convert filtered data to DataFrame
     df = pd.DataFrame(filtered_data)
 
-    # Generate visualization if required columns exist
+    # ✅ Debugging: Check if filtered data is stored in session
+    session_filtered_data = request.session.get("debug_filtered_data", [])
+    print(f"\n🔎 Stored in Session (After Filtering): {len(session_filtered_data)} rows")
+
+    # ✅ Check if filtered data is empty
+    if df.empty:
+        return JsonResponse({"error": f"No data found for filter: {filter_value}"}, status=400)
+
+    # ✅ Generate visualization if required columns exist
     chart_html = ""
-    if not df.empty and "category" in df.columns and "Predicted_Sales" in df.columns:
+    if "category" in df.columns and "Predicted_Sales" in df.columns:
         fig = go.Figure(
             data=[
                 go.Bar(
@@ -381,6 +416,7 @@ def filter_predictions(request):
         "grouped_predictions.html",
         {"grouped_data": filtered_data, "chart_html": chart_html}
     )
+
 
 
 
@@ -421,6 +457,491 @@ def visualize_filtered_data(request):
     chart_html = fig.to_html(full_html=False)
 
     return JsonResponse({"chart_html": chart_html})
+
+
+# Load API key for Google Gemini
+
+api_key = "AIzaSyBM2Xj-1r8RKRiEIooOFnL1c-yYeJvxYRU"
+
+if not api_key:
+    raise ValueError("Error: GEMINI_API_KEY is not set. Check your .env file!")
+
+# Initialize Google Gemini model
+model = ChatGoogleGenerativeAI(
+    model="gemini-1.5-pro",
+    google_api_key=api_key
+)
+
+
+def remove_markdown_bold(text):
+    """ Remove bold formatting (**) from AI-generated text. """
+    return re.sub(r"\*\*(.*?)\*\*", r"\1", text)  # Replace **text** with text
+
+def clear_trend_explanation(request):
+    """ Clears the AI-generated trend explanation from the session """
+    if "trend_explanation" in request.session:
+        del request.session["trend_explanation"]
+    return JsonResponse({"message": "Trend analysis cleared successfully."})
+
+def generate_trend_explanation(request):
+    """ Generate an AI-powered trend analysis based on filtered sales data. """
+    
+    # Retrieve filtered data from session
+    filtered_data = request.session.get("filtered_data", [])
+
+    if not filtered_data:
+        return JsonResponse({"error": "No filtered data available for analysis."})
+
+    # Convert to DataFrame
+    df = pd.DataFrame(filtered_data)
+
+    if df.empty:
+        return JsonResponse({"error": "Filtered data is empty."})
+
+    # Extract relevant columns
+    if "category" not in df.columns or "Predicted_Sales" not in df.columns:
+        return JsonResponse({"error": "Required columns are missing."})
+
+    # Generate summary statistics for AI model
+    total_sales = df["Predicted_Sales"].sum()
+    avg_sales = df["Predicted_Sales"].mean()
+    top_categories = df.groupby("category")["Predicted_Sales"].sum().sort_values(ascending=False).head(3).to_dict()
+
+    # Prepare structured prompt
+    prompt = f"""
+    You are a professional business analyst specializing in sales forecasting. Based on the following sales data, provide insights in the specified format:
+
+    📊 Sales Overview  
+    - Total Predicted Sales: ₹{total_sales}  
+    - Average Predicted Sales per Category: ₹{avg_sales:.2f}  
+
+    🏆 Top 3 Best-Performing Categories:  
+    {top_categories}  
+
+    📢 AI Sales Insights  
+
+    1️⃣ Trend Overview: Explain the general sales trend.  
+    2️⃣ Category Performance: Highlight which categories are growing or declining.  
+    3️⃣ Business Strategy: Provide 2-3 strategic suggestions to improve sales.  
+
+    Ensure your response follows this format strictly to maintain clarity.
+    """
+
+    try:
+        # Send request to Google Gemini AI
+        response = model.invoke(
+            [
+                SystemMessage("You are an expert business analyst providing structured insights on sales data."),
+                HumanMessage(prompt)
+            ]
+        )
+        ai_explanation = response.content.strip()
+        
+        # Remove Markdown bold formatting (**) before saving
+        ai_explanation = remove_markdown_bold(ai_explanation)
+
+    except Exception as e:
+        ai_explanation = f"AI analysis failed: {str(e)}"
+
+    # Store cleaned explanation in session
+    request.session["trend_explanation"] = ai_explanation
+
+    return JsonResponse({"trend_explanation": ai_explanation})
+
+
+
+
+
+
+# Load API key from environment variable
+api_key =  "AIzaSyDLOi_cx0pJ0NgTFsxE8XMd8HaveCXCuTA"
+
+# Ensure API key is set
+if not api_key:
+    raise ValueError("❌ Error: GEMINI_API_KEY is not set. Check your .env file!")
+
+# Initialize Google Gemini Model
+try:
+    model = ChatGoogleGenerativeAI(
+        model="gemini-1.5-flash",
+        google_api_key=api_key
+    )
+    print("✅ Gemini Model Loaded Successfully!")
+except Exception as e:
+    print(f"❌ Failed to Load Model: {e}")
+
+
+def format_markdown_to_html(text):
+    """ Convert bullet points (*) and line breaks to HTML format. """
+    text = remove_markdown_bold(text)  # Convert bold markdown to HTML <strong>
+
+    # Convert bullet points (*) to <ul><li> format
+    text = re.sub(r"\n\* (.+)", r"<li>\1</li>", text)  # Convert * points into <li> items
+    text = re.sub(r"(</li>)\n(<li>)", r"\1\n\2", text)  # Ensure proper spacing between list items
+    text = re.sub(r"(<li>.*?</li>)", r"<ul>\n\1\n</ul>", text)  # Wrap <li> items inside <ul>
+
+    # Convert double newlines to paragraph breaks for better formatting
+    text = re.sub(r"\n\n", r"<br><br>", text)
+
+    return text
+
+
+def Quick_AI_Sales_Summary(request):
+    """
+    Generates an AI-powered summary of dynamically filtered sales data.
+    """
+    if request.method == "POST":
+        filtered_data = request.session.get("filtered_data", [])
+
+        if not filtered_data:
+            return JsonResponse({"error": "No sufficient data available for sales summary."})
+
+        data_payload = json.dumps(filtered_data, indent=4)
+
+        prompt = f"""
+        You are an AI sales analyst.
+
+        Given the following dynamically filtered sales data in JSON format:
+        {data_payload}
+
+        Provide:
+        1. A summary of key sales trends.
+        2. The best-performing and worst-performing items.
+        3. Any noticeable patterns or insights.
+        
+        Format the summary in a simple, easy-to-read format.
+        """
+
+        # Retry mechanism for handling rate limits (429 errors)
+        max_retries = 3
+        delay = 2  # Start with 2 seconds delay
+
+        for attempt in range(max_retries):
+            try:
+                response = model.invoke(prompt)
+
+                if not response or not response.content:
+                    return JsonResponse({"error": "AI model did not return a response."})
+
+                sales_summary = format_markdown_to_html(response.content)
+
+                return JsonResponse({"summary": sales_summary})
+
+            except Exception as e:
+                error_message = str(e)
+                if "429 Resource has been exhausted" in error_message:
+                    print(f"⚠️ Rate limit hit. Retrying in {delay} seconds...")
+                    time.sleep(delay)
+                    delay *= 2  # Exponential backoff (2s → 4s → 8s)
+                else:
+                    return JsonResponse({"error": f"Failed to generate summary: {error_message}"})
+
+        return JsonResponse({"error": "AI model quota exceeded. Try again later."})
+
+    return JsonResponse({"error": "Invalid request method."})
+
+
+
+def ai_business_insights(request):
+    # Retrieve filtered data from session
+    session_filtered_data = request.session.get("debug_filtered_data", [])
+
+    if not session_filtered_data:
+        return JsonResponse({"error": "No data available for analysis"}, status=400)
+
+    # Initialize data structures
+    demand_forecast = []
+    revenue_projection = 0
+    category_contributions = {}
+    region_sales = {}
+
+    # Process data
+    for entry in session_filtered_data:
+        category = entry.get("category", "Unknown")
+        item = entry.get("item", "Unknown")
+        location = entry.get("location", "Unknown")
+        total_sales = entry.get("total_sales_value", 0)
+        predicted_sales = entry.get("Predicted_Sales", 0)
+        trend = entry.get("Trend", "Unknown")
+
+        # Demand Forecasting
+        demand_forecast.append({
+            "item": item,
+            "location": location,
+            "predicted_demand": predicted_sales,
+            "trend": trend
+        })
+
+        # Revenue Projection
+        revenue_projection += predicted_sales
+        category_contributions[category] = category_contributions.get(category, 0) + predicted_sales
+
+        # Region-wise Sales Insights
+        region_sales[location] = region_sales.get(location, 0) + total_sales
+
+    # Convert category contributions to percentages
+    total_revenue = sum(category_contributions.values())
+    category_percentages = [
+        {"category": cat, "percentage": round((sales / total_revenue) * 100, 2)}
+        for cat, sales in category_contributions.items()
+    ]
+
+    # Get top and low-performing cities
+    sorted_regions = sorted(region_sales.items(), key=lambda x: x[1], reverse=True)
+    top_cities = sorted_regions[:3]  # Top 3 selling regions
+    low_performance_regions = sorted_regions[-3:]  # Bottom 3 selling regions
+
+    response_data = {
+        "demand_forecast": demand_forecast,
+        "expected_revenue": revenue_projection,
+        "top_contributing_categories": category_percentages,
+        "top_cities": [{"location": loc, "total_sales": sales} for loc, sales in top_cities],
+        "low_performance_regions": [{"location": loc, "total_sales": sales} for loc, sales in low_performance_regions],
+    }
+
+    return JsonResponse(response_data)
+
+
+
+
+def customer_segmentation(request):
+    try:
+        # ✅ Get filtered data from session (fixing key name)
+        filtered_data = request.session.get("debug_filtered_data", [])  # Use correct session key
+
+        if not filtered_data:
+            return JsonResponse({"error": "No filtered data found. Upload CSV first."}, status=400)
+
+        df = pd.DataFrame(filtered_data)
+
+        # ✅ Apply location filter from request GET parameters
+        filter_value = request.GET.get("filter_value", "").strip()
+        if filter_value:
+            df["location"] = df["location"].str.strip().str.lower()  # Normalize location
+            df = df[df["location"] == filter_value.lower()]
+
+        # ✅ Print the first 5 rows after filtering to debug
+        print("\n🔍 **Filtered Data (First 5 Rows) for Location:**", filter_value)
+        print(df.head(5))
+
+        if df.empty:
+            return JsonResponse({"error": f"No data found for location: {filter_value}"}, status=400)
+
+        # ✅ Data Cleaning
+        df.columns = df.columns.str.strip()
+        df.rename(columns=lambda x: x.replace("\n", "").strip(), inplace=True)
+        df["item"] = df["item"].str.strip()
+        df = df.drop_duplicates()
+
+        # ✅ Ensure numeric conversion
+        for col in ["total_sales_value", "Predicted_Sales"]:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+        # ✅ Calculate 'Difference' if missing
+        if "Difference" not in df.columns:
+            df["Difference"] = df["Predicted_Sales"] - df["total_sales_value"]
+
+        numeric_columns = df.select_dtypes(include=["number"]).columns.tolist()
+        if not numeric_columns:
+            return JsonResponse({"error": "No numeric columns found for clustering."}, status=400)
+
+        X = df[numeric_columns].dropna()
+        if len(X.drop_duplicates()) < 3:
+            return JsonResponse({"error": "Not enough unique data points for clustering."}, status=400)
+
+        # ✅ Standardize Features
+        scaler = StandardScaler()
+        X_scaled = scaler.fit_transform(X)
+
+        # ✅ Apply K-Means Clustering
+        kmeans = KMeans(n_clusters=3, random_state=42, n_init=10)
+        df.loc[X.index, "Segment"] = kmeans.fit_predict(X_scaled)
+
+        # ✅ Assign meaningful segment labels
+        def assign_segment_label(row):
+            if row["total_sales_value"] > 2e7 and row["Difference"] > 1e5:
+                return "High-Value Customers"
+            elif row["total_sales_value"] > 1e7:
+                return "Moderate Buyers"
+            elif row["total_sales_value"] < 5e6:
+                return "Low-Value Customers"
+            elif row["Trend"] == "🟢 Increasing":
+                return "Growth Potential"
+            else:
+                return "At-Risk Customers"
+
+        df["Segment_Label"] = df.apply(assign_segment_label, axis=1)
+
+        # ✅ Assign sales trends
+        df["Trend_Summary"] = df["Trend"].apply(
+            lambda x: "📈 Increasing Sales" if "🟢" in x else ("📉 Decreasing Sales" if "🔴" in x else "➖ Stable Sales")
+        )
+
+        # ✅ Create structured summary
+        summary_table = df.groupby(["Segment_Label", "category", "location"]).agg(
+            Avg_Sales_Value=("total_sales_value", "mean"),
+            Trend=("Trend_Summary", lambda x: x.value_counts().idxmax())  # Most common trend
+        ).reset_index()
+
+        # ✅ Print summary for debugging
+        print("\n📊 **Filtered Customer Segmentation Summary for Location:**", filter_value)
+        print(summary_table.head(5))  # Print only the first 5 rows
+
+        # ✅ Convert to JSON
+        segmented_data = df.to_dict(orient="records")
+
+        # ✅ Store in session (limit to 1000 records)
+        request.session["segmented_data"] = segmented_data[:1000]
+        request.session.modified = True
+        request.session.save()
+
+        return JsonResponse({"segmentation": segmented_data[:100]}, status=200)
+
+    except ValueError as ve:
+        print(f"⚠ ValueError: {str(ve)}")
+        return JsonResponse({"error": f"Clustering failed: {str(ve)}"}, status=400)
+
+    except Exception as e:
+        print(f"❌ Unexpected Error: {str(e)}")
+        return JsonResponse({"error": f"Unexpected error: {str(e)}"}, status=500)
+
+
+
+def confidence_score(request):
+    try:
+        # ✅ Print first 5 entries for debugging
+        filtered_data = request.session.get("debug_filtered_data", [])
+        print("Filtered Data from Session (First 5 Entries):", filtered_data[:5])  
+
+        if not filtered_data:
+            return JsonResponse({"error": "No filtered data available"}, status=400)
+
+        # ✅ Ensure required keys exist
+        for entry in filtered_data:
+            if "total_sales_value" not in entry or "Predicted_Sales" not in entry:
+                return JsonResponse({
+                    "error": "Missing required keys in session data",
+                    "expected_keys": ["total_sales_value", "Predicted_Sales"],
+                    "received_data": entry  # Print problematic entry
+                }, status=400)
+
+        # Convert to NumPy arrays
+        actual_sales = np.array([entry["total_sales_value"] for entry in filtered_data])
+        predicted_sales = np.array([entry["Predicted_Sales"] for entry in filtered_data])
+
+        # Avoid division by zero
+        actual_sales = np.where(actual_sales == 0, 1, actual_sales)
+
+        # Compute Mean Absolute Percentage Error (MAPE)
+        percentage_errors = np.abs((actual_sales - predicted_sales) / actual_sales)
+        mape = np.mean(percentage_errors)
+
+        # Confidence Score Calculation
+        confidence = max(0.5, min(0.99, (1 - mape)))  
+
+        # Additional Insights
+        total_actual_sales = np.sum(actual_sales)
+        total_predicted_sales = np.sum(predicted_sales)
+        individual_errors = [round(float(err) * 100, 2) for err in percentage_errors.tolist()]  
+
+        # ✅ New Features
+        highest_error = max(individual_errors)
+        lowest_error = min(individual_errors)
+        avg_error = round(np.mean(individual_errors), 2)
+
+        # ✅ Category-wise Confidence
+        category_wise_data = defaultdict(list)
+        location_wise_data = defaultdict(list)
+        trend_count = {"increasing": 0, "decreasing": 0}
+
+        for entry, err in zip(filtered_data, individual_errors):
+            category_wise_data[entry["category"]].append(err)
+            location_wise_data[entry["location"]].append(err)
+            if "Trend" in entry:
+                if "🟢" in entry["Trend"]:
+                    trend_count["increasing"] += 1
+                elif "🔴" in entry["Trend"]:
+                    trend_count["decreasing"] += 1
+
+        # ✅ Compute average errors per category and location
+        category_confidence = {
+            cat: round((1 - np.mean(errs) / 100), 2)
+            for cat, errs in category_wise_data.items()
+        }
+        location_confidence = {
+            loc: round((1 - np.mean(errs) / 100), 2)
+            for loc, errs in location_wise_data.items()
+        }
+
+        # ✅ Final Response
+        confidence_data = {
+            "confidence": round(float(confidence), 2),
+            "mape": round(float(mape) * 100, 2),
+            "total_actual_sales": int(total_actual_sales),
+            "total_predicted_sales": int(total_predicted_sales),
+            "error_per_prediction": individual_errors,
+            "data_points_used": len(filtered_data),
+            "highest_error": highest_error,
+            "lowest_error": lowest_error,
+            "average_error": avg_error,
+            "category_wise_confidence": category_confidence,
+            "location_wise_confidence": location_confidence,
+            "trend_summary": trend_count
+        }
+
+        # Store in session
+        request.session["confidence_data"] = confidence_data
+
+        return JsonResponse(confidence_data)
+
+    except Exception as e:
+        return JsonResponse({"error": f"An error occurred: {str(e)}"}, status=500)
+    
+    
+
+def ai_inventory_optimization(request):
+    """AI-powered Inventory Optimization View"""
+    
+    # Retrieve session data
+    filtered_data = request.session.get("debug_filtered_data", [])
+    
+    if not filtered_data:
+        return JsonResponse({"error": "No data available for inventory analysis."}, status=400)
+
+    # 📊 Process Data: Identify Fast-Moving and Slow-Moving Items
+    fast_moving = []
+    slow_moving = []
+    
+    for entry in filtered_data:
+        item = entry.get("item")
+        location = entry.get("location")
+        predicted_sales = entry.get("Predicted_Sales")
+        trend = entry.get("Trend")
+        total_sales = entry.get("total_sales_value")
+
+        if trend == "🟢 Increasing":
+            fast_moving.append({
+                "item": item,
+                "location": location,
+                "predicted_sales": predicted_sales,
+                "trend": trend
+            })
+        else:
+            slow_moving.append({
+                "item": item,
+                "location": location,
+                "total_sales": total_sales,
+                "predicted_sales": predicted_sales,
+                "trend": trend
+            })
+    
+    # 🔍 AI-generated recommendations
+    recommendations = {
+        "fast_moving": fast_moving,
+        "slow_moving": slow_moving
+    }
+
+    return JsonResponse(recommendations, safe=False)
 
 
 

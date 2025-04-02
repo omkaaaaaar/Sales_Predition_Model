@@ -9,7 +9,119 @@
     <link rel="stylesheet" href="{% static 'css/new_styles.css' %}">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-    <style>
+<style>
+/* Container styling */
+#aiSalesSummaryOutput  {
+    background: #ffffff;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 600px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading style */
+#aiSalesSummaryOutput h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+/* Icon inside heading (optional) */
+#aiSalesSummaryOutput h3::before {
+    content: "📊"; /* Replace with an icon or image */
+    margin-right: 8px;
+}
+
+/* Summary text */
+#aiSummaryText {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Button container */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Generate button */
+.generate-button {
+    background-color: #007bff;
+}
+
+.generate-button:hover {
+    background-color: #0056b3;
+}
+
+/* Clear button */
+.clear-button {
+    background-color: #28a745;
+}
+
+.clear-button:hover {
+    background-color: #1e7e34;
+}
+
+/* Icons inside buttons */
+.button i {
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    #aiSalesSummaryOutput {
+        max-width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}
+
+.trend-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-line;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+button#generate-trend-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+button#generate-trend-btn:hover {
+    background-color: #0056b3;
+}
+
         /* Ensure the whole page is scrollable */
         body {
             height: 100vh; /* Full viewport height */
@@ -101,11 +213,218 @@
         .filter-container button:hover {
             background-color: #555;
         }
-    </style>
+
+        
+    /* Additional buttons for AI-powered features */
+/* Container styling */
+.trend-explanation , .aiSalesSummaryOutput {
+    background: #ffffff;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 600px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Heading style */
+.trend-explanation h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+/* Trend content box */
+.trend-box {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #007bff;
+}
+
+/* Paragraph for empty state */
+#ai-trend-content p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button container */
+#trend-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+/* Buttons */
+#generate-trend-btn,
+#clear-trend-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Generate button */
+#generate-trend-btn {
+    background-color: #007bff;
+}
+
+#generate-trend-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Clear button */
+#clear-trend-btn {
+    background-color: #28a745;
+}
+
+#clear-trend-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .trend-explanation {
+        max-width: 100%;
+    }
+
+    #trend-form {
+        flex-direction: column;
+    }
+}
+
+/* Button container */
+.confidence-score-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+/* AI Features Section - Main Container */
+.ai-features {
+    background: #f8f9fa;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1366px; /* Updated width */
+    width: 95%; /* You can also set a percentage width */
+    margin: auto;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+
+/* AI Features Heading */
+.ai-features h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Internal Div Styling */
+.ai-features > div {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading Styling for Each Feature */
+.ai-features h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Buttons Inside AI Features */
+.ai-features button {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+
+}
+
+/* Generate Button */
+.ai-features .generate-button {
+    background-color: #007bff;
+}
+
+.ai-features .generate-button:hover {
+    background-color: #0056b3;
+}
+
+/* Clear Button */
+.ai-features .clear-button {
+    background-color: #dc3545;
+}
+
+.ai-features .clear-button:hover {
+    background-color: #a71d2a;
+}
+
+/* Button Group for Spacing */
+.ai-features .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .ai-features {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .ai-features .button-group {
+        flex-direction: column;
+    }
+}
+
+
+.trend-explanation, #aiSalesSummaryOutput {
+    width: 90% !important; /* The divs will take up 90% of the parent's width */
+    max-width: 1200px; /* Ensures the width does not exceed 1200px */
+    margin: auto; /* Centers the divs horizontally */
+}
+
+.aiSalesSummaryOutput {
+    margin-bottom: 10px;
+}
+
+
+#aiSalesSummaryOutput {
+    margin-bottom: 18px;
+}
+</style>
 </head>
 <body>
 
-    <h2 style="text-align: center;">📊 Grouped Sales Predictions</h2>
+<h2 style="text-align: center;"> AI-Powered Sales Insights: Filter, Visualize & Predict</h2>
 
     <!-- Filter Input -->
     <div class="filter-container">
@@ -119,8 +438,6 @@
     <div id="chart-container" style="text-align: center; margin-top: 20px;">
         {{ chart_html|safe }}
     </div>
-    
-
     <!-- Grouped Table with Scrollbar -->
     <div class="table-container">
         <table class="styled-table" id="salesTable">
@@ -173,6 +490,653 @@
         .catch(error => console.error("Error fetching visualization:", error));
 });
     </script>
-        
+
+   
+<!-- AI Features Section -->
+<div class="ai-features">
+    <h2>Enhance Your Predictions with AI Features</h2>
+    <!-- AI-Powered Trend Explanation Section -->
+         <div class="trend-explanation">
+             <h3>📊 AI-Powered Sales Trend Analysis</h3>
+             <div id="ai-trend-content">
+                 {% if request.session.trend_explanation %}
+                     <div class="trend-box">
+                         {% autoescape off %}
+                             {{ request.session.trend_explanation | linebreaks }}
+                         {% endautoescape %}
+                     </div>
+                 {% else %}
+                     <p>Click the button below to generate an AI-powered trend analysis.</p>
+                 {% endif %}
+             </div>
+ 
+             <!-- AI-Powered Trend Explanation Button -->
+             <form id="trend-form">
+                 {% csrf_token %}
+                 <button type="button" id="generate-trend-btn">🔍 Generate Trend Analysis</button>
+                 <button type="button" id="clear-trend-btn" class="clear-btn">🗑️ Clear Analysis</button>
+             </form>
+         </div>
+ 
+         <!-- JavaScript to Fetch AI Trend Analysis -->
+         <script>
+         document.addEventListener("DOMContentLoaded", function () {
+             document.getElementById("generate-trend-btn").addEventListener("click", function () {
+                 fetch("{% url 'generate_trend_explanation' %}", {
+                     method: "POST",
+                     headers: {
+                         "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value,
+                         "Content-Type": "application/json"
+                     },
+                     body: JSON.stringify({})
+                 })
+                 .then(response => response.json())
+                 .then(data => {
+                     if (data.trend_explanation) {
+                         document.getElementById("ai-trend-content").innerHTML = "<div class='trend-box'>" + data.trend_explanation.replace(/\n/g, '<br>') + "</div>";
+                     } else {
+                         document.getElementById("ai-trend-content").innerHTML = "<p>❌ Failed to generate analysis.</p>";
+                     }
+                 })
+                 .catch(error => console.error("Error fetching AI analysis:", error));
+             });
+         });
+ 
+ 
+         // Clear analysis button
+         document.getElementById("clear-trend-btn").addEventListener("click", function () {
+                 fetch("{% url 'clear_trend_explanation' %}", {
+                     method: "POST",
+                     headers: {
+                         "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value,
+                         "Content-Type": "application/json"
+                     },
+                     body: JSON.stringify({})
+                 })
+                 .then(response => response.json())
+                 .then(data => {
+                     document.getElementById("ai-trend-content").innerHTML = "<p>Click the button below to generate an AI-powered trend analysis.</p>";
+                 })
+                 .catch(error => console.error("Error clearing analysis:", error));
+             });
+ 
+         </script>
+ 
+ 
+         <!-- AI Sales Summary Output -->
+                 <div id="aiSalesSummaryOutput" class="aiSalesSummaryOutput">
+                     <h3>AI Sales Summary Output</h3>
+                     <div id="aiSummaryText">Click the button below to generate an Sales Summary.</div>
+                     
+                     <div class="button-group">
+                         <button id="generateSummary" class="button generate-button">🔍 Generate an Sales Summary</button>
+                         <button id="clearSummary" class="button clear-button">🗑️ Clear Summary</button>
+                     </div>
+                 </div>
+ 
+                 <!-- JavaScript -->
+                 <script>
+                     document.getElementById("generateSummary").addEventListener("click", function() {
+                         fetch("{% url 'ai_sales_summary' %}", {
+                             method: "POST",
+                             headers: {
+                                 "X-CSRFToken": "{{ csrf_token }}",
+                                 "Content-Type": "application/json"
+                             }
+                         })
+                         .then(response => response.json())
+                         .then(data => {
+                             if (data.summary) {
+                                 document.getElementById("aiSummaryText").innerHTML = data.summary; // InnerHTML for formatting
+                             } else {
+                                 document.getElementById("aiSummaryText").innerText = "Error generating summary.";
+                             }
+                         })
+                         .catch(error => console.error("Error fetching AI Sales Summary:", error));
+                     });
+ 
+                     document.getElementById("clearSummary").addEventListener("click", function() {
+                         document.getElementById("aiSummaryText").innerText = "Click the button below to generate an AI-powered trend analysis.";
+                     });
+                 </script>
+
+
+                <!-- AI Business Insights Panel -->
+                <div id="businessInsightsContainer" class="dashboard-section">
+                    <h3>📊 AI Business Insights</h3>
+                    <p>Click the button below to generate AI-powered insights.</p>
+
+                    <div class="button-group">
+                        <button id="generateBusinessInsights" class="button generate-button">🔍 Generate Insights</button>
+                        <button id="clearBusinessInsights" class="button clear-button">🗑️ Clear Insights</button>
+                    </div>
+
+                    <!-- Insights Tables -->
+                    <div id="insightsTableContainer"></div>
+                </div>
+
+                <!-- JavaScript to Fetch and Display Insights -->
+                <script>
+                document.getElementById("generateBusinessInsights").addEventListener("click", function() {
+                    fetch("{% url 'ai_business_insights' %}", {
+                        method: "GET",
+                        headers: {
+                            "X-CSRFToken": "{{ csrf_token }}",
+                            "Content-Type": "application/json"
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.error) {
+                            document.getElementById("insightsTableContainer").innerHTML = `<p style="color: red;">⚠ ${data.error}</p>`;
+                            return;
+                        }
+
+                        let insightsHTML = `
+                        <!-- 📈 Predictive Demand Forecasting -->
+                        <h4>📈 Predictive Demand Forecasting</h4>
+                        <table class="insights-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Location</th>
+                                    <th>Predicted Demand</th>
+                                    <th>Trend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.demand_forecast.map(df => `
+                                    <tr>
+                                        <td>${df.item}</td>
+                                        <td>${df.location}</td>
+                                        <td>${df.predicted_demand.toLocaleString()} units</td>
+                                        <td style="color: ${df.trend === '🟢 Increasing' ? 'green' : 'red'}; font-weight: bold;">
+                                            ${df.trend}
+                                        </td>
+                                    </tr>`).join('')}
+                            </tbody>
+                        </table>
+
+                        <!-- 💰 Revenue Projection -->
+                        <h4>💰 Revenue Projection</h4>
+                        <table class="insights-table">
+                            <thead>
+                                <tr><th>Estimated Revenue</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>₹${data.expected_revenue.toLocaleString()}</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- 🏆 Top Contributing Categories -->
+                        <h4>🏆 Top Contributing Categories</h4>
+                        <table class="insights-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Contribution (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.top_contributing_categories.map(cat => `
+                                    <tr>
+                                        <td>${cat.category}</td>
+                                        <td>${cat.percentage}%</td>
+                                    </tr>`).join('')}
+                            </tbody>
+                        </table>
+
+                        <!-- 🌍 Region-Wise Sales Insights -->
+                        <h4>🌍 Region-Wise Sales Insights</h4>
+                        <table class="insights-table">
+                            <thead>
+                                <tr>
+                                    <th>Top Selling Cities</th>
+                                    <th>Revenue (₹)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.top_cities.map(city => `
+                                    <tr>
+                                        <td>${city.location}</td>
+                                        <td>₹${city.total_sales.toLocaleString()}</td>
+                                    </tr>`).join('')}
+                            </tbody>
+                        </table>
+
+                        <h4>⚠️ Low Performing Regions</h4>
+                        <table class="insights-table">
+                            <thead>
+                                <tr>
+                                    <th>Region</th>
+                                    <th>Revenue (₹)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.low_performance_regions.map(region => `
+                                    <tr>
+                                        <td>${region.location}</td>
+                                        <td>₹${region.total_sales.toLocaleString()}</td>
+                                    </tr>`).join('')}
+                            </tbody>
+                        </table>
+                        `;
+
+                        document.getElementById("insightsTableContainer").innerHTML = insightsHTML;
+                    })
+                    .catch(error => console.error("Error fetching Business Insights:", error));
+
+                    // ✅ FIX: Clear Insights Button
+                    document.getElementById("clearBusinessInsights").addEventListener("click", function() {
+                        document.getElementById("insightsTableContainer").innerHTML = ""; // Clears the fetched insights
+                    });
+                    });
+                </script>
+
+                <!-- CSS for Tables and Dashboard -->
+                <style>
+                .dashboard-section {
+                    padding: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    background: #f9f9f9;
+                }
+
+                .button-group {
+                    margin: 15px 0;
+                }
+
+                .button {
+                    padding: 10px 15px;
+                    margin: 5px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                .generate-button { background-color: #28a745; color: white; }
+                .clear-button { background-color: #dc3545; color: white; }
+
+                .insights-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 15px;
+                    font-size: 16px;
+                }
+
+                .insights-table th {
+                    background-color: #007bff;
+                    color: white;
+                    padding: 8px;
+                }
+
+                .insights-table td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: center;
+                }
+
+                .table-container {
+                    max-height: 300px; /* Adjust height as needed */
+                    overflow-y: auto; /* Enables vertical scrolling */
+                    overflow-x: auto; /* Enables horizontal scrolling if needed */
+                    border: 1px solid #ddd; /* Optional border */
+                }
+
+                /* Custom Scrollbar */
+                .table-container::-webkit-scrollbar {
+                    width: 8px;
+                }
+
+                .table-container::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 10px;
+                }
+
+                .table-container::-webkit-scrollbar-thumb {
+                    background: #888;
+                    border-radius: 10px;
+                }
+
+                .table-container::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                }
+                </style>
+
+
+
+                <!-- AI Sales Confidence Score Section -->
+                <div id="aiConfidenceScoreSection" class="aiConfidenceScoreSection">
+                    <h3>🔍 AI Confidence Score</h3>
+                    <p id="confidenceScoreText">Click the button below to get confidence score.</p>
+
+                    <div class="button-group">
+                        <button id="generateConfidence" class="button generate-button">🎯 Get Confidence Score</button>
+                        <button id="clearConfidence" class="button clear-button">🗑️ Clear</button>
+                    </div>
+
+                    <!-- Display additional insights -->
+                    <div id="confidenceDetails" style="display: none;">
+                        <p><b>📊 MAPE:</b> <span id="mapeValue">--</span>%</p>
+                        <p><b>📈 Total Actual Sales:</b> <span id="actualSales">--</span></p>
+                        <p><b>📉 Total Predicted Sales:</b> <span id="predictedSales">--</span></p>
+                        <p><b>🔢 Data Points Used:</b> <span id="dataPoints">--</span></p>
+                        <p><b>📊 Highest Error:</b> <span id="highestError">--</span>%</p>
+                        <p><b>📊 Lowest Error:</b> <span id="lowestError">--</span>%</p>
+                        <p><b>📊 Average Error:</b> <span id="averageError">--</span>%</p>
+                        
+                        <!-- Trend Summary -->
+                        <p><b>📈 Increasing Trends:</b> <span id="increasingTrends">--</span></p>
+                        <p><b>📉 Decreasing Trends:</b> <span id="decreasingTrends">--</span></p>
+
+                        <!-- Collapsible Category-wise & Location-wise Confidence -->
+                        <button class="collapsible">📂 Category-wise Confidence</button>
+                        <div class="content" id="categoryConfidence"></div>
+
+                        <!-- Collapsible Section for Explanation -->
+                        <button class="collapsible">🤔 Why do Metrics Matter for You?</button>
+                        <div class="content">
+                            <ul>
+                                <li>✅ <b>Confidence Score:</b> Shows how reliable the AI predictions are. A <b>higher score means more accurate forecasts</b>, helping you plan better.</li> 
+                                <li>✅ <b>Trends (Increasing/Decreasing):</b> Helps you see <b>which products or locations are growing or declining</b>, so you can adjust inventory or marketing.</li>
+                                <li>✅ <b>Category-wise & Location-wise Confidence:</b> <b>A higher score means the AI understands sales behavior better in those areas.</b></li>
+                                <li>📊 <b>MAPE:</b> Measures prediction accuracy. A lower percentage indicates better AI performance.</li>
+                                <li>📈 <b>Total Actual Sales:</b> The sum of all real sales data, providing insight into overall market trends.</li>
+                                <li>📉 <b>Total Predicted Sales:</b> The AI-generated forecast for sales, helping in inventory planning.</li>
+                                <li>🔢 <b>Data Points Used:</b> The total number of data entries analyzed for prediction accuracy.</li>
+                                <li>📊 <b>Highest Error:</b> The maximum deviation between actual and predicted sales.</li>
+                                <li>📊 <b>Lowest Error:</b> The minimum deviation between actual and predicted sales.</li>
+                                <li>📊 <b>Average Error:</b> The mean deviation, indicating overall prediction reliability.</li>
+                                <li>📈 <b>Increasing Trends:</b> Number of products or locations showing sales growth.</li>
+                                <li>📉 <b>Decreasing Trends:</b> Number of products or locations experiencing sales decline.</li>
+                                <li>📂 <b>Category-wise Confidence:</b> AI accuracy for different product categories.</li>
+                                <li>📍 <b>Location-wise Confidence:</b> AI accuracy for different geographical locations.</li>
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript for Confidence Score -->
+                <script>
+                document.getElementById("generateConfidence").addEventListener("click", function () { 
+                    fetch("{% url 'confidence_score' %}")
+                    .then(response => response.json()) 
+                    .then(data => {
+                        if (data.confidence) { 
+                            let confidencePercentage = (data.confidence * 100).toFixed(2) + "%";  // Convert to percentage
+                            document.getElementById("confidenceScoreText").innerHTML = `Confidence Score: <b>${confidencePercentage}</b>`;
+                            document.getElementById("mapeValue").innerText = data.mape;
+                            document.getElementById("actualSales").innerText = data.total_actual_sales;
+                            document.getElementById("predictedSales").innerText = data.total_predicted_sales;
+                            document.getElementById("dataPoints").innerText = data.data_points_used;
+                            document.getElementById("highestError").innerText = data.highest_error;
+                            document.getElementById("lowestError").innerText = data.lowest_error;
+                            document.getElementById("averageError").innerText = data.average_error;
+                            document.getElementById("increasingTrends").innerText = data.trend_summary.increasing;
+                            document.getElementById("decreasingTrends").innerText = data.trend_summary.decreasing;
+                            document.getElementById("confidenceDetails").style.display = "block";  
+
+                            // Convert category-wise confidence to percentage
+                            renderConfidenceData("categoryConfidence", data.category_wise_confidence);
+
+                            // Convert location-wise confidence to percentage
+                            renderConfidenceData("locationConfidence", data.location_wise_confidence);
+                        } else { 
+                            document.getElementById("confidenceScoreText").innerText = "Error fetching confidence score.";
+                            document.getElementById("confidenceDetails").style.display = "none";  
+                        }
+                    })
+                    .catch(error => console.error("Error fetching Confidence Score:", error));
+                });
+
+                // Function to render confidence data in percentage format
+                function renderConfidenceData(elementId, data) {
+                    const container = document.getElementById(elementId);
+                    container.innerHTML = "";
+                    for (const key in data) {
+                        let confidencePercentage = (data[key] * 100).toFixed(2) + "%";  // Convert to percentage
+                        let p = document.createElement("p");
+                        p.innerHTML = `<b>${key}:</b> ${confidencePercentage}`;
+                        container.appendChild(p);
+                    }
+                }
+
+                    // Collapsible functionality
+                    var coll = document.getElementsByClassName("collapsible");
+                    for (let i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            content.style.display = (content.style.display === "block") ? "none" : "block";
+                        });
+                    }
+
+                    document.getElementById("confidenceScoreText").addEventListener("click", function() {
+                        document.getElementById("confidenceScoreText").innerText = "Click the button below to get confidence score.";
+                    });
+                </script>
+
+                <!-- CSS for Collapsible Sections -->
+                <style>
+                    .button-group { margin-top: 10px; }
+                    .collapsible {
+                        background-color: #007BFF;
+                        color: white;
+                        cursor: pointer;
+                        padding: 10px;
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        font-size: 16px;
+                        margin-top: 10px;
+                    }
+                    .collapsible:hover { background-color: #0056b3; }
+                    .content {
+                        display: none;
+                        overflow: hidden;
+                        padding: 10px;
+                        background-color: #f1f1f1;
+                    }
+                    .button-group { margin-top: 10px; }
+
+                    .collapsible {
+                        background-color: #007BFF;
+                        color: white;
+                        cursor: pointer;
+                        padding: 10px;
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        font-size: 16px;
+                        margin-top: 10px;
+                    }
+
+                    .collapsible:hover { background-color: #0056b3; }
+
+                    .content {
+                        display: none;
+                        overflow: hidden;
+                        padding: 10px;
+                        background-color: #f1f1f1;
+                        border-left: 3px solid #007BFF;
+                        margin-top: 5px;
+                        border-radius: 5px;
+                    }
+                </style>
+
+<!-- 📦 AI Inventory Optimization Panel -->
+<!-- 📦 AI Inventory Optimization Panel -->
+<div id="inventoryOptimizationContainer" class="dashboard-section">
+    <h3>📦 AI Inventory Optimization</h3>
+    <p>Click the button below to get AI-driven insights on inventory management.</p>
+
+    <div class="button-group">
+        <button id="generateInventoryInsights" class="button generate-button">🔍 Generate Insights</button>
+        <button id="clearInventoryInsights" class="button clear-button">🗑️ Clear Insights</button>
+    </div>
+
+    <!-- 📊 Inventory Insights Table -->
+    <table id="inventoryTable" class="inventory-table">
+        <thead>
+            <tr>
+                <th>📌 Product</th>
+                <th>📍 Location</th>
+                <th>📦 Units to Restock/Remove</th>
+                <th>📊 Trend</th>
+                <th>📊 Progress</th>
+                <th>🔧 Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted dynamically -->
+        </tbody>
+    </table>
+</div>
+
+
+<!-- 📜 JavaScript to Fetch and Display Insights -->
+<script>
+document.getElementById("generateInventoryInsights").addEventListener("click", function () {
+    fetch("{% url 'ai_inventory_optimization' %}", {
+        method: "GET",
+        headers: {
+            "X-CSRFToken": "{{ csrf_token }}",
+            "Content-Type": "application/json"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            alert("⚠ " + data.error);
+            return;
+        }
+
+        let tableBody = document.querySelector("#inventoryTable tbody");
+        tableBody.innerHTML = ""; // Clear previous data
+
+        // 🟢 Fast-Moving Products (Restock Soon)
+        data.fast_moving.forEach(product => {
+            tableBody.innerHTML += `
+                <tr class="fast-moving">
+                    <td>${product.item}</td>
+                    <td>${product.location}</td>
+                    <td>${product.predicted_sales.toLocaleString()}</td>
+                    <td class="trend-positive">📈 High Demand</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill fast" style="width: ${Math.min(product.predicted_sales / 100, 100)}%;"></div>
+                        </div>
+                    </td>
+                    <td class="action">✅ Restock Soon</td>
+                </tr>
+            `;
+        });
+
+        // 🔴 Slow-Moving Products (Reduce Stock)
+        data.slow_moving.forEach(product => {
+            tableBody.innerHTML += `
+                <tr class="slow-moving">
+                    <td>${product.item}</td>
+                    <td>${product.location}</td>
+                    <td>${product.total_sales.toLocaleString()}</td>
+                    <td class="trend-negative">📉 Low Demand</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill slow" style="width: ${Math.min(product.total_sales / 100, 100)}%;"></div>
+                        </div>
+                    </td>
+                    <td class="action">⚠️ Reduce Stock</td>
+                </tr>
+            `;
+        });
+    })
+    .catch(error => console.error("Error fetching Inventory Insights:", error));
+});
+
+// ✅ Clear Insights Button
+document.getElementById("clearInventoryInsights").addEventListener("click", function () {
+    document.querySelector("#inventoryTable tbody").innerHTML = ""; 
+});
+</script>
+
+<!-- 🎨 CSS for Table and Progress Bar -->
+<style>
+/* 📦 Dashboard Section */
+/* 📦 Dashboard Section */
+.dashboard-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* 📌 Button Styles */
+.button-group { margin: 15px 0; }
+.button {
+    padding: 12px 18px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.generate-button { background-color: #28a745; color: white; }
+.clear-button { background-color: #dc3545; color: white; }
+.button:hover { transform: scale(1.05); }
+
+/* 📊 Table Styles */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+.inventory-table th, .inventory-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+.inventory-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* 🚀 High-Demand Products */
+.high-demand { background: #e6f7e6; }
+.trend-positive { color: green; font-weight: bold; }
+
+/* 📉 Low-Demand Products */
+.low-demand { background: #fce8e8; }
+.trend-negative { color: red; font-weight: bold; }
+
+/* 🎯 Action Recommendation */
+.action { font-weight: bold; }
+
+/* 📊 Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
+.progress-fill.fast { background: #28a745; }
+.progress-fill.slow { background: #dc3545; }
+
+</style>
+            </div>    
+
+            
 </body>
 </html>
