@@ -507,7 +507,7 @@ style="background-color: #efeae3; font-family: Arial, sans-serif;">
 <!-- AI Features Section -->
 <div class="ai-features">
     <h2>Enhance Your Predictions with AI Features</h2>
-    <!-- AI-Powered Trend Explanation Section -->
+    <!-- AI-Powered Trend Explanation Section 
          <div class="trend-explanation">
              <h3>📊 AI-Powered Sales Trend Analysis</h3>
              <div id="ai-trend-content">
@@ -522,7 +522,7 @@ style="background-color: #efeae3; font-family: Arial, sans-serif;">
                  {% endif %}
              </div>
  
-             <!-- AI-Powered Trend Explanation Button -->
+             AI-Powered Trend Explanation Button 
              <form id="trend-form">
                  {% csrf_token %}
                  <button type="button" id="generate-trend-btn">🔍 Generate Trend Analysis</button>
@@ -530,7 +530,7 @@ style="background-color: #efeae3; font-family: Arial, sans-serif;">
              </form>
          </div>
  
-         <!-- JavaScript to Fetch AI Trend Analysis -->
+         JavaScript to Fetch AI Trend Analysis 
          <script>
          document.addEventListener("DOMContentLoaded", function () {
              document.getElementById("generate-trend-btn").addEventListener("click", function () {
@@ -575,7 +575,7 @@ style="background-color: #efeae3; font-family: Arial, sans-serif;">
          </script>
  
  
-         <!-- AI Sales Summary Output -->
+          AI Sales Summary Output 
                  <div id="aiSalesSummaryOutput" class="aiSalesSummaryOutput">
                      <h3>AI Sales Summary Output</h3>
                      <div id="aiSummaryText">Click the button below to generate an Sales Summary.</div>
@@ -586,7 +586,7 @@ style="background-color: #efeae3; font-family: Arial, sans-serif;">
                      </div>
                  </div>
  
-                 <!-- JavaScript -->
+                  
                  <script>
                      document.getElementById("generateSummary").addEventListener("click", function() {
                          fetch("{% url 'ai_sales_summary' %}", {
@@ -610,7 +610,7 @@ style="background-color: #efeae3; font-family: Arial, sans-serif;">
                      document.getElementById("clearSummary").addEventListener("click", function() {
                          document.getElementById("aiSummaryText").innerText = "Click the button below to generate an AI-powered trend analysis.";
                      });
-                 </script>
+                 </script>  -->
 
 
                 <!-- AI Business Insights Panel -->

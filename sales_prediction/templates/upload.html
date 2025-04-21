@@ -194,8 +194,13 @@
           <input type="text" name="target" id="target" placeholder="e.g. total_sales_value">
         </div>
 
-        <button type="submit" formaction="{% url 'predict_sales_grouped' %}" class="btn">New Predict</button>
-        <button type="submit" formaction="{% url 'grouped_predictions' %}" class="btn btn-secondary">View Grouped Predictions</button>
+        <button type="submit" formaction="{% url 'predict_sales_grouped' %}" class="btn">
+            📊 Segregated Predictions
+        </button>
+        <button type="submit" formaction="{% url 'grouped_predictions' %}" class="btn btn-secondary">
+            📈 Analytical Predictions
+        </button>
+        
       </form>
     </div>
   </div>

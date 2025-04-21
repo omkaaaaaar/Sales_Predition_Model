@@ -302,3 +302,9 @@ def visualize_filtered_data(request):
     chart_html = fig.to_html(full_html=False)
 
     return JsonResponse({"chart_html": chart_html})
+
+
+
+variable = item_id,date,month,year,location,category,item,sales,price,discount,profit_margin,advertising_spend
+
+target = total_sales_value
