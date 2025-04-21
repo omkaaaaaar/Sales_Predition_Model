@@ -10,9 +10,10 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <style>
+
 /* Container styling */
 #aiSalesSummaryOutput  {
-    background: #ffffff;
+    background: #fff;
     border: 2px solid #d1d5db;
     border-radius: 8px;
     padding: 16px;
@@ -100,7 +101,7 @@
 }
 
 .trend-box {
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     font-size: 14px;
@@ -218,7 +219,7 @@ button#generate-trend-btn:hover {
     /* Additional buttons for AI-powered features */
 /* Container styling */
 .trend-explanation , .aiSalesSummaryOutput {
-    background: #ffffff;
+    background: #fff;
     border: 2px solid #d1d5db;
     border-radius: 8px;
     padding: 16px;
@@ -422,9 +423,20 @@ button#generate-trend-btn:hover {
 }
 </style>
 </head>
-<body>
+<body 
+style="background-color: #efeae3; font-family: Arial, sans-serif;">
 
-<h2 style="text-align: center;"> AI-Powered Sales Insights: Filter, Visualize & Predict</h2>
+<!-- Navbar -->
+<nav>
+    <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="https://i.postimg.cc/90hwkYtz/sale.png" alt="Sales Gyan">
+    </a>
+    <div id="nav-part2">
+        <h4><a class="nav-link" href="{% url 'index' %}">Home</a></h4>
+        <h4><a class="nav-link" href="{% url 'blog_list' %}">Blog</a></h4>
+    </div>
+</nav>
+<h2 style="text-align: center; font: https://fonts.google.com/specimen/Special+Gothic+Condensed+One" >  AI-Powered Sales Insights: Filter, Visualize & Predict</h2>
 
     <!-- Filter Input -->
     <div class="filter-container">
@@ -994,7 +1006,9 @@ button#generate-trend-btn:hover {
             <!-- Data will be inserted dynamically -->
         </tbody>
     </table>
+    
 </div>
+
 
 
 <!-- 📜 JavaScript to Fetch and Display Insights -->
@@ -1137,6 +1151,15 @@ document.getElementById("clearInventoryInsights").addEventListener("click", func
 </style>
             </div>    
 
-            
+
+            <div>
+                <footer>
+                    <p>&copy; 2025 Sales Gyan All rights reserved. |
+                        <a href="#">Privacy Policy</a> |
+                        <a href="#">Terms of Service</a>
+                    </p>
+                </footer>
+                </div>
+
 </body>
 </html>

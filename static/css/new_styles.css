@@ -282,11 +282,11 @@ nav img {
 .faq-item h3 {
     margin: 0;
     cursor: pointer;
-    color: #bc7819;
+    color: #000;
     transition: color 0.3s ease;
 }
 .faq-item h3:hover {
-    color: #00000077;
+    color: orange;
 }
 .faq-item .answer {
     display: none;

@@ -1,140 +1,208 @@
-{% extends 'base.html' %}
+{% load static %}
 {% load custom_filters %}
-
-{% block title %}Upload CSV for Sales Prediction{% endblock %}
-
-{% block extra_css %}
-<style>
-/* Container Styling */
-.container {
-    padding: 20px;
-    border-radius: 8px;
-    margin: 50px auto;
-    max-width: 800px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-}
-
-/* Headings */
-h2, h3, h4 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-h2 { font-size: 24px; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
-h3 { font-size: 20px; }
-h4 { font-size: 18px; }
-
-/* Form Group */
-.form-group {
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f0f0f0;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="file"], input[type="text"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s ease-in-out;
-}
-
-input:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
-}
-
-/* Buttons */
-.btn-primary, .btn-secondary {
-    margin-top: 15px;
-    width: 100%;
-    padding: 12px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-    opacity: 0.9;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-        margin: 30px auto;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload CSV | Sales Gyan</title>
+  <link rel="shortcut icon" href="https://i.postimg.cc/Hx573hMf/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/new_styles.css' %}">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #efeae3;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-    input, .btn {
-        font-size: 14px;
+
+    nav {
+      background-color: #efeae3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
     }
-}
-</style>
-{% endblock %}
 
-{% block content %}
-<div class="container">
-    <h2>Upload CSV file for Sales Prediction</h2>
-    {% if error %}<p style="color:red; text-align:center;">{{ error }}</p>{% endif %}
-    
-    <h3>Sample CSV File</h3>
-    <p>Download a sample CSV file <a href="{% url 'download_sample_csv' %}">here</a>.</p>
+    nav img {
+      height: 90px; /* Increased the height to enlarge the logo */
+    }
 
-    <!-- File Upload Form -->
-    <form method="POST" enctype="multipart/form-data">
+    #nav-part2 {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    #nav-part2 h4 {
+      margin: 0;
+    }
+
+    .main-wrapper {
+      flex: 1;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-section {
+      background: white;
+      flex: 1 1 500px;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-section h2 {
+      margin-bottom: 1rem;
+      color: #202124;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: #5f6368;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .btn {
+      background-color: #1a73e8;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-top: 0.8rem;
+      margin-right: 0.6rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1558d6;
+    }
+
+    .btn-secondary {
+      background-color: #5f6368;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 14px;
+      color: #5f6368;
+      border-top: 1px solid #e0e0e0;
+      margin-top: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1a73e8;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1080px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <a class="navbar-brand" href="{% url 'index' %}">
+      <img src="https://i.postimg.cc/90hwkYtz/sale.png" alt="Sales Gyan Logo">
+    </a>
+    <div id="nav-part2">
+      <h4><a class="nav-link" href="{% url 'index' %}">Home</a></h4>
+      <!-- <h4><a href="{% url 'signup' %}">Join Us</a></h4>
+      <h4><a class="nav-link" href="{% url 'upload_file' %}">Upload File</a></h4>
+      <h4><a class="nav-link" href="{% url 'about' %}">About Us</a></h4> 
+      <h4><a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a></h4> -->
+      <h4><a class="nav-link" href="{% url 'blog_list' %}">Blog</a></h4>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-wrapper">
+    <!-- Upload CSV Form -->
+   <!-- <div class="form-section">
+      <h2>Upload CSV File</h2>
+
+      {% if error %}
+      <p style="color: red;">{{ error }}</p>
+      {% endif %}
+
+      <p style="margin-bottom: 1rem;">Download a sample CSV file <a href="{% url 'download_sample_csv' %}">here</a>.</p>
+
+      <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="form-group">
-            <label for="file">Upload CSV:</label>
-            <input type="file" name="file" id="file" accept=".csv" required>
+          <label for="file">Choose CSV File</label>
+          <input type="file" name="file" id="file" accept=".csv" required>
         </div>
-
         <div class="form-group">
-            <label for="columns">Enter Columns to Display (comma-separated):</label>
-            <input type="text" name="columns" id="columns" placeholder="Example: item_id,item_name,sales">
+          <label for="columns">Columns to Display (comma-separated)</label>
+          <input type="text" name="columns" id="columns" placeholder="e.g. item_id,item_name,sales">
         </div>
 
-        <!-- Action Buttons -->
-        <button type="submit" formmethod="post" formaction="{% url 'upload_file' %}" class="btn btn-primary">Upload and Predict</button>
-        <button type="submit" formmethod="post" formaction="{% url 'predict_sales' %}" class="btn btn-primary">New Predict</button>
-        <button type="submit" formmethod="post" formaction="{% url 'predict_sales_grouped' %}" class="btn btn-primary">New Predict Group</button>
-        <button type="submit" formmethod="post" formaction="{% url 'upload_file_group_by' %}" class="btn btn-secondary">Upload and Show Grouped Results</button>
-    </form>
-    <br>
-<hr>
-    <br>
-    <h1>Upadated Feature</h1>
-    <!-- Feature & Target Selection Form -->
-    <form method="post" enctype="multipart/form-data">
+        <button type="submit" formaction="{% url 'upload_file' %}" class="btn">Upload and Predict</button>
+        <button type="submit" formaction="{% url 'predict_sales' %}" class="btn">New Predict</button>
+        <button type="submit" formaction="{% url 'predict_sales_grouped' %}" class="btn">New Predict Group</button>
+        <button type="submit" formaction="{% url 'upload_file_group_by' %}" class="btn btn-secondary">Grouped Results</button>
+      </form>
+    </div> -->
+
+    <!-- Updated Features Prediction -->
+    <div class="form-section">
+      <h2>Updated Features CSV</h2>
+      <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="form-group">
-            <label>Select CSV file:</label>
-            <input type="file" name="file" required>
+          <label for="featureFile">Choose CSV File</label>
+          <input type="file" name="file" id="featureFile" required>
         </div>
         <div class="form-group">
-            <label>Select Features (comma-separated):</label>
-            <input type="text" name="features" placeholder="e.g. item_id, price, discount">
+          <label for="features">Enter Features (comma-separated)</label>
+          <input type="text" name="features" id="features" placeholder="e.g. item_id,price,discount">
         </div>
         <div class="form-group">
-            <label>Select Target Column:</label>
-            <input type="text" name="target" placeholder="e.g. total_sales_value">
+          <label for="target">Target Column</label>
+          <input type="text" name="target" id="target" placeholder="e.g. total_sales_value">
         </div>
-        <button type="submit" formmethod="post" formaction="{% url 'predict_sales_grouped' %}" class="btn btn-primary">New Predict</button>
-        <button type="submit" formmethod="post" formaction="{% url 'grouped_predictions' %}" class="btn btn-primary">📊 View Grouped Predictions</button>
 
-    </form>
-</div>
-{% endblock %}
+        <button type="submit" formaction="{% url 'predict_sales_grouped' %}" class="btn">New Predict</button>
+        <button type="submit" formaction="{% url 'grouped_predictions' %}" class="btn btn-secondary">View Grouped Predictions</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Sales Gyan. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
